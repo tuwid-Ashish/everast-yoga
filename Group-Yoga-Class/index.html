@@ -737,108 +737,101 @@ Institute</title>
 <body>
 
   <!-- ========== NAVBAR (reuse on every page) ========== -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
-    <div class="container">
-      <!-- Brand with logo -->
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
-          alt="
-Logo" style="height:40px; width:auto; margin-right:.6rem;">
-        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
-      </a>
+<nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+  <div class="container">
+    <!-- Brand with logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+        alt="Everest Yoga Logo" class="navbar-logo">
+      <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
+    </a>
 
-      <div class="collapse navbar-collapse" id="evyNav">
-        <ul class="navbar-nav ml-auto">
-          <!-- Home -->
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <!-- About Us (dropdown) -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-              style="outline: none !important; border: none !important; box-shadow: none !important;"
-              onclick="window.location. href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
-              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Us
-            </a>
-            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
-              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
-              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
-              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
-              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
-              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
-              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
-              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
-              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
-            </div>
-          </li>
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" 
+            aria-controls="evyNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <!-- yogo (with second-level submenu) -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Yoga
-            </a>
+    <div class="collapse navbar-collapse" id="evyNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Home -->
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        
+        <!-- About Us (dropdown) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+            <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+            <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+            <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+            <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+            <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+            <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+          </div>
+        </li>
 
-            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-
-              <!-- Submenu parent -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
-                  aria-haspopup="true" aria-expanded="false">
-                  Fusion Yoga Teacher Training
-                </a>
-                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
-                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
-                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
-                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
-                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
-                   
-                </div>
-              </div>
-
-              <div class="dropdown-divider"></div>
-
-              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
-              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
-              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
-              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
-            </div>
-          </li>
-
-          <!-- Primary items -->
-
-          <!-- Pilates (with second-level submenu) -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Pilates
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-
-              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
-
-              <div class="dropdown-divider"></div>
-
-              <!-- Submenu parent -->
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
-                  aria-haspopup="true" aria-expanded="false">
-                  Pilates Teacher Training
-                </a>
-                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
-                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
-                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
-                </div>
+        <!-- Yoga (with submenu) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Yoga
+          </a>
+          <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+            <!-- Submenu parent -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="fusionDropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                Fusion Yoga Teacher Training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
               </div>
             </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
-        </ul>
-      </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+            <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+            <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+            <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+          </div>
+        </li>
+
+        <!-- Pilates (with submenu) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pilates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
+            <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+            <div class="dropdown-divider"></div>
+            <!-- Submenu parent -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                Pilates Teacher Training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
+                <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <header class="hero">
