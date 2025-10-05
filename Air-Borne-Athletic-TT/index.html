@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Air Borne Athletic Teacher Training • 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
+  <style>
+    :root {
+      --royal: #0b2a4a;
+      --royal-700: #0a2440;
+      --royal-50: #f4f6fa;
+      --accent: #2a6f97;
+      --ink: #0b2a4a;
+      --muted: #667085;
+      --card: #fff;
+      --ring: rgba(42, 111, 151, .18);
+      --shadow: 0 10px 28px var(--royal-50);
+      --radius: 16px;
+      --airborne-primary: #1a237e;
+      --airborne-secondary: #3949ab;
+      --airborne-accent: #00bcd4;
+      --airborne-gradient: linear-gradient(135deg, var(--royal), var(--leaf));
+    }
+
+    .btn-pill {
+      background: var(--royal);
+      color: #fff !important;
+      border: none
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 42, 74, .18)
+    }
+
+    .navbar-evy .brand-mark {
+      background: var(--royal) !important
+    }
+
+    a {
+      color: var(--accent)
+    }
+
+    a:hover {
+      color: var(--royal)
+    }
+
+    .badge-soft {
+      background: var(--royal-50);
+      color: var(--royal);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+  </style>
+  <!-- END: THEME OVERRIDES -->
+
+  <style>
+    :root {
+      --ink: #0a2c4f;
+      --leaf: #2a9d8f;
+      --saffron: #f4a261;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #667085;
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+    /* ========== NAVBAR (glassy, sticky) ========== */
+    .navbar-evy {
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      background: rgba(255, 255, 255, .85) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(10, 44, 79, .06);
+      transition: box-shadow .2s ease;
+    }
+
+    .navbar-evy.nav-shadow {
+      box-shadow: 0 8px 24px rgba(10, 44, 79, .10);
+    }
+
+    .navbar-evy .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink) !important;
+      font-family: "Playfair Display", serif;
+    }
+
+    .navbar-evy .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-right: .6rem;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.05rem;
+      box-shadow: 0 6px 16px rgba(10, 44, 79, .1)
+    }
+
+    .navbar-evy .nav-link {
+      font-weight: 600;
+      color: var(--ink) !important;
+      opacity: .9;
+    }
+
+    .navbar-evy .nav-link:hover,
+    .navbar-evy .dropdown-item:hover {
+      color: var(--leaf) !important;
+    }
+
+    .navbar-evy .dropdown-menu {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-evy {
+      background: var(--bg);
+      border-top: 1px solid rgba(10, 44, 79, .06);
+      padding-top: 54px;
+    }
+
+    .footer-evy .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: "Playfair Display", serif;
+    }
+
+    .footer-evy .logo .brand-mark {
+      margin-right: .6rem;
+    }
+
+    .footer-evy h6 {
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem
+    }
+
+    .footer-evy a {
+      color: var(--ink);
+      opacity: .85;
+      text-decoration: none
+    }
+
+    .footer-evy a:hover {
+      opacity: 1;
+      color: var(--leaf)
+    }
+
+    .footer-evy .social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      margin-right: .4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid rgba(10, 44, 79, .08);
+    }
+
+    .footer-evy .newsletter .form-control {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .15)
+    }
+
+    .footer-evy .newsletter .form-control:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .footer-evy .bottom {
+      border-top: 1px solid rgba(10, 44, 79, .06)
+    }
+
+    /* ========== Floating WhatsApp ========== */
+    .whatsapp-fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1051;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+    }
+
+    .whatsapp-fab:hover {
+      transform: translateY(-2px)
+    }
+
+    /* Page specific styles */
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -10% -10% 0 -10%;
+      background: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      filter: contrast(1.1) saturate(1.1);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--airborne-gradient);
+      opacity: 0.85;
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      font-weight: 700;
+      opacity: .9
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+      margin: .4rem 0 1rem;
+    }
+
+    .hero p.lead {
+      max-width: 720px;
+      opacity: .95
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .7rem 1.4rem;
+      font-weight: 700;
+      /* background: linear-gradient(135deg, var(--airborne-accent), var(--airborne-secondary)); */
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      right: auto;
+      margin-top: -0.125rem;
+      margin-left: .1rem;
+      border-radius: .5rem;
+    }
+
+    .dropdown-submenu>a.dropdown-toggle::after {
+      content: "›";
+      border: none;
+      font-weight: 700;
+      margin-left: .4rem;
+    }
+
+    .dropdown-submenu.open-left>.dropdown-menu {
+      left: auto;
+      right: 100%;
+      margin-left: 0;
+      margin-right: .1rem;
+    }
+
+    .dropdown-submenu.open-left>a.dropdown-toggle::after {
+      content: "‹";
+    }
+
+    @media (min-width:992px) {
+      .navbar-evy .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .navbar-evy .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Training Overview Cards */
+    .training-overview {
+      margin-top: -80px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .overview-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(26, 35, 126, .15);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      height: 100%;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overview-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--airborne-gradient);
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+
+    .overview-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(26, 35, 126, .25);
+    }
+
+    .overview-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .overview-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--airborne-gradient);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 1.5rem;
+      position: relative;
+    }
+
+    .overview-icon::after {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: var(--airborne-gradient);
+      opacity: 0.2;
+      transform: scale(0);
+      transition: transform .4s ease;
+    }
+
+    .overview-card:hover .overview-icon::after {
+      transform: scale(1);
+    }
+
+    .overview-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .overview-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--airborne-secondary);
+      line-height: 1.4;
+    }
+
+    /* Enhanced Program Cards */
+    .program-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(26, 35, 126, .1);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: all .4s ease;
+      position: relative;
+      height: 100%;
+      min-height: 400px;
+    }
+
+    .program-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--airborne-gradient);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s ease;
+    }
+
+    .program-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 30px 60px rgba(26, 35, 126, .2);
+    }
+
+    .program-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .program-image {
+      height: 200px;
+      background: var(--airborne-gradient);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .program-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 35, 126, 0.3);
+    }
+
+    .program-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--airborne-primary);
+    }
+
+    .program-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .program-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .program-description {
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .program-features {
+      margin-top: 1.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .feature-item i {
+      color: var(--airborne-accent);
+      margin-right: 0.5rem;
+      width: 16px;
+    }
+
+    /* Suspension Training Section */
+    .suspension-concept {
+      background: linear-gradient(135deg, rgba(26, 35, 126, 0.05), rgba(57, 73, 171, 0.05));
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .suspension-concept::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 150px;
+      height: 150px;
+      background: rgba(26, 35, 126, 0.1);
+      border-radius: 50%;
+    }
+
+    .suspension-concept::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      width: 100px;
+      height: 100px;
+      background: rgba(0, 188, 212, 0.1);
+      border-radius: 50%;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(26, 35, 126, .1);
+      transition: transform .3s ease;
+      border: 1px solid rgba(26, 35, 126, .08);
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .benefit-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--airborne-gradient);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.2rem;
+    }
+
+    /* Stats section */
+    .stats-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(26, 35, 126, .1);
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--airborne-gradient);
+      transform: scaleX(0);
+      transition: transform .3s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(26, 35, 126, .15);
+    }
+
+    .stats-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: var(--airborne-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--airborne-gradient);
+      color: white;
+      border-radius: var(--radius);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(40%, -40%);
+    }
+
+    .cta-section::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      transform: translate(-40%, 40%);
+    }
+
+    .cta-section h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-outline-light {
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-outline-light:hover {
+      background: white;
+      color: var(--airborne-primary);
+    }
+
+    /* Floating elements animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes floatReverse {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(15px); }
+    }
+
+    .floating {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-reverse {
+      animation: floatReverse 3.5s ease-in-out infinite;
+    }
+
+    /* Enhanced animations */
+    @keyframes cardSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .program-card.reveal.in {
+      animation: cardSlideIn 0.8s ease forwards;
+    }
+
+    .program-card:nth-child(1) { animation-delay: 0.1s; }
+    .program-card:nth-child(2) { animation-delay: 0.2s; }
+    .program-card:nth-child(3) { animation-delay: 0.3s; }
+
+    /* Gradient text */
+    .gradient-text {
+      background: var(--airborne-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Interactive elements */
+    .interactive-element {
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+
+    .interactive-element:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container wrap text-center">
+      <span class="eyebrow">Suspension Based Training • Revolutionary Movement</span>
+      <h1>Air Borne Athletic Teacher Training</h1>
+      <p class="lead mx-auto">Experience the future of fitness with our unique suspension-based training programs. Master the art of aerial movement through comprehensive teacher training in Aerial Yoga, Bungee Yoga, and TRX - all designed to defy gravity and elevate your practice.</p>
+      <div class="mt-4">
+        <a href="#enroll" class="btn btn-pill btn-lg mr-3">Start Your Journey</a>
+        <a href="#programs" class="btn btn-outline-light">Explore Programs</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRAINING OVERVIEW -->
+  <section class="training-overview py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating">
+            <div class="overview-icon">
+              <i class="fas fa-parachute-box"></i>
+            </div>
+            <h5 class="overview-title">Suspension Training</h5>
+            <div class="overview-value">Unique gravity-defying<br>movement system</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating-reverse" style="animation-delay: 0.5s;">
+            <div class="overview-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h5 class="overview-title">Training Options</h5>
+            <div class="overview-value">Residential &<br>Non-Residential<br>Available</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating" style="animation-delay: 1s;">
+            <div class="overview-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h5 class="overview-title">3 Specializations</h5>
+            <div class="overview-value">Aerial • Bungee • TRX<br>Teacher Training</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUSPENSION CONCEPT -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Unique Suspension-Based Training Concept</h2>
+        <div style="height: 3px; width: 80px; background: var(--airborne-gradient); margin: 1rem auto;"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 reveal">
+          <div class="suspension-concept">
+            <div class="text-center">
+              <h3 style="font-family:'Playfair Display',serif; font-weight:600; color: var(--airborne-primary);">Revolutionary Movement Training</h3>
+              <p class="lead text-muted mb-4">Our Air Borne Athletic program introduces a revolutionary approach to fitness and wellness through suspension-based training. This unique concept combines traditional movement principles with innovative aerial techniques, creating a comprehensive system that challenges both body and mind while providing therapeutic benefits.</p>
+              
+              <div class="row text-center mt-5">
+                <div class="col-md-3 mb-3">
+                  <div class="stats-card reveal">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Specialized Programs</span>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="stats-card reveal">
+                    <span class="stat-number">360°</span>
+                    <span class="stat-label">Movement Training</span>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="stats-card reveal">
+                    <span class="stat-number">Zero</span>
+                    <span class="stat-label">Joint Impact</span>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="stats-card reveal">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Core Engagement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING PROGRAMS -->
+  <section id="programs" class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Comprehensive Training Programs</h2>
+        <p class="text-muted">Master three distinct suspension-based training methodologies</p>
+        <div style="height: 3px; width: 60px; background: var(--airborne-gradient); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="row">
+        <!-- Aerial Yoga Training -->
+        <div class="col-lg-4 mb-4 reveal">
+          <div class="program-card">
+            <div class="program-image">
+              <div class="program-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+            </div>
+            <div class="program-content">
+              <h5 class="program-title">Aerial Yoga Teacher Training</h5>
+              <p class="program-description">Experience the magic of floating yoga with our comprehensive aerial yoga teacher training. Learn to guide students through graceful movements suspended in silk hammocks, combining traditional yoga postures with the therapeutic benefits of inversion and decompression.</p>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Aerial apparatus setup & safety</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Beginner to advanced sequences</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Inversion therapy techniques</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Anatomy & contraindications</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Class sequencing & music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bungee Yoga Training -->
+        <div class="col-lg-4 mb-4 reveal">
+          <div class="program-card">
+            <div class="program-image">
+              <div class="program-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <div class="program-content">
+              <h5 class="program-title">Bungee Yoga Teacher Training</h5>
+              <p class="program-description">Discover the exhilarating world of bungee fitness where participants are suspended by bungee cords, allowing for dynamic, high-energy movements that are gentle on joints while providing an incredible cardiovascular workout and full-body conditioning.</p>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Bungee system mechanics</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Dynamic movement patterns</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Cardio & strength combinations</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Student safety protocols</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>High-energy choreography</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRX Training -->
+        <div class="col-lg-4 mb-4 reveal">
+          <div class="program-card">
+            <div class="program-image">
+              <div class="program-icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+            </div>
+            <div class="program-content">
+              <h5 class="program-title">TRX Teacher Training</h5>
+              <p class="program-description">Master the versatile TRX suspension trainer system that leverages gravity and body weight to perform functional movements. Learn to create challenging, scalable workouts that improve strength, balance, flexibility, and core stability for all fitness levels.</p>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>TRX equipment mastery</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Functional movement patterns</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Progressive exercise modifications</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Core stability & balance</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check"></i>
+                  <span>Group class instruction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Benefits of Suspension Training</h2>
+        <p class="text-muted">Transform your practice with gravity-defying movement</p>
+        <div style="height: 3px; width: 60px; background: var(--airborne-gradient); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h6>Low Impact Training</h6>
+          <p class="small text-muted">Reduce stress on joints while maximizing movement efficiency and therapeutic benefits</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </div>
+          <h6>Spinal Decompression</h6>
+          <p class="small text-muted">Release tension and improve spinal health through gentle inversion and traction</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h6>Enhanced Balance</h6>
+          <p class="small text-muted">Develop proprioception and stability through dynamic, unstable surface training</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h6>Core Strength</h6>
+          <p class="small text-muted">Engage deep stabilizing muscles through constant core activation and control</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-smile"></i>
+          </div>
+          <h6>Mental Wellness</h6>
+          <p class="small text-muted">Experience joy and playfulness while building confidence and overcoming fears</p>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h6>Inclusive Training</h6>
+          <p class="small text-muted">Adaptable for all ages, fitness levels, and physical abilities with modifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div class="cta-section">
+            <h2>Ready to Defy Gravity?</h2>
+            <p class="mb-4">Join the revolution in movement training and become a certified instructor in the fastest-growing fitness disciplines. Our comprehensive Air Borne Athletic Training will elevate your teaching skills and open new opportunities in the dynamic world of suspension-based fitness.</p>
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style="background: whit; color: var(--airborne-primary);">Enroll Today</a>
+              <a href="#" class="btn btn-outline-light btn-lg mb-2">View Schedule</a>
+            </div>
+            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Early registration discounts • Equipment included • Certification upon completion</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc500">YTTC 500</a></li>
+            <li><a href="/prenatal-yoga.html">Prenatal Training</a></li>
+            <li><a href="/airborne-athletic.html">Air Borne Athletic</a></li>
+            <li><a href="/yoga.html#workshops">Workshops & Retreats</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Add subtle shadow to navbar on scroll
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() {
+        if (!nav) return;
+        if (window.scrollY > 6) nav.classList.add('nav-shadow');
+        else nav.classList.remove('nav-shadow');
+      }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Mark active nav item by URL (basic)
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+
+    // Reveal animation on scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // Enhanced interactive elements
+    document.querySelectorAll('.interactive-element').forEach(el => {
+      el.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.05)';
+      });
+      el.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+</body>
+
+</html>

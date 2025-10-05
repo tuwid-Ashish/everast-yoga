@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>One-on-One Home Classes • 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
+  <style>
+    :root {
+      --royal: #0b2a4a;
+      --royal-700: #0a2440;
+      --royal-50: #f4f6fa;
+      --accent: #2a6f97;
+      --ink: #0b2a4a;
+      --muted: #667085;
+      --card: #fff;
+      --ring: rgba(42, 111, 151, .18);
+      --shadow: 0 10px 28px rgba(11, 42, 74, .10);
+      --radius: 16px;
+      --private-primary: #8b5a2b;
+      --private-secondary: #d4af37;
+      --private-accent: #f4e4bc;
+      --private-luxury: #6d4c41;
+    }
+
+    .btn-pill {
+      background: var(--royal);
+      color: #fff !important;
+      border: none
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 42, 74, .18)
+    }
+
+    .navbar-evy .brand-mark {
+      background: var(--royal) !important
+    }
+
+    a {
+      color: var(--accent)
+    }
+
+    a:hover {
+      color: var(--royal)
+    }
+
+    .badge-soft {
+      background: var(--royal-50);
+      color: var(--royal);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+  </style>
+  <!-- END: THEME OVERRIDES -->
+
+  <style>
+    :root {
+      --ink: #0a2c4f;
+      --leaf: #2a9d8f;
+      --saffron: #f4a261;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #667085;
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+    /* ========== NAVBAR (glassy, sticky) ========== */
+    .navbar-evy {
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      background: rgba(255, 255, 255, .85) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(10, 44, 79, .06);
+      transition: box-shadow .2s ease;
+    }
+
+    .navbar-evy.nav-shadow {
+      box-shadow: 0 8px 24px rgba(10, 44, 79, .10);
+    }
+
+    .navbar-evy .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink) !important;
+      font-family: "Playfair Display", serif;
+    }
+
+    .navbar-evy .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-right: .6rem;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.05rem;
+      box-shadow: 0 6px 16px rgba(10, 44, 79, .1)
+    }
+
+    .navbar-evy .nav-link {
+      font-weight: 600;
+      color: var(--ink) !important;
+      opacity: .9;
+    }
+
+    .navbar-evy .nav-link:hover,
+    .navbar-evy .dropdown-item:hover {
+      color: var(--leaf) !important;
+    }
+
+    .navbar-evy .dropdown-menu {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-evy {
+      background: var(--bg);
+      border-top: 1px solid rgba(10, 44, 79, .06);
+      padding-top: 54px;
+    }
+
+    .footer-evy .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: "Playfair Display", serif;
+    }
+
+    .footer-evy .logo .brand-mark {
+      margin-right: .6rem;
+    }
+
+    .footer-evy h6 {
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem
+    }
+
+    .footer-evy a {
+      color: var(--ink);
+      opacity: .85;
+      text-decoration: none
+    }
+
+    .footer-evy a:hover {
+      opacity: 1;
+      color: var(--leaf)
+    }
+
+    .footer-evy .social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      margin-right: .4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid rgba(10, 44, 79, .08);
+    }
+
+    .footer-evy .newsletter .form-control {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .15)
+    }
+
+    .footer-evy .newsletter .form-control:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .footer-evy .bottom {
+      border-top: 1px solid rgba(10, 44, 79, .06)
+    }
+
+    /* ========== Floating WhatsApp ========== */
+    .whatsapp-fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1051;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+    }
+
+    .whatsapp-fab:hover {
+      transform: translateY(-2px)
+    }
+
+    /* Page specific styles */
+    .hero {
+      position: relative;
+      min-height: 68vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -10% -10% 0 -10%;
+      background: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      filter: contrast(1.05) saturate(1.05);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(1200px 600px at 20% 20%, rgba(139, 90, 43, .25), transparent),
+        linear-gradient(to bottom right, rgba(10, 44, 79, .85), rgba(212, 175, 55, .75));
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      font-weight: 700;
+      opacity: .9
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      margin: .4rem 0 1rem;
+    }
+
+    .hero p.lead {
+      max-width: 720px;
+      opacity: .95
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .7rem 1.4rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--royal), var(--leaf));
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      right: auto;
+      margin-top: -0.125rem;
+      margin-left: .1rem;
+      border-radius: .5rem;
+    }
+
+    .dropdown-submenu>a.dropdown-toggle::after {
+      content: "›";
+      border: none;
+      font-weight: 700;
+      margin-left: .4rem;
+    }
+
+    .dropdown-submenu.open-left>.dropdown-menu {
+      left: auto;
+      right: 100%;
+      margin-left: 0;
+      margin-right: .1rem;
+    }
+
+    .dropdown-submenu.open-left>a.dropdown-toggle::after {
+      content: "‹";
+    }
+
+    @media (min-width:992px) {
+      .navbar-evy .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .navbar-evy .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Private classes design */
+    .schedule-overview {
+      margin-top: -60px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .overview-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      text-align: center;
+      height: 100%;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overview-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      transform: scaleX(0);
+      transition: transform .3s ease;
+    }
+
+    .overview-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(10, 44, 79, .15);
+    }
+
+    .overview-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .overview-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin: 0 auto 1rem;
+      position: relative;
+    }
+
+    .overview-icon::after {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      opacity: 0.2;
+      transform: scale(0);
+      transition: transform .3s ease;
+    }
+
+    .overview-card:hover .overview-icon::after {
+      transform: scale(1);
+    }
+
+    .overview-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .overview-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--leaf);
+      line-height: 1.4;
+    }
+
+    /* About Section for Private Classes */
+    .about-section {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      background: rgba(42, 157, 143, 0.1);
+      border-radius: 50%;
+    }
+
+    .about-section::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      background: rgba(244, 162, 97, 0.1);
+      border-radius: 50%;
+    }
+
+    /* Objectives & Outcomes Cards */
+    .objective-card, .outcome-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .objective-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+
+    .outcome-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--saffron), var(--leaf));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+
+    .objective-card:hover, .outcome-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 20px 40px rgba(10, 44, 79, .15);
+    }
+
+    .objective-card:hover::before, .outcome-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .objective-header, .outcome-header {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .objective-icon, .outcome-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .objective-icon::after, .outcome-icon::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      opacity: 0.2;
+      transform: scale(0);
+      transition: transform .3s ease;
+    }
+
+    .objective-card:hover .objective-icon::after, 
+    .outcome-card:hover .outcome-icon::after {
+      transform: scale(1);
+    }
+
+    .objective-title, .outcome-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.3;
+      flex: 1;
+    }
+
+    .objective-content, .outcome-content {
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .objective-list, .outcome-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .objective-list li, .outcome-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      padding-left: 0;
+    }
+
+    .objective-list li::before, .outcome-list li::before {
+      content: "✨";
+      margin-right: 0.75rem;
+      margin-top: 0.1rem;
+      flex-shrink: 0;
+    }
+
+    /* Service Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(10, 44, 79, .1);
+      transition: transform .3s ease;
+      border: 1px solid rgba(10, 44, 79, .08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      transform: scaleX(0);
+      transition: transform .3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+    }
+
+    /* Session Types */
+    .session-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .session-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(10, 44, 79, .1);
+      transition: transform .3s ease;
+      border: 2px solid transparent;
+    }
+
+    .session-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--leaf);
+    }
+
+    .session-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Stats section */
+    .stats-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(10, 44, 79, .08);
+      min-height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .3s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px rgba(10, 44, 79, .15);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--leaf);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--royal), var(--leaf));
+      color: white;
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    .cta-section h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .btn-outline-light {
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-outline-light:hover {
+      background: white;
+      color: var(--royal);
+    }
+
+    /* Floating elements animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Private class specific elements */
+    .luxury-fact {
+      background: linear-gradient(135deg, rgba(139, 90, 43, 0.1), rgba(212, 175, 55, 0.1));
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--leaf);
+    }
+
+    .luxury-fact h6 {
+      color: var(--leaf);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Benefits icons */
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 5px 15px rgba(10, 44, 79, .08);
+      transition: transform .3s ease;
+    }
+
+    .benefit-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .benefit-emoji {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .benefit-text {
+      flex: 1;
+    }
+
+    .benefit-text h6 {
+      margin: 0 0 0.25rem 0;
+      color: var(--ink);
+      font-weight: bold;
+    }
+
+    .benefit-text p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Pricing section */
+    .pricing-section {
+      background: rgba(139, 90, 43, 0.05);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px solid rgba(139, 90, 43, 0.2);
+    }
+
+    .pricing-section h5 {
+      color: var(--ink);
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-section .badge {
+      background: var(--leaf);
+      color: white;
+      margin: 0.25rem;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+    }
+
+    /* Process steps */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 1.5rem;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 5px 15px rgba(10, 44, 79, .08);
+      transition: transform .3s ease;
+      position: relative;
+    }
+
+    .process-step:hover {
+      transform: translateY(-4px);
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-weight: bold;
+    }
+
+    .step-title {
+      font-weight: bold;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container wrap text-center">
+      <span class="eyebrow">Personalized • Private • Professional</span>
+      <h1>One-on-One Home Classes</h1>
+      <p class="lead mx-auto">Bringing mindful yoga practice to the comfort of your home. Experience personalized attention and customized yoga plans tailored specifically to your needs, schedule, and goals.</p>
+      <div class="mt-4">
+        <a href="#schedule" class="btn btn-pill btn-lg mr-3">Book Session</a>
+        <a href="#features" class="btn btn-outline-light">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CLASS OVERVIEW -->
+  <section class="schedule-overview py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating">
+            <div class="overview-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h5 class="overview-title">At Your Home</h5>
+            <div class="overview-value">Comfort & Privacy<br>Your Space<br>Your Rules</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating" style="animation-delay: 0.5s;">
+            <div class="overview-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h5 class="overview-title">1:1 Personal Attention</h5>
+            <div class="overview-value">Customized Plans<br>Focused Guidance<br>Individual Goals</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating" style="animation-delay: 1s;">
+            <div class="overview-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h5 class="overview-title">Flexible Timing</h5>
+            <div class="overview-value">Your Convenience<br>Monday to Saturday<br>60 Minutes Duration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 reveal">
+          <div class="about-section">
+            <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Premium Personalized Yoga Experience</h2>
+            <p class="lead text-muted mb-4">Our One-on-One Home Classes bring the expertise of 
+Institute directly to your doorstep. Experience the luxury of personalized yoga instruction in the comfort and privacy of your own home, with sessions designed exclusively around your unique needs and lifestyle.</p>
+            
+            <div class="luxury-fact">
+              <h6>✨ Why Choose Private Home Sessions?</h6>
+              <p>Private yoga sessions provide 100% focused attention, allowing for faster progress, personalized modifications, and the convenience of practicing in your familiar environment. Studies show that personalized instruction can accelerate learning by up to 300% compared to group classes.</p>
+            </div>
+
+            <div class="row text-center mt-4">
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">1:1</span>
+                  <span class="stat-label">Personal Attention</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">60</span>
+                  <span class="stat-label">Minutes Session</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">6</span>
+                  <span class="stat-label">Days Available</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Customized</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE FEATURES -->
+  <section id="features" class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Exclusive Service Features</h2>
+        <p class="text-muted">What makes our private home sessions special</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-route"></i>
+          </div>
+          <h6>Customized Practice</h6>
+          <p class="small text-muted">Every session is tailored to your specific needs, goals, health conditions, and fitness level for optimal results.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h6>Complete Privacy</h6>
+          <p class="small text-muted">Practice without self-consciousness in your own space, allowing for deeper exploration and learning.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h6>Flexible Scheduling</h6>
+          <p class="small text-muted">Choose session times that work best for your lifestyle, from early morning to evening slots.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h6>Expert Instructors</h6>
+          <p class="small text-muted">Learn from certified, experienced yoga teachers who bring professional expertise to your home.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h6>Health-Focused</h6>
+          <p class="small text-muted">Special attention to any health concerns, injuries, or physical limitations with safe modifications.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <i class="fas fa-family"></i>
+          </div>
+          <h6>Family Sessions</h6>
+          <p class="small text-muted">Option for couples or family yoga sessions to practice together in a supportive environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJECTIVES & OUTCOMES -->
+  <section id="objectives" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Commitment to You</h2>
+        <p class="text-muted">Personalized service objectives and expected outcomes</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="row">
+        <!-- Objectives -->
+        <div class="col-lg-6 mb-4 reveal">
+          <div class="objective-card">
+            <div class="objective-header">
+              <div class="objective-icon">
+                <i class="fas fa-target"></i>
+              </div>
+              <div>
+                <h5 class="objective-title">Our Objectives</h5>
+              </div>
+            </div>
+            <div class="objective-content">
+              <ul class="objective-list">
+                <li>Offer personalized attention and customized yoga plans for each individual</li>
+                <li>Cater to individual schedules, goals, and specific health needs effectively</li>
+                <li>Provide privacy and comfort of practicing yoga in your own home environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outcomes -->
+        <div class="col-lg-6 mb-4 reveal">
+          <div class="outcome-card">
+            <div class="outcome-header">
+              <div class="outcome-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div>
+                <h5 class="outcome-title">Expected Outcomes</h5>
+              </div>
+            </div>
+            <div class="outcome-content">
+              <ul class="outcome-list">
+                <li>Rapid progress with focused guidance and one-on-one instruction</li>
+                <li>Greater confidence in personal practice and improved technique</li>
+                <li>Convenient and effective way to integrate yoga into daily life seamlessly</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESSION TYPES -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Session Options Available</h2>
+        <p class="text-muted">Choose the type of private session that suits your needs</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="session-types">
+        <div class="session-card reveal">
+          <div class="session-badge">Beginner Friendly</div>
+          <h6>Foundation Sessions</h6>
+          <p class="small text-muted">Perfect for those new to yoga. Learn basic poses, breathing techniques, and fundamentals.</p>
+        </div>
+        <div class="session-card reveal">
+          <div class="session-badge">Advanced Practice</div>
+          <h6>Intermediate/Advanced</h6>
+          <p class="small text-muted">Challenging sequences for experienced practitioners looking to deepen their practice.</p>
+        </div>
+        <div class="session-card reveal">
+          <div class="session-badge">Therapeutic</div>
+          <h6>Healing & Recovery</h6>
+          <p class="small text-muted">Gentle, therapeutic yoga for injury recovery, pain management, or health conditions.</p>
+        </div>
+        <div class="session-card reveal">
+          <div class="session-badge">Specialized</div>
+          <h6>Prenatal & Senior</h6>
+          <p class="small text-muted">Safe, modified practices for expecting mothers and senior practitioners.</p>
+        </div>
+      </div>
+
+      <div class="pricing-section reveal">
+        <h5><i class="fas fa-star"></i> Premium Service Includes:</h5>
+        <div class="mt-3">
+          <span class="badge">Initial Assessment</span>
+          <span class="badge">Customized Plan</span>
+          <span class="badge">Progress Tracking</span>
+          <span class="badge">Take-Home Practice</span>
+          <span class="badge">Nutritional Guidance</span>
+          <span class="badge">Lifestyle Tips</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">How It Works</h2>
+        <p class="text-muted">Simple steps to start your private yoga journey</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number">1</div>
+          <div class="step-title">Initial Consultation</div>
+          <p class="small text-muted">Discuss your goals, health status, and preferences with our yoga expert.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">2</div>
+          <div class="step-title">Custom Plan Creation</div>
+          <p class="small text-muted">We design a personalized yoga program tailored to your specific needs.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">3</div>
+          <div class="step-title">Schedule Sessions</div>
+          <p class="small text-muted">Choose convenient times that fit your schedule for regular practice.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">4</div>
+          <div class="step-title">Begin Practice</div>
+          <p class="small text-muted">Start your journey with expert guidance in the comfort of your home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Exclusive Benefits</h2>
+        <p class="text-muted">Why choose our private home yoga sessions</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="benefit-grid">
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">🎯</span>
+          <div class="benefit-text">
+            <h6>Faster Progress</h6>
+            <p>Accelerated learning with personalized instruction</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">🏠</span>
+          <div class="benefit-text">
+            <h6>Ultimate Convenience</h6>
+            <p>No travel time, practice in familiar environment</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">🔒</span>
+          <div class="benefit-text">
+            <h6>Complete Privacy</h6>
+            <p>Practice without judgment or comparison</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">⏰</span>
+          <div class="benefit-text">
+            <h6>Flexible Schedule</h6>
+            <p>Sessions that fit your lifestyle perfectly</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">💪</span>
+          <div class="benefit-text">
+            <h6>Personalized Approach</h6>
+            <p>Every pose modified for your body and needs</p>
+          </div>
+        </div>
+        <div class="benefit-item reveal">
+          <span class="benefit-emoji">👨‍⚕️</span>
+          <div class="benefit-text">
+            <h6>Expert Guidance</h6>
+            <p>Professional instruction with immediate feedback</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div class="cta-section">
+            <h2>Ready to Transform Your Practice?</h2>
+            <p class="mb-4">Experience the luxury of personalized yoga instruction in your own home. Start your journey to better health, flexibility, and mindfulness with our expert instructors who bring the studio experience directly to you.</p>
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style=" color: var(--royal);">Book Free Consultation</a>
+              <a href="#" class="btn btn-outline-light btn-lg mb-2">Learn More</a>
+            </div>
+            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Free initial consultation • Flexible packages • Expert certified instructors</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc500">YTTC 500</a></li>
+            <li><a href="/prenatal-yoga.html">Prenatal Training</a></li>
+            <li><a href="/group_class.html">Group Yoga Classes</a></li>
+            <li><a href="/kid-class.html">Kids Yoga Classes</a></li>
+            <li><a href="/Therapy-class.html">Therapy Yoga Classes</a></li>
+            <li><a href="/Private-class.html">Private Yoga Classes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Add subtle shadow to navbar on scroll
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() {
+        if (!nav) return;
+        if (window.scrollY > 6) nav.classList.add('nav-shadow');
+        else nav.classList.remove('nav-shadow');
+      }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Mark active nav item by URL (basic)
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+
+    // Reveal animation on scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+  </script>
+</body>
+
+</html>

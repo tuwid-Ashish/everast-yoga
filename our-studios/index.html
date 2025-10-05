@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Our Studios — 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR (reuse) -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are.html">Who We Are</a>
+              <a class="dropdown-item" href="/Founder-managings.html">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facalites.html">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads.html">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty.html">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studio.html">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials.html">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- Yoga (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/yoga.html" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/fusion-yoga.html" id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200hrs-foundational.html">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/airborne-athletic.html">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/prenatal-yoga.html">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/group_class.html">Group Yoga Class</a>
+              <a class="dropdown-item" href="/kid-class.html">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-class.html">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-class.html">Private Yoga Class</a>
+            </div>
+          </li>
+          <!-- Primary items -->
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/yoga.html" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/group_class.html">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/fusion-yoga.html" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200hrs-foundational.html">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us.html">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap py-5">
+      <span class="eyebrow text-uppercase" style="letter-spacing:.2rem; opacity:.9">Spaces for Practice</span>
+      <h1>Our Studios</h1>
+      <p class="lead mb-0">Purpose-built shalas designed for focused learning and restorative practice—
+        natural light, quality props, and a calm, safe environment for all levels.</p>
+      <div class="mt-4">
+        <a href="#studios" class="btn btn btn-primary-pill btn-pill mr-2">Explore Studios</a>
+        <a href="/contact-us.html" class="btn btn-outline-light btn-pill" style="background:transparent;border:1px solid rgba(255,255,255,.6)">Book a Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIOS LIST -->
+  <section id="studios" class="py-5" style="background:var(--royal-50)">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge-soft">Locations</span>
+        <h2 class="mt-2" style="color: var(--royal); font-family:'Playfair Display',serif; font-weight:700">Ludhiana Headquarters</h2>
+        <p class="text-muted mb-0">Primary studio with teacher training, therapy and pilates capacity.</p>
+      </div>
+
+      <div class="row align-items-stretch">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="studio-card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="icon mr-2"><i class="fa-solid fa-location-dot"></i></span>
+              <h5 class="mb-0">Ludhiana Studio</h5>
+            </div>
+            <p class="text-muted mb-2">Ludhiana, Punjab, India</p>
+            <ul class="list-unstyled mb-3">
+              <li class="mb-1"><i class="fa-solid fa-clock mr-2" style="color:var(--leaf)"></i>Mon–Sun: 6:00 AM – 8:00 PM</li>
+              <li class="mb-1"><i class="fa-solid fa-phone mr-2" style="color:var(--leaf)"></i><a href="tel:+919999999999">+91 99XX-XX-XXXX</a></li>
+              <li class="mb-1"><i class="fa-solid fa-envelope mr-2" style="color:var(--leaf)"></i><a href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></li>
+            </ul>
+
+            <div class="row">
+              <div class="col-6 mb-2"><i class="fa-solid fa-spa mr-2" style="color:var(--royal)"></i>Props & Bolsters</div>
+              <div class="col-6 mb-2"><i class="fa-solid fa-wind mr-2" style="color:var(--royal)"></i>Ventilated & Light</div>
+              <div class="col-6 mb-2"><i class="fa-solid fa-shower mr-2" style="color:var(--royal)"></i>Changing Corner</div>
+              <div class="col-6 mb-2"><i class="fa-solid fa-square-parking mr-2" style="color:var(--royal)"></i>Parking</div>
+            </div>
+
+            <div class="mt-3">
+              <a class="btn btn-pill btn-sm mr-2" href="/contact-us.html">Get Directions</a>
+              <a class="btn btn-outline-secondary btn-pill btn-sm" style="border:1px solid rgba(11,42,74,.2)" href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="h-100" style="background:#fff; border:1px solid rgba(10,44,79,.08); border-radius:16px; overflow:hidden; box-shadow:var(--shadow)">
+          
+            <div class="p-3">
+              <div style="border-radius:12px; overflow:hidden; border:1px solid rgba(10,44,79,.08)">
+                <iframe title="Map placeholder" src="https://maps.google.com/maps?q=Ludhiana%2C%20Punjab&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="240" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- =================== OUR STUDIOS =================== -->
+<section class="py-5" id="our-studios">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge badge-pill" style="background:var(--royal-50); color:var(--royal); font-weight:700;">Centres & Communities</span>
+      <h2 class="mt-2" style="color: var(--royal); font-family:'Playfair Display',serif; font-weight:700">Our Studios</h2>
+      <p class="text-muted mb-0">Find a centre near you or learn online. All centres follow our safety-first, therapy-aware pedagogy.</p>
+    </div>
+
+    <div class="row">
+      <!-- Ludhiana (HQ) -->
+      <div class="col-md-6 col-lg-4 mb-4 reveal">
+        <div class="card h-100" style="border:none; border-radius:16px; box-shadow:0 12px 30px rgba(11,42,74,.10)">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-location-dot mr-2" style="color:var(--royal)"></i>
+              <h5 class="mb-0">Ludhiana (HQ)</h5>
+            </div>
+            <p class="mb-1"><strong>
+Institute, Rajguru Nagar</strong></p>
+            <p class="text-muted mb-2">House No. 245, Block–C, Rajguru Nagar, Ferozepur Road, Ludhiana, Punjab – 141012</p>
+            <p class="mb-1"><i class="fa-solid fa-user"></i> Sanjeev Tyagi • Kavita Tyagi</p>
+            <p class="mb-1"><i class="fa-solid fa-phone"></i>
+              <a href="tel:+919501934391">+91 9501 934 391</a> · <a href="tel:+919501934392">+91 9501 934 392</a>
+            </p>
+            <p class="mb-3"><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a>
+            </p>
+            <div class="d-flex">
+              <a class="btn btn-sm btn-pill mr-2" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps?q=House+No.+245,+Block+-+C,+Rajguru+Nagar,+Ferozepur+Road,+Ludhiana,+Punjab+-+141012">Directions</a>
+              <a class="btn btn-sm btn-outline-dark btn-pill" target="_blank" rel="noopener" href="https://wa.me/919501934391">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kerala (Trivandrum) -->
+      <div class="col-md-6 col-lg-4 mb-4 reveal">
+        <div class="card h-100" style="border:none; border-radius:16px; box-shadow:0 12px 30px rgba(11,42,74,.10)">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-location-dot mr-2" style="color:var(--royal)"></i>
+              <h5 class="mb-0">Kerala (Trivandrum)</h5>
+            </div>
+            <p class="mb-1"><strong>
+Institute, Kerala</strong></p>
+            <p class="text-muted mb-2">Nirmalyam, CVRA 89, West Enclave, Vayalikada’ Mukkola P O, Trivandrum – 695004, Kerala</p>
+            <p class="mb-1"><i class="fa-solid fa-user"></i> Ms. S Sunitha</p>
+            <p class="mb-1"><i class="fa-solid fa-phone"></i>
+              <a href="tel:+918129127155">+91 8129 127 155</a> · <a href="tel:+916282895367">+91 628 289 5367</a>
+            </p>
+            <p class="mb-3"><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:everestyogakerala@gmail.com">everestyogakerala@gmail.com</a>
+            </p>
+            <div class="d-flex">
+              <a class="btn btn-sm btn-pill mr-2" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps?q=Vayalikada+Mukkola+P+O+Trivandrum+695004">Directions</a>
+              <a class="btn btn-sm btn-outline-dark btn-pill" target="_blank" rel="noopener"
+                 href="https://www.facebook.com/EverestyogaPilatesinstitute">Follow</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rishikesh (Uttarakhand) -->
+      <div class="col-md-6 col-lg-4 mb-4 reveal">
+        <div class="card h-100" style="border:none; border-radius:16px; box-shadow:0 12px 30px rgba(11,42,74,.10)">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-location-dot mr-2" style="color:var(--royal)"></i>
+              <h5 class="mb-0">Rishikesh (Uttarakhand)</h5>
+            </div>
+            <p class="mb-1"><strong>
+Institute, Rishikesh</strong></p>
+            <p class="text-muted mb-2">Lakshman Jhula Road, Rishikesh, Uttarakhand – 249192</p>
+            <p class="mb-1"><i class="fa-solid fa-user"></i> Dr. Surendra Prasad Rayal • Dr. Naveen Prasad Nautiyal</p>
+            <p class="mb-3"><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a>
+            </p>
+            <a class="btn btn-sm btn-pill" target="_blank" rel="noopener"
+               href="https://www.google.com/maps?q=Lakshman+Jhula+Road,+Rishikesh+249192">Directions</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Udaipur (Rajasthan) -->
+      <div class="col-md-6 col-lg-4 mb-4 reveal">
+        <div class="card h-100" style="border:none; border-radius:16px; box-shadow:0 12px 30px rgba(11,42,74,.10)">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-location-dot mr-2" style="color:var(--royal)"></i>
+              <h5 class="mb-0">Udaipur (Rajasthan)</h5>
+            </div>
+            <p class="mb-1"><strong>
+Institute, Udaipur</strong></p>
+            <p class="text-muted mb-2">Udaipur, Rajasthan</p>
+            <p class="mb-1"><i class="fa-solid fa-user"></i> Dr. Guneet Monga</p>
+            <p class="mb-3"><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a>
+            </p>
+            <a class="btn btn-sm btn-pill" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Udaipur,+Rajasthan">Directions</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bareilly (Online Training) -->
+      <div class="col-md-6 col-lg-4 mb-4 reveal">
+        <div class="card h-100" style="border:none; border-radius:16px; box-shadow:0 12px 30px rgba(11,42,74,.10)">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-location-dot mr-2" style="color:var(--royal)"></i>
+              <h5 class="mb-0">Bareilly (Online Training)</h5>
+            </div>
+            <p class="mb-1"><strong>
+Institute, Bareilly</strong></p>
+            <p class="text-muted mb-2">Nekpur, Bareilly, Uttar Pradesh – 243001</p>
+            <p class="mb-1"><i class="fa-solid fa-user"></i> Yoga Guru Shivam Sharma</p>
+            <p class="mb-3"><i class="fa-solid fa-envelope"></i>
+              <a href="mailto:yogainstitureverest@gmail.com">yogainstitureverest@gmail.com</a>
+            </p>
+            <a class="btn btn-sm btn-pill" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Nekpur,+Bareilly+243001">Directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+  <section class="py-5" style="background:var(--royal); color:#fff">
+    <div class="container text-center">
+      <h3 style="font-family:'Playfair Display',serif; font-weight:700">Visit 
+Studio</h3>
+      <p class="mb-3" style="opacity:.95">Speak to our team, explore the space, and find the right class for you.</p>
+      <a class="btn btn-primary-pill btn-pill bg-dark mr-2" href="/contact-us.html">Contact Us</a>
+      <a class="btn btn-outline-light btn-pill" style="background:transparent;border:1px solid rgba(255,255,255,.6)" href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc300">YTTC 300</a></li>
+            <li><a href="/pilates.html">Pilates Training</a></li>
+            <li><a href="/yoga.html#corporate">Corporate Wellness</a></li>
+            <li><a href="/yoga.html#workshops">Workshops & Retreats</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>c 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- GLOBAL SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() { if (!nav) return; if (window.scrollY > 6) nav.classList.add('nav-shadow'); else nav.classList.remove('nav-shadow'); }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+  </script>
+  <script src="../js/effect.js"></script>
+</body>
+
+</html>

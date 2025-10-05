@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Guest Faculty • 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- ========== GLOBAL STYLES (keep once site-wide) ========== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
+  <style>
+    :root {
+      --royal: #0b2a4a;
+      /* new primary */
+      --royal-700: #0a2440;
+      --royal-50: #f4f6fa;
+      --accent: #2a6f97;
+      /* calm secondary */
+      --ink: #0b2a4a;
+      --muted: #667085;
+      --card: #fff;
+      --ring: rgba(42, 111, 151, .18);
+      --shadow: 0 10px 28px rgba(11, 42, 74, .10);
+      --radius: 16px;
+    }
+
+    /* kill gradients from old theme */
+    .btn-pill {
+      background: var(--royal);
+      color: #fff !important;
+      border: none
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 42, 74, .18)
+    }
+
+    .navbar-evy .brand-mark {
+      background: var(--royal) !important
+    }
+
+    a {
+      color: var(--accent)
+    }
+
+    a:hover {
+      color: var(--royal)
+    }
+
+    .badge-soft {
+      background: var(--royal-50);
+      color: var(--royal);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+  </style>
+  <!-- END: THEME OVERRIDES -->  
+<style>
+    :root {
+      --ink: #0a2c4f;
+
+      /* Primary yoga blue */
+      --leaf: #2a9d8f;
+      /* Calm green accent */
+      --saffron: #f4a261;
+      /* Warm highlight */
+      --bg: #f7f8fb;
+      /* Light background */
+      --card: #ffffff;
+      --muted: #667085;
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+    /* ========== NAVBAR (glassy, sticky) ========== */
+    .navbar-evy {
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      background: rgba(255, 255, 255, .85) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(10, 44, 79, .06);
+      transition: box-shadow .2s ease;
+    }
+
+    .navbar-evy.nav-shadow {
+      box-shadow: 0 8px 24px rgba(10, 44, 79, .10);
+    }
+
+    .navbar-evy .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink) !important;
+      font-family: "Playfair Display", serif;
+    }
+
+    .navbar-evy .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-right: .6rem;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.05rem;
+      box-shadow: 0 6px 16px rgba(10, 44, 79, .1)
+    }
+
+    .navbar-evy .nav-link {
+      font-weight: 600;
+      color: var(--ink) !important;
+      opacity: .9;
+    }
+
+    .navbar-evy .nav-link:hover,
+    .navbar-evy .dropdown-item:hover {
+      color: var(--leaf) !important;
+    }
+
+    .navbar-evy .dropdown-menu {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .55rem 1.05rem;
+      font-weight: 700;
+      color: #fff !important;
+      /* background: linear-gradient(135deg, var(--leaf), var(--saffron)); */
+      background: linear-gradient(135deg, var(--royal), var(--leaf));
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-evy {
+      background: var(--bg);
+      border-top: 1px solid rgba(10, 44, 79, .06);
+      padding-top: 54px;
+    }
+
+    .footer-evy .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: "Playfair Display", serif;
+    }
+
+    .footer-evy .logo .brand-mark {
+      margin-right: .6rem;
+    }
+
+    .footer-evy h6 {
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem
+    }
+
+    .footer-evy a {
+      color: var(--ink);
+      opacity: .85;
+      text-decoration: none
+    }
+
+    .footer-evy a:hover {
+      opacity: 1;
+      color: var(--leaf)
+    }
+
+    .footer-evy .social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      margin-right: .4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid rgba(10, 44, 79, .08);
+    }
+
+    .footer-evy .newsletter .form-control {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .15)
+    }
+
+    .footer-evy .newsletter .form-control:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .footer-evy .bottom {
+      border-top: 1px solid rgba(10, 44, 79, .06)
+    }
+
+    /* ========== Floating WhatsApp ========== */
+    .whatsapp-fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1051;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+    }
+
+    .whatsapp-fab:hover {
+      transform: translateY(-2px)
+    }
+  </style>
+ 
+<style>
+    :root {
+      --ink: #0a2c4f;
+
+      --leaf: #2a9d8f;
+      --saffron: #f4a261;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #667085;
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 56vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      overflow: hidden
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -10% -10% 0 -10%;
+      background: url('https://images.unsplash.com/photo-1522092787788-8b974970799a?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      transform: translateY(var(--parallax, 0px));
+      will-change: transform;
+      filter: contrast(1.05) saturate(1.05);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(1100px 500px at 20% 20%, rgba(244, 162, 97, .25), transparent),
+        linear-gradient(to bottom right, rgba(10, 44, 79, .88), rgba(42, 157, 143, .78));
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .22rem;
+      font-weight: 700;
+      opacity: .95
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: .25rem 0 .75rem
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .7rem 1.2rem;
+      font-weight: 700;
+      /* background: linear-gradient(135deg, var(--leaf), var(--saffron)); */
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    /* TOOLBAR */
+    .toolbar {
+      margin-top: -28px;
+      position: relative;
+      z-index: 3
+    }
+
+    .toolbar .card {
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .06);
+      box-shadow: var(--shadow)
+    }
+
+    .chip {
+      border: 1px solid rgba(10, 44, 79, .12);
+      padding: .45rem .9rem;
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      transition: all .2s ease
+    }
+
+    .chip.active,
+    .chip:hover {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .search {
+      border-radius: 999px;
+      padding: .65rem 1rem;
+      border: 1px solid rgba(10, 44, 79, .12);
+      outline: none;
+      width: 100%
+    }
+
+    .search:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    /* GRID + CARD */
+    .grid {
+      padding: 54px 0
+    }
+
+    .faculty {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .06);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease
+    }
+
+    .faculty:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 36px rgba(10, 44, 79, .16)
+    }
+
+    .faculty .photo {
+      position: relative;
+      height: 230px;
+      background: #e8f4f1;
+      overflow: hidden
+    }
+
+    .faculty .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+      transition: transform .5s ease;
+      filter: saturate(1.04)
+    }
+
+    .faculty:hover .photo img {
+      transform: scale(1.06)
+    }
+
+    .badge-role {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(10, 44, 79, .95);
+      color: #fff;
+      padding: .35rem .7rem;
+      border-radius: 10px;
+      font-size: .8rem;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .18)
+    }
+
+    .faculty .body {
+      padding: 18px
+    }
+
+    .faculty h5 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      margin-bottom: .25rem;
+      font-size: 1.15rem
+    }
+
+    .faculty .meta {
+      color: var(--leaf);
+      font-weight: 700;
+      font-size: .9rem;
+      margin-bottom: .5rem
+    }
+
+    .faculty .bio {
+      color: var(--muted);
+      font-size: .94rem;
+      min-height: 60px
+    }
+
+    .faculty .social a {
+      color: var(--ink);
+      margin-right: 10px;
+      opacity: .75;
+      font-size: 1.05rem;
+      transition: color .2s ease, opacity .2s ease
+    }
+
+    .faculty .social a:hover {
+      color: var(--saffron);
+      opacity: 1
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .reveal {
+        transition: none
+      }
+
+      .faculty,
+      .btn-pill {
+        transition: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container wrap text-center">
+      <span class="eyebrow">Wisdom • Scholarship • Experience</span>
+      <h1>Guest Faculty</h1>
+      <p class="lead mx-auto" style="max-width:760px">
+        Distinguished experts who enrich our courses with depth across philosophy, Ayurveda, anatomy, meditation and
+        research.
+      </p>
+      <a href="#list" class="btn btn-pill mt-2">Explore Profiles</a>
+    </div>
+  </header>
+
+
+  <!-- GRID -->
+  <main id="list" class="grid">
+    <div class="container">
+      <div class="row">
+
+        <!-- NOTE: Replace with real faculty details when available -->
+        <!-- 1 -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Philosophy,Research" data-name="Prof. Shalini Iyer" data-city="Pune"
+            data-title="Philosophy Scholar">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/PREM-ANVESHI-3.jpg"
+                alt="Prof. Shalini Iyer">
+              <span class="badge-role">Motivational Speaker</span>
+            </div>
+            <div class="body">
+              <h5>Swami Prem Anveshi</h5>
+              <div class="meta">Founder - Anveshi Foundation</div>
+              <p class="bio">Motivational Speaker & Spiritual Guide (Founder & MD – Anveshi Foundation & Futurex Group,
+                India).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button> -->
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Ayurveda,Research" data-name="Dr. Harish Menon" data-city="Kochi"
+            data-title="Ayurveda Physician">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-SURENDRA-TYAGI.jpg"
+                alt="Dr. Harish Menon">
+              <span class="badge-role">Yogic Science</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Surendra Kumar</h5>
+              <div class="meta">Ayurveda Physician</div>
+              <p class="bio">Dept of Yogic Science (Gurukul Kangri University, Haridwar, Uttarakhand).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button> -->
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Anatomy,Research" data-name="Dr. Nivedita Rao" data-city="Bengaluru"
+            data-title="Anatomy & Physiology">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/CLAIRE-1.jpg" alt="Dr. Nivedita Rao">
+              <span class="badge-role">Yoga Teacher</span>
+            </div>
+            <div class="body">
+              <h5>Claire Saunders</h5>
+              <div class="meta">Founder - Ashtanga Yoga</div>
+              <p class="bio">Authorized Level 2 Ashtanga Yoga Teacher
+                (Founder & Director- Ashtanga Yoga Shala, France).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button> -->
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Meditation,Philosophy" data-name="Swami Aditya" data-city="Rishikesh"
+            data-title="Meditation Mentor">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/07/Sandra.jpg" alt="Swami Aditya">
+              <span class="badge-role">Yoga Therapy</span>
+            </div>
+            <div class="body">
+              <h5>Sandra Moyzes (Israel)</h5>
+              <div class="meta">Certified Yoga Teacher</div>
+              <p class="bio">Specializes in Yoga for Children, Ha-Ta Yoga and Yoga Therapy. Teaches Vedic Way of Life &
+                Philosophy of Yoga. Teaching since 2012..</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <!-- <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button> -->
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Philosophy,International" data-name="Dr. Maya Kapoor" data-city="Delhi"
+            data-title="Comparative Philosophy">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/dr-suneet.jpg" alt="Dr. Maya Kapoor">
+              <span class="badge-role">Philosophy</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Suneet Aurora</h5>
+              <div class="meta">Comparative Philosophy</div>
+              <p class="bio">Upanishads, Buddhism & modern life—bridging schools to enrich teacher training.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button> -->
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6 — DR. RAJNI NAUTIYAL -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Naturopathy,Yoga" data-name="Dr. Rajni Nautiyal" data-city="Uttarakhand"
+            data-title="Dept of Yoga & Naturopathy">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-RAJNI-NAUTIYAL-1.jpg"
+                alt="Dr. Rajni Nautiyal">
+              <span class="badge-role">Yoga & Naturopathy</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Rajni Nautiyal</h5>
+              <div class="meta">Dept of Yoga & Naturopathy • HNB Garhwal University</div>
+              <p class="bio">Academic expert in Yoga & Naturopathy associated with HNB Garhwal University, Uttarakhand.
+              </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7 — DR. VINOD NAUTIYAL -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Naturopathy,Yoga" data-name="Dr. Vinod Nautiyal" data-city="Uttarakhand"
+            data-title="Dept of Yoga & Naturopathy">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-VINOD-NAUTIYAL-1.jpg"
+                alt="Dr. Vinod Nautiyal">
+              <span class="badge-role">Yoga & Naturopathy</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Vinod Nautiyal</h5>
+              <div class="meta">Dept of Yoga & Naturopathy • HNB Garhwal University</div>
+              <p class="bio">Specialist educator in Yoga & Naturopathy from HNB Garhwal University, Uttarakhand.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8 — DR. ALKA GUPTA -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Ayurveda,Naturopathy,International" data-name="Dr. Alka Gupta"
+            data-city="Thailand" data-title="Dept of Yoga • Naturopathy • Ayurveda">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-ALKA-GUPTA.jpg"
+                alt="Dr. Alka Gupta">
+              <span class="badge-role">Ayurveda</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Alka Gupta</h5>
+              <div class="meta">Founder & MD – AGATH Health Care Co. Ltd. • WHO TCIM Advisor</div>
+              <p class="bio">Brings global experience across Yoga, Naturopathy & Ayurveda with WHO-linked advisory work.
+              </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+        <!-- 9 • Dr. Rakesh Tomar -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Physical Education,Research,International" data-name="Dr. Rakesh Tomar"
+            data-city="Saudi Arabia" data-title="Dept. of Physical Education">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/dr-tomar-1.jpg"
+                alt="Dr. Rakesh Tomar">
+              <span class="badge-role">Physical Education</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Rakesh Tomar</h5>
+              <div class="meta">Dept. of Physical Education</div>
+              <p class="bio">King Fahd University of Petroleum &amp; Minerals, Saudi Arabia.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 10 • Dr. Saraswati Kala -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Yoga,Naturopathy,India,Leadership" data-name="Dr. Saraswati Kala"
+            data-city="Dehradun" data-title="Dept. of Yoga & Naturopathy">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/saraswati-kala.jpg"
+                alt="Dr. Saraswati Kala">
+              <span class="badge-role">Yoga &amp; Naturopathy</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Saraswati Kala</h5>
+              <div class="meta">Dept. of Yoga &amp; Naturopathy</div>
+              <p class="bio">SRRR University, Dehradun; Director – Arogyam Yoga &amp; Naturopathy Center; INO President
+                (Uttarakhand).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 11 • Dr. Kiran Vashisht -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Ayurveda,India,Academia" data-name="Dr. Kiran Vashisht"
+            data-city="Uttarakhand" data-title="Dept. of Ayurveda">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/07/DR-KIRAN-VASHISHT.jpg"
+                alt="Dr. Kiran Vashisht">
+              <span class="badge-role">Ayurveda</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Kiran Vashisht</h5>
+              <div class="meta">Dept. of Ayurveda</div>
+              <p class="bio">Assistant Professor – Gurukul Campus, Uttarakhand Ayurved University.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 12 • Shri Anil Bharti -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Motivation,Spiritual Guide,India,Leadership" data-name="Shri Anil Bharti"
+            data-city="Ludhiana, Punjab" data-title="Motivational Speaker & Spiritual Guide">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/ANIL-BHARTI.jpg"
+                alt="Shri Anil Bharti">
+              <span class="badge-role">Motivational</span>
+            </div>
+            <div class="body">
+              <h5>Shri Anil Bharti</h5>
+              <div class="meta">Motivational Speaker &amp; Spiritual Guide</div>
+              <p class="bio">State Awardee; President – Vivekananda Trust &amp; Vivekananda Meditation Pyramid, Ludhiana
+                (Pb).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 13 • Dr. Ajay Malik -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Physical Education,Sports,India,Academia" data-name="Dr. Ajay Malik"
+            data-city="Uttarakhand" data-title="Physical Education & Sports">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/Dr-Ajay-Malik.jpg"
+                alt="Dr. Ajay Malik">
+              <span class="badge-role">Physical Education</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Ajay Malik</h5>
+              <div class="meta">Physical Education &amp; Sports</div>
+              <p class="bio">Asst Prof, Gurukul Kangri University, Uttarakhand.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 14 • Mrs Manjula Jamwal -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Yoga,Meditation,India,Heartfulness" data-name="Mrs Manjula Jamwal"
+            data-city="" data-title="Yoga Instructor & Heartfulness Meditation Practitioner">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/MRS-MANJULA-JAMWAL-1.jpg"
+                alt="Mrs Manjula Jamwal">
+              <span class="badge-role">Yoga &amp; Meditation</span>
+            </div>
+            <div class="body">
+              <h5>Mrs Manjula Jamwal</h5>
+              <div class="meta">Yoga Instructor &amp; Heartfulness Meditation Practitioner</div>
+              <p class="bio">Patanjali Yog Samiti &amp; Govt. of India.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 15 • Acharya Bipin Joshi -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Motivation,Spiritual Guide,India,Leadership"
+            data-name="Acharya Bipin Joshi" data-city="Dehradun" data-title="Motivational Speaker & Spiritual Guide">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/05/acharya-bipin-joshi.jpg"
+                alt="Acharya Bipin Joshi">
+              <span class="badge-role">Motivational</span>
+            </div>
+            <div class="body">
+              <h5>Acharya Bipin Joshi</h5>
+              <div class="meta">Motivational Speaker &amp; Spiritual Guide</div>
+              <p class="bio">Founder – Doon Yogpeeth, World Peace Foundation &amp; Uttarakhand Divine Village, Dehradun
+                (India).</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 16 • Ashok Nalamalapu (Ashoka) -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="faculty" data-tags="Kirtan,International,USA,Spiritual Music"
+            data-name="Ashok Nalamalapu (Ashoka)" data-city="USA" data-title="Professional Kirtankar (USA)">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2023/07/ASHOK-NALAMALAPU.jpg"
+                alt="Ashok Nalamalapu (Ashoka)">
+              <span class="badge-role">Kirtan</span>
+            </div>
+            <div class="body">
+              <h5>Ashok Nalamalapu (Ashoka)</h5>
+              <div class="meta">Professional Kirtankar (USA)</div>
+              <p class="bio">Founder &amp; Director – Sadhana Spiritual Center, a nonprofit promoting meditation, kirtan
+                &amp; multi-faith chanting.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-3" style="font-family:'Playfair Display',serif;font-weight:700;">Invite a Guest Faculty</h2>
+      <p class="text-muted mb-4 mx-auto" style="max-width:720px">Plan an expert module for your batch—philosophy,
+        Ayurveda, anatomy, meditation or research. We’ll coordinate the schedule.</p>
+      <a href="/contact-us/" class="btn btn-pill">Enquire Now</a>
+    </div>
+  </section>
+
+
+  <!-- Modal (Profile Quick View) -->
+  <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="border-radius:16px">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="profileName">Faculty Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body pt-0">
+          <p class="text-success font-weight-bold mb-1" id="profileTitle">Title</p>
+          <p class="text-muted mb-0" id="profileBio">Short bio will appear here from card.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-pill" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc300">YTTC 300</a></li>
+            <li><a href="/pilates.html">Pilates Training</a></li>
+            <li><a href="/yoga.html#corporate">Corporate Wellness</a></li>
+            <li><a href="/yoga.html#workshops">Workshops & Retreats</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Add subtle shadow to navbar on scroll
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() {
+        if (!nav) return;
+        if (window.scrollY > 6) nav.classList.add('nav-shadow');
+        else nav.classList.remove('nav-shadow');
+      }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Mark active nav item by URL (basic)
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    // Parallax
+    const hero = document.querySelector('.hero');
+    const setParallax = () => {
+      if (!hero) return; const y = Math.min(40, window.scrollY * 0.15);
+      hero.style.setProperty('--parallax', `${y * -1}px`);
+    };
+    setParallax(); window.addEventListener('scroll', setParallax, { passive: true });
+
+    // Reveal on scroll
+    const reveals = [...document.querySelectorAll('.reveal')];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+
+
+    // Modal Fill
+    document.querySelectorAll('[data-modal="profile"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.faculty');
+        if (!card) return;
+        document.getElementById('profileName').textContent = card.dataset.name || card.querySelector('h5')?.textContent || 'Faculty';
+        document.getElementById('profileTitle').textContent = card.dataset.title || card.querySelector('.meta')?.textContent || '';
+        document.getElementById('profileBio').textContent = card.querySelector('.bio')?.textContent || '';
+        $('#profileModal').modal('show');
+      });
+    });
+  </script>
+</body>
+
+</html>

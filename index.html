@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Blue White Elegant Layout</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Google Fonts for Elegant Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <!-- ========== GLOBAL STYLES (keep once site-wide) ========== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO (solid royal, image right) ================= -->
+  <section class="py-5" style="background:var(--royal); color:#fff">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 reveal">
+         
+          <h1 style="font-family:'Playfair Display',serif; font-weight:700">Rooted Yoga Education for Today</h1>
+          <p class="lead mt-2" style="opacity:.95">
+Institute blends traditional wisdom with contemporary
+            pedagogy—YTTC 200/300/500, Therapy, Pilates & Corporate Wellness.</p>
+          <div class="mt-3">
+            <a href="/yoga.html#yttc200" class="btn btn-pill mr-2">Join YTTC 200</a>
+            <a href="/contact-us.html" class="btn btn-outline-light btn-pill"
+              style="background:transparent;border:1px solid rgba(255,255,255,.6)">Talk to Us</a>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <img class="img-fluid rounded" style="border-radius:20px; box-shadow:var(--shadow)"
+            src="/img/hero-section.png"
+            alt="Yoga practice">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST STRIP ================= -->
+  <section style="background:var(--royal-50)">
+    <div class="container py-3">
+      <div class="d-flex flex-wrap align-items-center justify-content-center text-center">
+        <small class="text-muted mr-3 mb-2">Trusted by students across India</small>
+        <img src="https://dummyimage.com/120x40/ffffff/0b2a4a&text=Partner+A" class="mx-2 mb-2" alt="">
+        <img src="https://dummyimage.com/120x40/ffffff/0b2a4a&text=Partner+B" class="mx-2 mb-2" alt="">
+        <img src="https://dummyimage.com/120x40/ffffff/0b2a4a&text=Partner+C" class="mx-2 mb-2" alt="">
+        <img src="https://dummyimage.com/120x40/ffffff/0b2a4a&text=Partner+D" class="mx-2 mb-2" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAMS (cards, no gradient) ================= -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge-soft">Programs</span>
+        <h2 class="mt-2" style="font-family:'Playfair Display',serif; font-weight:700">Choose Your Path</h2>
+        <p class="text-muted">Structured tracks with safety-first teaching and real mentorship.</p>
+      </div>
+      <div class="row">
+        <!-- Card -->
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1517637633369-e4cc28755e41?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>YTTC 200</h5>
+              <p class="text-muted">Foundations in Hatha/Ashtanga, sequencing, cues & assessment.</p>
+              <a class="btn btn-pill btn-sm" href="/yoga.html#yttc200">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1540206276207-3af25c08abc4?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>YTTC 300/500</h5>
+              <p class="text-muted">Advanced pedagogy, adjustments, pranayama & practicum.</p>
+              <a class="btn btn-pill btn-sm" href="/yoga.html#yttc300">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>Therapy & Rehab</h5>
+              <p class="text-muted">Evidence-aware protocols for pain, stress & lifestyle issues.</p>
+              <a class="btn btn-pill btn-sm" href="/yoga.html#therapy">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1593810450967-f9c42742e326?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>Pilates & Mobility</h5>
+              <p class="text-muted">Core strength, alignment and breath-led movement.</p>
+              <a class="btn btn-pill btn-sm" href="/pilates.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY EVEREST (icons) ================= -->
+  <section class="py-5" style="background:var(--royal-50)">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge-soft">Why Everest</span>
+        <h2 class="mt-2" style="font-family:'Playfair Display',serif; font-weight:700">Designed for Real Progress</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <i class="fa-solid fa-user-shield mb-2" style="font-size:1.4rem; color:var(--royal)"></i>
+            <h6>Safety-First Pedagogy</h6>
+            <p class="text-muted mb-0">Alignment, regressions & injury-safe cues for all levels.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <i class="fa-solid fa-stethoscope mb-2" style="font-size:1.4rem; color:var(--royal)"></i>
+            <h6>Therapy Orientation</h6>
+            <p class="text-muted mb-0">Protocols for back pain, stress, breath health, and rehab.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <i class="fa-solid fa-graduation-cap mb-2" style="font-size:1.4rem; color:var(--royal)"></i>
+            <h6>Experienced Faculty</h6>
+            <p class="text-muted mb-0">National & international guest faculty for depth & breadth.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <i class="fa-solid fa-briefcase mb-2" style="font-size:1.4rem; color:var(--royal)"></i>
+            <h6>Career Support</h6>
+            <p class="text-muted mb-0">Teaching practice, internships & corporate wellness gigs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS (count-up) ================= -->
+  <section class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-4 reveal">
+          <div class="p-4" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <div class="display-4 font-weight-bold" data-count="2000">0</div>
+            <small class="text-muted">Students Trained</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 reveal">
+          <div class="p-4" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <div class="display-4 font-weight-bold" data-count="20">0</div>
+            <small class="text-muted">Cities & Centres</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 reveal">
+          <div class="p-4" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <div class="display-4 font-weight-bold" data-count="500">0</div>
+            <small class="text-muted">Hours (up to)</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4 reveal">
+          <div class="p-4" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <div class="display-4 font-weight-bold" data-count="100">0</div>
+            <small class="text-muted">Guest Faculty</small>
+          </div>
+        </div>
+      </div>
+      <small class="text-muted">*Replace with your actual numbers.</small>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED FACULTY (mini gallery) ================= -->
+  <section class="py-5" style="background:var(--royal-50)">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <span class="badge-soft">Faculty</span>
+          <h3 class="mt-2" style="font-family:'Playfair Display',serif; font-weight:700">Learn from the Best</h3>
+        </div>
+        <a href="/guest-faculty.html" class="btn btn-pill btn-sm">View All</a>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3 reveal"><img class="img-fluid rounded" style="box-shadow:var(--shadow)"
+            src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-RAJNI-NAUTIYAL-1.jpg" alt=""></div>
+        <div class="col-6 col-md-3 mb-3 reveal"><img class="img-fluid rounded" style="box-shadow:var(--shadow)"
+            src="https://everestyogainstitute.in/wp-content/uploads/2023/05/DR-ALKA-GUPTA.jpg" alt=""></div>
+        <div class="col-6 col-md-3 mb-3 reveal"><img class="img-fluid rounded" style="box-shadow:var(--shadow)"
+            src="https://everestyogainstitute.in/wp-content/uploads/2023/05/dr-tomar-1.jpg" alt=""></div>
+        <div class="col-6 col-md-3 mb-3 reveal"><img class="img-fluid rounded" style="box-shadow:var(--shadow)"
+            src="https://everestyogainstitute.in/wp-content/uploads/2023/07/ASHOK-NALAMALAPU.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge-soft">Testimonials</span>
+        <h2 class="mt-2" style="font-family:'Playfair Display',serif; font-weight:700">What Students Say</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <p class="text-muted">“Faculty is humble and highly knowledgeable. The therapy modules changed my practice.”
+            </p>
+            <strong>— Aarti, Delhi</strong><br><small class="text-muted">YTTC 200</small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <p class="text-muted">“Super professional, very Indian in ethos yet modern in delivery. Loved it.”</p>
+            <strong>— Vikram, Mumbai</strong><br><small class="text-muted">YTTC 300</small>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="p-4 h-100" style="background:#fff; border-radius:16px; box-shadow:var(--shadow)">
+            <p class="text-muted">“Corporate sessions brought calm and mobility to our team’s day.”</p>
+            <strong>— HR Lead, Bengaluru</strong><br><small class="text-muted">Corporate Wellness</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG / RESOURCES PREVIEW ================= -->
+  <section class="py-5" style="background:var(--royal-50)">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <span class="badge-soft">Resources</span>
+          <h3 class="mt-2" style="font-family:'Playfair Display',serif; font-weight:700">Latest From Us</h3>
+        </div>
+        <a href="/blog.html" class="btn btn-pill btn-sm">All Articles</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>Building Breath Capacity</h5>
+              <p class="text-muted">Simple pranayama progressions for daily life.</p>
+              <a href="#" class="btn btn-pill btn-sm">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1593810451127-1b3c0b1bf3b6?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>Mobility for Desk Work</h5>
+              <p class="text-muted">Five-minute flows for busy professionals.</p>
+              <a href="#" class="btn btn-pill btn-sm">Read</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="card h-100" style="border:none; box-shadow:var(--shadow); border-radius:16px">
+            <img class="card-img-top"
+              style="height:160px; object-fit:cover; border-top-left-radius:16px; border-top-right-radius:16px"
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+              alt="">
+            <div class="card-body">
+              <h5>Teacher’s Toolkit</h5>
+              <p class="text-muted">Cues, regressions and safe adjustments.</p>
+              <a href="#" class="btn btn-pill btn-sm">Read</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-2" style="font-family:'Playfair Display',serif; font-weight:700">Begin Your Journey</h2>
+      <p class="text-muted mb-4 mx-auto" style="max-width:700px">Tell us your goals—fitness, therapy, or teaching—and
+        we’ll guide you to the right program.</p>
+      <a href="/contact-us.html" class="btn btn-pill">Enquire Now</a>
+    </div>
+  </section>
+
+
+
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/200Hrs-Foundational-YTTC/">YTTC 200</a></li>
+            <li><a href="/500Hrs-Foundational-YTTC/">YTTC 500</a></li>
+            <li><a href="/200Hrs-Pilates-TT/">Pilates Training</a></li>
+            <li><a href="/airborne-athletic.html">Air Borne Athletic TT</a></li>
+            <li><a href="/prenatal-yoga.html">Prenatal Yoga TT</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Page Effects (no extra lib) -->
+  <script src="js/effect.js"></script>
+</body>
+
+</html>

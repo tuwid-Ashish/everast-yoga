@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Pilates Fitness Classes • 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
+  <style>
+    :root {
+      --royal: #0b2a4a;
+      --royal-700: #0a2440;
+      --royal-50: #f4f6fa;
+      --accent: #2a6f97;
+      --ink: #0b2a4a;
+      --muted: #667085;
+      --card: #fff;
+      --ring: rgba(42, 111, 151, .18);
+      --shadow: 0 10px 28px rgba(11, 42, 74, .10);
+      --radius: 16px;
+      --pilates-primary: #8e24aa;
+      --pilates-secondary: #ab47bc;
+      --pilates-accent: #e1bee7;
+      --pilates-gold: #ffc107;
+    }
+
+    .btn-pill {
+      background: var(--royal);
+      color: #fff !important;
+      border: none
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 42, 74, .18)
+    }
+
+    .navbar-evy .brand-mark {
+      background: var(--royal) !important
+    }
+
+    a {
+      color: var(--accent)
+    }
+
+    a:hover {
+      color: var(--royal)
+    }
+
+    .badge-soft {
+      background: var(--royal-50);
+      color: var(--royal);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+  </style>
+  <!-- END: THEME OVERRIDES -->
+
+  <style>
+    :root {
+      --ink: #0a2c4f;
+      --leaf: #2a9d8f;
+      --saffron: #f4a261;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #667085;
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+    /* ========== NAVBAR (glassy, sticky) ========== */
+    .navbar-evy {
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      background: rgba(255, 255, 255, .85) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(10, 44, 79, .06);
+      transition: box-shadow .2s ease;
+    }
+
+    .navbar-evy.nav-shadow {
+      box-shadow: 0 8px 24px rgba(10, 44, 79, .10);
+    }
+
+    .navbar-evy .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink) !important;
+      font-family: "Playfair Display", serif;
+    }
+
+    .navbar-evy .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-right: .6rem;
+      background: linear-gradient(135deg, var(--leaf), var(--saffron));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.05rem;
+      box-shadow: 0 6px 16px rgba(10, 44, 79, .1)
+    }
+
+    .navbar-evy .nav-link {
+      font-weight: 600;
+      color: var(--ink) !important;
+      opacity: .9;
+    }
+
+    .navbar-evy .nav-link:hover,
+    .navbar-evy .dropdown-item:hover {
+      color: var(--leaf) !important;
+    }
+
+    .navbar-evy .dropdown-menu {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .08);
+      box-shadow: var(--shadow);
+    }
+
+    /* ========== FOOTER ========== */
+    .footer-evy {
+      background: var(--bg);
+      border-top: 1px solid rgba(10, 44, 79, .06);
+      padding-top: 54px;
+    }
+
+    .footer-evy .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: "Playfair Display", serif;
+    }
+
+    .footer-evy .logo .brand-mark {
+      margin-right: .6rem;
+    }
+
+    .footer-evy h6 {
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem
+    }
+
+    .footer-evy a {
+      color: var(--ink);
+      opacity: .85;
+      text-decoration: none
+    }
+
+    .footer-evy a:hover {
+      opacity: 1;
+      color: var(--leaf)
+    }
+
+    .footer-evy .social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      margin-right: .4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid rgba(10, 44, 79, .08);
+    }
+
+    .footer-evy .newsletter .form-control {
+      border-radius: 12px;
+      border: 1px solid rgba(10, 44, 79, .15)
+    }
+
+    .footer-evy .newsletter .form-control:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .footer-evy .bottom {
+      border-top: 1px solid rgba(10, 44, 79, .06)
+    }
+
+    /* ========== Floating WhatsApp ========== */
+    .whatsapp-fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1051;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+    }
+
+    .whatsapp-fab:hover {
+      transform: translateY(-2px)
+    }
+
+    /* Page specific styles */
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -10% -10% 0 -10%;
+      background: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      filter: contrast(1.1) saturate(1.1);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(1200px 600px at 20% 20%, rgba(142, 36, 170, .3), transparent),
+        linear-gradient(to bottom right, rgba(10, 44, 79, .85), rgba(171, 71, 188, .75));
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      font-weight: 700;
+      opacity: .9
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+      margin: .4rem 0 1rem;
+    }
+
+    .hero p.lead {
+      max-width: 720px;
+      opacity: .95
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .7rem 1.4rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--royal), var(--leaf));
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      right: auto;
+      margin-top: -0.125rem;
+      margin-left: .1rem;
+      border-radius: .5rem;
+    }
+
+    .dropdown-submenu>a.dropdown-toggle::after {
+      content: "›";
+      border: none;
+      font-weight: 700;
+      margin-left: .4rem;
+    }
+
+    .dropdown-submenu.open-left>.dropdown-menu {
+      left: auto;
+      right: 100%;
+      margin-left: 0;
+      margin-right: .1rem;
+    }
+
+    .dropdown-submenu.open-left>a.dropdown-toggle::after {
+      content: "‹";
+    }
+
+    @media (min-width:992px) {
+      .navbar-evy .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .navbar-evy .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Pilates-specific design */
+    .schedule-overview {
+      margin-top: -80px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .overview-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(142, 36, 170, .15);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      height: 100%;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overview-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      transform: scaleX(0);
+      transition: transform .4s ease;
+    }
+
+    .overview-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(142, 36, 170, .25);
+    }
+
+    .overview-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .overview-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 1.5rem;
+      position: relative;
+    }
+
+    .overview-icon::after {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      opacity: 0.2;
+      transform: scale(0);
+      transition: transform .4s ease;
+    }
+
+    .overview-card:hover .overview-icon::after {
+      transform: scale(1);
+    }
+
+    .overview-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .overview-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--pilates-primary);
+      line-height: 1.4;
+    }
+
+    /* About Section for Pilates */
+    .about-section {
+      background: var(--bg);
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      background: rgba(142, 36, 170, 0.1);
+      border-radius: 50%;
+    }
+
+    .about-section::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: -30px;
+      width: 60px;
+      height: 60px;
+      background: rgba(171, 71, 188, 0.1);
+      border-radius: 50%;
+    }
+
+    /* Equipment Grid */
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .equipment-card {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(142, 36, 170, .1);
+      transition: transform .3s ease;
+      border: 1px solid rgba(142, 36, 170, .08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .equipment-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      transform: scaleX(0);
+      transition: transform .3s ease;
+    }
+
+    .equipment-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .equipment-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .equipment-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+    }
+
+    /* Benefits Cards */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .benefit-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(142, 36, 170, .08);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      text-align: left;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 20px 40px rgba(142, 36, 170, .15);
+    }
+
+    .benefit-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .benefit-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .benefit-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .benefit-title {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .benefit-content {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Stats section */
+    .stats-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(142, 36, 170, .1);
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      transform: scaleX(0);
+      transition: transform .3s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(142, 36, 170, .15);
+    }
+
+    .stats-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      color: white;
+      border-radius: var(--radius);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(40%, -40%);
+    }
+
+    .cta-section::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      transform: translate(-40%, 40%);
+    }
+
+    .cta-section h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-outline-light {
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .btn-outline-light:hover {
+      background: white;
+      color: var(--pilates-primary);
+    }
+
+    /* Floating elements animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes floatReverse {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(15px); }
+    }
+
+    .floating {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-reverse {
+      animation: floatReverse 3.5s ease-in-out infinite;
+    }
+
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Schedule section */
+    .schedule-info {
+      background: rgba(142, 36, 170, 0.05);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--pilates-primary);
+    }
+
+    .schedule-info h6 {
+      color: var(--pilates-primary);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Class types */
+    .class-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .class-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(142, 36, 170, .1);
+      transition: transform .3s ease;
+      border: 2px solid transparent;
+    }
+
+    .class-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--pilates-primary);
+    }
+
+    .class-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Enhanced animations */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .equipment-card.reveal.in {
+      animation: slideUp 0.6s ease forwards;
+    }
+
+    .equipment-card:nth-child(1) { animation-delay: 0.1s; }
+    .equipment-card:nth-child(2) { animation-delay: 0.2s; }
+    .equipment-card:nth-child(3) { animation-delay: 0.3s; }
+    .equipment-card:nth-child(4) { animation-delay: 0.4s; }
+
+    /* Progress bars */
+    .progress-custom {
+      height: 8px;
+      background: rgba(142, 36, 170, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1rem 0;
+    }
+
+    .progress-bar-custom {
+      height: 100%;
+      background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary));
+      border-radius: 10px;
+      transition: width 2s ease;
+    }
+
+    /* Testimonial section */
+    .testimonial-section {
+      background: rgba(171, 71, 188, 0.05);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px solid rgba(171, 71, 188, 0.2);
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: var(--pilates-primary);
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are.html">Who We Are</a>
+              <a class="dropdown-item" href="/Founder-managings.html">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facalites.html">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads.html">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty.html">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studio.html">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials.html">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- Yoga (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/yoga.html" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="/fusion-yoga.html" id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200hrs-foundational.html">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/airborne-athletic.html">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/prenatal-yoga.html">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/group_class.html">Group Yoga Class</a>
+              <a class="dropdown-item" href="/kid-class.html">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-class.html">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-class.html">Private Yoga Class</a>
+            </div>
+          </li>
+          <!-- Primary items -->
+            <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/yoga.html" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates_Fitness_Classes.html">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200hrs-Pilates-Training.html">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+         
+          
+          <li class="nav-item"><a class="nav-link" href="/store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us.html">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container wrap text-center">
+      <span class="eyebrow">Strength • Flexibility • Control</span>
+      <h1>Pilates Fitness Classes</h1>
+      <p class="lead mx-auto">Pilates at Everest is your pathway to a leaner, stronger, and more resilient body. Experience precision-based movement training that transforms both body and mind through professional equipment and expert instruction.</p>
+      <div class="mt-4">
+        <a href="#schedule" class="btn btn-pill btn-lg mr-3">Start Training</a>
+        <a href="#equipment" class="btn btn-outline-light">Our Equipment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CLASS OVERVIEW -->
+  <section class="schedule-overview py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating">
+            <div class="overview-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h5 class="overview-title">Daily Schedule</h5>
+            <div class="overview-value">6:00 AM - 8:00 PM<br>Monday to Friday<br>60 Minutes Each</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating-reverse" style="animation-delay: 0.5s;">
+            <div class="overview-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h5 class="overview-title">Professional Equipment</h5>
+            <div class="overview-value">7 Equipment Types<br>Results-Driven<br>Workouts</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 reveal">
+          <div class="overview-card floating" style="animation-delay: 1s;">
+            <div class="overview-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h5 class="overview-title">Precision Training</h5>
+            <div class="overview-value">Core Power<br>Muscle Tone<br>Flexibility</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 reveal">
+          <div class="about-section">
+            <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Transform Your Body with Precision</h2>
+            <p class="lead text-muted mb-4">Our Pilates classes are designed to challenge your body, build strength, and enhance performance. Through controlled movements and focused breathing, Pilates develops core strength, improves posture, and creates long, lean muscles while enhancing mind-body connection.</p>
+            
+            <div class="schedule-info">
+              <h6>📅 Class Schedule</h6>
+              <p><strong>Days:</strong> Monday to Friday<br>
+              <strong>Time:</strong> 6:00 AM IST onwards till 8:00 PM IST<br>
+              <strong>Duration:</strong> Each class is 60 minutes</p>
+            </div>
+
+            <div class="row text-center mt-4">
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">60</span>
+                  <span class="stat-label">Minutes Focused Training</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">5</span>
+                  <span class="stat-label">Days Per Week</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">7</span>
+                  <span class="stat-label">Equipment Types</span>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <div class="stats-card reveal">
+                  <span class="stat-number">14</span>
+                  <span class="stat-label">Hours Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT SECTION -->
+  <section id="equipment" class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Professional Pilates Equipment</h2>
+        <p class="text-muted">Complete range of professional equipment for results-driven workouts</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="equipment-grid">
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-bed"></i>
+          </div>
+          <h6>Reformer</h6>
+          <p class="small text-muted">The most versatile Pilates equipment featuring spring resistance for full-body conditioning and precise movement control.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-couch"></i>
+          </div>
+          <h6>Cadillac Bed</h6>
+          <p class="small text-muted">Advanced training apparatus offering three-dimensional movement possibilities for rehabilitation and advanced conditioning.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-chair"></i>
+          </div>
+          <h6>Wunda Chair</h6>
+          <p class="small text-muted">Compact yet challenging equipment that develops core strength, balance, and coordination through instability training.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-compress-arrows-alt"></i>
+          </div>
+          <h6>Spine Corrector</h6>
+          <p class="small text-muted">Specialized equipment designed to improve spinal mobility, posture, and core strength through targeted exercises.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-circle"></i>
+          </div>
+          <h6>MOTR Pilates</h6>
+          <p class="small text-muted">Modern fusion training tool combining Pilates principles with functional movement and cardio elements.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-arrows-alt"></i>
+          </div>
+          <h6>Caformer</h6>
+          <p class="small text-muted">High-intensity, low-impact training machine that combines Pilates with cardio and strength training.</p>
+        </div>
+        <div class="equipment-card reveal">
+          <div class="equipment-icon">
+            <i class="fas fa-square"></i>
+          </div>
+          <h6>Mat Pilates</h6>
+          <p class="small text-muted">Foundation of Pilates practice using body weight and gravity to build core strength and body awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Why Choose Our Pilates Training?</h2>
+        <p class="text-muted">Experience transformative benefits through precision-based movement</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <h6 class="benefit-title">Build Core Power</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Strengthen and stabilize your foundation for better performance. Develop deep abdominal muscles, pelvic floor, and back muscles for improved stability and power transfer.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 95%;"></div>
+            </div>
+            <small class="text-muted">Core Strength Enhancement: 95%</small>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-muscle"></i>
+            </div>
+            <h6 class="benefit-title">Enhance Muscle Tone</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Sculpt lean, defined muscles with precision-based training. Create long, strong muscles without bulk through controlled resistance and focused movements.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 90%;"></div>
+            </div>
+            <small class="text-muted">Muscle Definition: 90%</small>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-expand"></i>
+            </div>
+            <h6 class="benefit-title">Improve Flexibility & Mobility</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Increase your range of motion for injury-free movement. Dynamic stretching and strengthening simultaneously improve joint mobility and muscle flexibility.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 85%;"></div>
+            </div>
+            <small class="text-muted">Flexibility Improvement: 85%</small>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h6 class="benefit-title">Boost Endurance</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Train smarter with workouts that develop stamina and control. Build muscular endurance through sustained holds and flowing movement sequences.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 80%;"></div>
+            </div>
+            <small class="text-muted">Endurance Building: 80%</small>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-align-center"></i>
+            </div>
+            <h6 class="benefit-title">Perfect Your Posture</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Correct imbalances and align your body for long-term health. Address postural deviations and strengthen supporting muscles for optimal alignment.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 92%;"></div>
+            </div>
+            <small class="text-muted">Postural Improvement: 92%</small>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-header">
+            <div class="benefit-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h6 class="benefit-title">Mind-Body Connection</h6>
+          </div>
+          <div class="benefit-content">
+            <p>Develop mental focus and body awareness through concentrated movement. Enhance coordination, balance, and proprioception for better overall function.</p>
+            <div class="progress-custom">
+              <div class="progress-bar-custom" style="width: 88%;"></div>
+            </div>
+            <small class="text-muted">Mind-Body Integration: 88%</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS TYPES -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Class Options Available</h2>
+        <p class="text-muted">Choose the perfect Pilates class for your fitness level and goals</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--pilates-primary), var(--pilates-secondary)); margin: 1rem auto;"></div>
+      </div>
+
+      <div class="class-types">
+        <div class="class-card reveal">
+          <div class="class-badge">Beginner</div>
+          <h6>Foundation Classes</h6>
+          <p class="small text-muted">Perfect introduction to Pilates principles, basic movements, and proper breathing techniques.</p>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-badge">Intermediate</div>
+          <h6>Progressive Training</h6>
+          <p class="small text-muted">Build on foundation skills with more challenging exercises and equipment variations.</p>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-badge">Advanced</div>
+          <h6>Master Classes</h6>
+          <p class="small text-muted">Complex movement patterns, advanced equipment work, and high-level conditioning.</p>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-badge">Specialized</div>
+          <h6>Rehabilitation Focus</h6>
+          <p class="small text-muted">Therapeutic Pilates for injury recovery, pain management, and corrective exercise.</p>
+        </div>
+      </div>
+
+      <div class="testimonial-section reveal">
+        <div class="testimonial-quote">
+          "Pilates has transformed not just my body, but my entire approach to movement and wellness. The precision and control I've developed here have improved every aspect of my daily life."
+        </div>
+        <div class="testimonial-author">- Sarah K., Member since 2020</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal">
+          <div class="cta-section">
+            <h2>Ready to Transform Your Body?</h2>
+            <p class="mb-4">Experience the power of precision-based movement training. Join our Pilates classes and discover a stronger, more flexible, and resilient version of yourself through expert instruction and professional equipment.</p>
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style=" color: var(--pilates-primary);">Start Your Journey</a>
+              <a href="#" class="btn btn-outline-light btn-lg mb-2">Book Trial Class</a>
+            </div>
+            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Professional equipment • Expert instructors • All fitness levels welcome</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc500">YTTC 500</a></li>
+            <li><a href="/prenatal-yoga.html">Prenatal Training</a></li>
+            <li><a href="/pilates.html">Pilates Fitness Classes</a></li>
+            <li><a href="/group_class.html">Group Yoga Classes</a></li>
+            <li><a href="/kid-class.html">Kids Yoga Classes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Add subtle shadow to navbar on scroll
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() {
+        if (!nav) return;
+        if (window.scrollY > 6) nav.classList.add('nav-shadow');
+        else nav.classList.remove('nav-shadow');
+      }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Mark active nav item by URL (basic)
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+
+    // Reveal animation on scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // Enhanced interactive animations
+    document.querySelectorAll('.equipment-card, .benefit-card, .class-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px) scale(1.02)';
+      });
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Progress bar animation
+    const progressBars = document.querySelectorAll('.progress-bar-custom');
+    const progressObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const width = bar.style.width;
+          bar.style.width = '0%';
+          setTimeout(() => {
+            bar.style.width = width;
+          }, 300);
+          progressObserver.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    progressBars.forEach(bar => {
+      progressObserver.observe(bar);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

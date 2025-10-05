@@ -1,0 +1,367 @@
+/* =========================================================
+   500H Pilates TT — Page Styles (page-level only)
+   Depends on your global theme tokens (royal palette).
+   ========================================================= */
+
+/* Map page tokens to brand blues (local to this page) */
+:root {
+    --training-primary: var(--royal);
+    --training-secondary: var(--royal-700);
+    --training-accent: var(--royal-50);
+    --training-gold: var(--accent);
+}
+
+
+/* Hero */
+.hero {
+    background: var(--royal);
+    color: #fff;
+    padding: 100px 0 70px
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero .lead {
+    opacity: .95
+}
+
+.hero-img {
+    border-radius: 20px;
+    box-shadow: var(--shadow)
+}
+
+.eyebrow {
+    font-size: 2rem;
+}
+
+/* ------------------------ Reveal animations ------------------------ */
+.reveal,
+.reveal-left,
+.reveal-right {
+    will-change: transform, opacity;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: none;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal-left.in {
+    opacity: 1;
+    transform: none;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal-right.in {
+    opacity: 1;
+    transform: none;
+}
+
+/* ------------------------ Floating anims --------------------------- */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes floatReverse {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-reverse {
+    animation: floatReverse 8s ease-in-out infinite;
+}
+
+/* ------------------------ Stats cards ------------------------------ */
+.stat-card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.6rem;
+    text-align: center;
+    border: 1px solid rgba(11, 42, 74, .06);
+    position: relative;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.stat-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    background: var(--royal);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(11, 42, 74, .15);
+}
+
+/* ------------------------ Curriculum modules ---------------------- */
+.modules-grid {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.modules-grid>[class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.module-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.6rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(11, 42, 74, .08);
+    border-left: 4px solid var(--royal);
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(11, 42, 74, .15);
+    border-left-color: var(--accent);
+}
+
+.module-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--royal-50);
+    color: var(--royal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(11, 42, 74, .06);
+}
+
+.module-card h5 {
+    font-weight: 700;
+    margin-bottom: .6rem;
+}
+
+.module-card ul {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.module-card ul li {
+    color: var(--muted);
+    margin: .25rem 0;
+}
+
+/* Progress strip */
+.progress-animated {
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(11, 42, 74, .10);
+}
+
+.progress-bar-animated {
+    height: 100%;
+    width: 0;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--royal), var(--accent));
+    transition: width 1.8s ease-in-out;
+}
+
+.progress-bar-animated.animate {
+    width: var(--progress-width);
+}
+
+/* --------------------------- Benefits ----------------------------- */
+.benefit-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.6rem;
+    text-align: center;
+    border: 1px solid rgba(11, 42, 74, .08);
+    box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 44px rgba(11, 42, 74, .15);
+    border-color: var(--royal);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--royal-50);
+    color: var(--royal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 auto 1.2rem;
+    border: 1px solid rgba(11, 42, 74, .06);
+}
+
+/* --------------------------- Machines ----------------------------- */
+/* Uses your existing machines markup; just add subtle hover pop */
+/* Machine card */
+.machine-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid rgba(11, 42, 74, .08);
+    box-shadow: 0 10px 28px rgba(11, 42, 74, .10);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.machine-media {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background: #f4f6fa;
+    overflow: hidden;
+}
+
+.machine-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+    transition: transform .35s ease;
+}
+
+.machine-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #0b2a4a;
+    color: #fff;
+    font-weight: 700;
+    font-size: .72rem;
+    border-radius: 999px;
+    padding: .25rem .6rem;
+    letter-spacing: .02em;
+}
+
+.machine-card:hover .machine-media img {
+    transform: scale(1.06);
+}
+
+.machine-body {
+    padding: 1.1rem 1.1rem 1.25rem;
+}
+
+.machine-body h5 {
+    font-weight: 700;
+    color: #0b2a4a;
+    margin-bottom: .25rem;
+}
+
+.machine-body p {
+    color: #667085;
+    margin-bottom: 0;
+    font-size: .95rem;
+    line-height: 1.55;
+}
+
+.machine-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.machine-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(11, 42, 74, .15);
+}
+
+/* ------------------------ Overview timeline (fixed) ------------------------ */
+.timeline {
+    position: relative;
+    padding-left: 10px;
+    /* room for line + dot */
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    /* line X */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--royal);
+}
+
+.timeline .item {
+    position: relative;
+    margin-bottom: 1.25rem;
+    /* text now starts after 36px, so it won't overlap the marker */
+}
+
+/* optional: tighter layout on very small screens */
+@media (max-width: 575.98px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before,
+    .timeline .item::before {
+        left: 10px;
+    }
+}
+
+/* --------------------------- Responsive ---------------------------- */
+@media (max-width: 991.98px) {
+    .stat-card .stat-num {
+        font-size: 1.8rem;
+    }
+}

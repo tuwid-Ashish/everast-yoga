@@ -1,0 +1,257 @@
+/* ==========================================================
+   200 Hours Foundational YTTC — Page specific styles
+   (Scoped to .yttc200)
+   Relies on global tokens: --royal, --royal-700, --royal-50,
+   --accent, --ink, --muted, --radius, --shadow, --ring, --card
+   ========================================================== */
+
+.yttc200 {
+  color: var(--ink);
+  background: #fff;
+}
+
+/* ---------------- HERO ---------------- */
+.yttc200 .hero {
+  position: relative;
+  min-height: 68vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.yttc200 .hero::before {
+  content: "";
+  position: absolute;
+  inset: -10% -10% 0 -10%;
+  background: url('/img/bg-second.jpg') center/cover no-repeat;
+  filter: brightness(0.78) saturate(1.05);
+  transform: scale(1.02);
+}
+
+.yttc200 .hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(11,42,74,.86), rgba(42,111,151,.72));
+}
+
+.yttc200 .hero .wrap { position: relative; z-index: 2; }
+.yttc200 .hero .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  opacity: .95;
+}
+.yttc200 .hero h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.12;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  margin: .5rem 0 1rem;
+}
+.yttc200 .hero .lead { max-width: 760px; opacity: .96; }
+
+/* Optional: nicer outline-light button on dark hero */
+.yttc200 .hero .btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 999px;
+  padding: .7rem 1.4rem;
+  font-weight: 700;
+}
+.yttc200 .hero .btn-outline-light:hover {
+  background: #fff;
+  color: var(--royal);
+}
+
+/* ---------------- OVERVIEW STRIP ---------------- */
+.yttc200 .training-overview { margin-top: -60px; position: relative; z-index: 3; }
+.yttc200 .overview-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(10,44,79,.06);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.yttc200 .overview-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(11,42,74,.12); }
+
+.yttc200 .overview-icon {
+  width: 60px; height: 60px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--royal), var(--accent));
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; margin: 0 auto 1rem;
+  box-shadow: 0 10px 22px rgba(11,42,74,.18);
+}
+.yttc200 .overview-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; color: var(--ink); margin-bottom: .25rem;
+}
+.yttc200 .overview-value { color: var(--muted); font-weight: 600; }
+
+/* ---------------- SECTION HEADERS ---------------- */
+.yttc200 .section-divider {
+  height: 3px; width: 66px;
+  background: linear-gradient(135deg, var(--royal), var(--accent));
+  margin: 1rem auto 0;
+  border-radius: 99px;
+}
+
+/* ---------------- STATS ---------------- */
+.yttc200 .stats-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(10,44,79,.08);
+}
+.yttc200 .stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--royal);
+  display: block;
+  line-height: 1;
+}
+.yttc200 .stat-label { color: var(--muted); font-weight: 600; }
+
+/* ---------------- MODULES ---------------- */
+.yttc200 #modules { background: #f7f8fb; }
+.yttc200 .module-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(10,44,79,.08);
+  box-shadow: var(--shadow);
+  padding: 1.75rem 1.75rem 1.5rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.yttc200 .module-card:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(10,44,79,.16); }
+
+.yttc200 .module-header { display: flex; align-items: center; margin-bottom: 1.25rem; gap: .75rem; }
+.yttc200 .module-number {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--royal), var(--accent));
+  color: #fff; display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1rem; flex-shrink: 0;
+}
+.yttc200 .module-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; color: var(--ink); margin: 0; line-height: 1.25;
+}
+.yttc200 .module-duration {
+  margin-left: auto;
+  background: var(--royal-50);
+  color: var(--royal);
+  padding: .25rem .75rem;
+  border-radius: 999px;
+  font-size: .85rem; font-weight: 700;
+}
+
+.yttc200 .module-content { color: var(--muted); line-height: 1.6; }
+.yttc200 .module-content ul { list-style: none; padding: 0; margin: 1rem 0 0; }
+.yttc200 .module-content li {
+  position: relative; padding-left: 1.5rem; margin: .35rem 0;
+}
+.yttc200 .module-content li::before {
+  content: "✓"; position: absolute; left: 0; top: 0;
+  color: var(--accent); font-weight: 800;
+}
+
+/* ---------------- COMMUNITY SERVICE ---------------- */
+.yttc200 .community-service {
+  background: linear-gradient(135deg, var(--royal), var(--accent));
+  color: #fff; border-radius: var(--radius);
+  padding: 2.5rem 2rem; text-align: center;
+  position: relative; overflow: hidden;
+  box-shadow: 0 16px 40px rgba(11,42,74,.18);
+}
+.yttc200 .community-service::before {
+  content: ""; position: absolute; top: -30%; right: -10%;
+  width: 360px; height: 360px; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255,255,255,.18), transparent 70%);
+  filter: blur(2px);
+}
+.yttc200 .community-service h3 {
+  font-family: "Playfair Display", serif; font-weight: 700; margin-bottom: .75rem; color: #fff;
+}
+.yttc200 .community-service-icon {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: rgba(255,255,255,.22); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; margin: 0 auto 1rem;
+}
+
+/* ---------------- CTA ---------------- */
+.yttc200 .cta-section {
+  background: var(--royal-50);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 26px rgba(11,42,74,.08);
+  border: 1px solid rgba(10,44,79,.06);
+}
+.yttc200 .cta-section h2 {
+  font-family: "Playfair Display", serif; font-weight: 700; color: var(--ink); margin-bottom: .75rem;
+}
+
+/* ---------------- Buttons (page tweaks only) ---------------- */
+.yttc200 .btn-pill {
+  border-radius: 999px;
+  padding: .7rem 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--royal), var(--accent));
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 8px 24px rgba(11,42,74,.18);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.yttc200 .btn-pill:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(11,42,74,.22); }
+
+/* Make Bootstrap outline-primary match brand */
+.yttc200 .btn-outline-primary {
+  border-radius: 999px;
+  padding: .7rem 1.4rem;
+  font-weight: 700;
+  border: 2px solid var(--royal);
+  color: var(--royal);
+  background: transparent;
+}
+.yttc200 .btn-outline-primary:hover {
+  background: var(--royal);
+  color: #fff;
+}
+
+/* ---------------- Animations (same feel as Pilates pages) ---------------- */
+.yttc200 .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
+.yttc200 .reveal.in { opacity: 1; transform: none; }
+
+@keyframes yttc-float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes yttc-float-rev {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.yttc200 .float { animation: yttc-float 7s ease-in-out infinite; }
+.yttc200 .float-reverse { animation: yttc-float-rev 9s ease-in-out infinite; }
+
+/* ---------------- Responsive tweaks ---------------- */
+@media (max-width: 991.98px) {
+  .yttc200 .training-overview { margin-top: -30px; }
+  .yttc200 .hero { min-height: 56vh; }
+}
+
+@media (max-width: 575.98px) {
+  .yttc200 .overview-card { padding: 1.5rem; }
+  .yttc200 .module-card { padding: 1.5rem; }
+}

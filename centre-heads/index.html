@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Centre Heads • 
+Institute</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  
+    <!-- ========== GLOBAL STYLES (keep once site-wide) ========== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        :root {
+            --ink: #0a2c4f;
+            /* Primary yoga blue */
+            --leaf: #2a9d8f;
+            /* Calm green accent */
+            --saffron: #f4a261;
+            /* Warm highlight */
+            --bg: #f7f8fb;
+            /* Light background */
+            --card: #ffffff;
+            --muted: #667085;
+            --ring: rgba(42, 157, 143, .22);
+            --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--ink);
+        }
+
+        a {
+            color: var(--leaf)
+        }
+
+        a:hover {
+            color: var(--saffron)
+        }
+
+        /* ========== NAVBAR (glassy, sticky) ========== */
+        .navbar-evy {
+            position: sticky;
+            top: 0;
+            z-index: 1050;
+            background: rgba(255, 255, 255, .85) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(10, 44, 79, .06);
+            transition: box-shadow .2s ease;
+        }
+
+        .navbar-evy.nav-shadow {
+            box-shadow: 0 8px 24px rgba(10, 44, 79, .10);
+        }
+
+        .navbar-evy .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: var(--ink) !important;
+            font-family: "Playfair Display", serif;
+        }
+
+        .navbar-evy .brand-mark {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            margin-right: .6rem;
+            background: linear-gradient(135deg, var(--leaf), var(--saffron));
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.05rem;
+            box-shadow: 0 6px 16px rgba(10, 44, 79, .1)
+        }
+
+        .navbar-evy .nav-link {
+            font-weight: 600;
+            color: var(--ink) !important;
+            opacity: .9;
+        }
+
+        .navbar-evy .nav-link:hover,
+        .navbar-evy .dropdown-item:hover {
+            color: var(--leaf) !important;
+        }
+
+        .navbar-evy .dropdown-menu {
+            border-radius: 12px;
+            border: 1px solid rgba(10, 44, 79, .08);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-pill {
+            border-radius: 999px;
+            padding: .55rem 1.05rem;
+            font-weight: 700;
+            color: #fff !important;
+            background: linear-gradient(135deg, var(--leaf), var(--saffron));
+            border: none;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+        }
+
+        .btn-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+        }
+
+        /* ========== FOOTER ========== */
+        .footer-evy {
+            background: var(--bg);
+            border-top: 1px solid rgba(10, 44, 79, .06);
+            padding-top: 54px;
+        }
+
+        .footer-evy .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: var(--ink);
+            font-family: "Playfair Display", serif;
+        }
+
+        .footer-evy .logo .brand-mark {
+            margin-right: .6rem;
+        }
+
+        .footer-evy h6 {
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 1rem
+        }
+
+        .footer-evy a {
+            color: var(--ink);
+            opacity: .85;
+            text-decoration: none
+        }
+
+        .footer-evy a:hover {
+            opacity: 1;
+            color: var(--leaf)
+        }
+
+        .footer-evy .social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            margin-right: .4rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border: 1px solid rgba(10, 44, 79, .08);
+        }
+
+        .footer-evy .newsletter .form-control {
+            border-radius: 12px;
+            border: 1px solid rgba(10, 44, 79, .15)
+        }
+
+        .footer-evy .newsletter .form-control:focus {
+            border-color: var(--leaf);
+            box-shadow: 0 0 0 6px var(--ring)
+        }
+
+        .footer-evy .bottom {
+            border-top: 1px solid rgba(10, 44, 79, .06)
+        }
+
+        /* ========== Floating WhatsApp ========== */
+        .whatsapp-fab {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 1051;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+        }
+
+        .whatsapp-fab:hover {
+            transform: translateY(-2px)
+        }
+    </style>
+
+<!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
+  <style>
+    :root {
+      --royal: #0b2a4a;
+      /* new primary */
+      --royal-700: #0a2440;
+      --royal-50: #f4f6fa;
+      --accent: #2a6f97;
+      /* calm secondary */
+      --ink: #0b2a4a;
+      --muted: #667085;
+      --card: #fff;
+      --ring: rgba(42, 111, 151, .18);
+      --shadow: 0 10px 28px rgba(11, 42, 74, .10);
+      --radius: 16px;
+    }
+
+    /* kill gradients from old theme */
+    .btn-pill {
+      background: var(--royal);
+      color: #fff !important;
+      border: none
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(11, 42, 74, .18)
+    }
+
+    .navbar-evy .brand-mark {
+      background: var(--royal) !important
+    }
+
+    a {
+      color: var(--accent)
+    }
+
+    a:hover {
+      color: var(--royal)
+    }
+
+    .badge-soft {
+      background: var(--royal-50);
+      color: var(--royal);
+      border-radius: 999px;
+      padding: .25rem .6rem;
+      font-weight: 700;
+      font-size: .8rem
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+  </style>
+  <!-- END: THEME OVERRIDES -->  
+<style>
+    :root {
+      --ink: #0a2c4f;
+
+      /* Primary yoga blue */
+      --leaf: #2a9d8f;
+      /* Calm green accent */
+      --saffron: #f4a261;
+      /* Warm highlight */
+      --bg: #f9f9f9;
+      /* Page background */
+      --card: #ffffff;
+      /* Card surface */
+      --muted: #667085;
+      /* Body text */
+      --ring: rgba(42, 157, 143, .22);
+      --shadow: 0 10px 30px rgba(10, 44, 79, .10);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: var(--leaf)
+    }
+
+    a:hover {
+      color: var(--saffron)
+    }
+
+    
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 56vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      overflow: hidden
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -10% -10% 0 -10%;
+      background: url('https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      transform: translateY(var(--parallax, 0px));
+      will-change: transform;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(1100px 500px at 20% 20%, rgba(244, 162, 97, .25), transparent),
+        linear-gradient(to bottom right, rgba(10, 44, 79, .88), rgba(42, 157, 143, .78));
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .22rem;
+      font-weight: 700;
+      opacity: .95
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.1;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: .25rem 0 .75rem
+    }
+
+    .btn-pill {
+      border-radius: 999px;
+      padding: .7rem 1.2rem;
+      font-weight: 700;
+      /* background: linear-gradient(135deg, var(--leaf), var(--saffron));
+       */
+       background: linear-gradient(135deg, var(--royal), var(--leaf));
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease
+    }
+
+    .btn-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+    }
+
+    /* TOOLBAR */
+    .toolbar {
+      margin-top: -28px;
+      position: relative;
+      z-index: 3
+    }
+
+    .toolbar .card {
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .06);
+      box-shadow: var(--shadow)
+    }
+
+    .chip {
+      border: 1px solid rgba(10, 44, 79, .12);
+      padding: .45rem .9rem;
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      transition: all .2s ease
+    }
+
+    .chip.active,
+    .chip:hover {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    .search {
+      border-radius: 999px;
+      padding: .65rem 1rem;
+      border: 1px solid rgba(10, 44, 79, .12);
+      outline: none;
+      width: 100%
+    }
+
+    .search:focus {
+      border-color: var(--leaf);
+      box-shadow: 0 0 0 6px var(--ring)
+    }
+
+    /* GRID + CARD */
+    .grid {
+      padding: 54px 0
+    }
+
+    .person {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(10, 44, 79, .06);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease
+    }
+
+    .person:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 36px rgba(10, 44, 79, .16)
+    }
+
+    .person .photo {
+      position: relative;
+      height: 230px;
+      background: #e8f4f1;
+      overflow: hidden
+    }
+
+    .person .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+      transition: transform .5s ease;
+      filter: saturate(1.04)
+    }
+
+    .person:hover .photo img {
+      transform: scale(1.06)
+    }
+
+    .badge-role {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(10, 44, 79, .95);
+      color: #fff;
+      padding: .35rem .7rem;
+      border-radius: 10px;
+      font-size: .8rem;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .18)
+    }
+
+    .person .body {
+      padding: 18px
+    }
+
+    .person h5 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      margin-bottom: .25rem;
+      font-size: 1.15rem
+    }
+
+    .person .meta {
+      color: var(--leaf);
+      font-weight: 700;
+      font-size: .9rem;
+      margin-bottom: .5rem
+    }
+
+    .person .bio {
+      color: var(--muted);
+      font-size: .94rem;
+      min-height: 60px
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px)
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+      transition: opacity .6s ease, transform .6s ease
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      .reveal {
+        transition: none
+      }
+
+      .person,
+      .btn-pill {
+        transition: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container wrap text-center">
+      <span class="eyebrow">Leadership • Authenticity • Impact</span>
+      <h1>Our Centre Heads</h1>
+      <p class="lead mx-auto" style="max-width:760px">
+        Meet the leaders building 
+communities across regions uniting traditional wisdom with modern
+        teaching practices.
+      </p>
+      <!-- <a href="#team" class="btn btn-pill mt-2">Explore Profiles</a> -->
+    </div>
+  </header>
+
+  <!-- TOOLBAR -->
+  <section class="toolbar">
+    <div class="container">
+      <div class="card p-3 p-md-4">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-3 mb-lg-0">
+            <div class="d-flex flex-wrap align-items-center">
+              <span class="mr-2 mb-2">Filter:</span>
+              <button class="chip mr-2 mb-2 active" data-filter="all">All</button>
+              <button class="chip mr-2 mb-2" data-filter="India">India</button>
+              <button class="chip mr-2 mb-2" data-filter="International">International</button>
+              <button class="chip mr-2 mb-2" data-filter="Therapy">Therapy</button>
+              <button class="chip mr-2 mb-2" data-filter="Teaching">Teaching</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <input id="search" type="search" class="search" placeholder="Search by name, city or role…" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <main id="team" class="grid">
+    <div class="container">
+      <div class="row">
+
+        <!-- 1: DR GUNEET MONGA -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="India,Therapy,Teaching" data-name="Dr. Guneet Monga" data-city="Ludhiana">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2022/04/GUNEET-MONGA-300x300.jpg"
+                alt="Dr. Guneet Monga">
+              <span class="badge-role">eRYT 500 • Therapy</span>
+            </div>
+            <div class="body">
+              <h5>Dr. Guneet Monga</h5>
+              <div class="meta">Yogacharya & Physiotherapist</div>
+              <p class="bio">eRYT 500 with degrees across B.Sc., B.P.T., PGDYE, M.Sc. Yoga, MBA, NET, Ph.D. Leads YTTC
+                with strong therapy focus.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2: BHUPINDER SINGH -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="India,Teaching" data-name="Bhupinder Singh" data-city="Punjab">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2022/04/BHUPINDER-SINGH-300x300.jpg"
+                alt="Bhupinder Singh">
+              <span class="badge-role">Yoga Sports • Coach</span>
+            </div>
+            <div class="body">
+              <h5>Bhupinder Singh</h5>
+              <div class="meta">National Coach & Referee</div>
+              <p class="bio">International referee & national level coach; teaches young students and leads Yoga Sports
+                initiatives in Punjab.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3: SUNITHA S S -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="India,Teaching" data-name="Sunitha S S" data-city="Kerala">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2022/04/SUNITHA-300x300.jpg"
+                alt="Sunitha S S">
+              <span class="badge-role">Kerala</span>
+            </div>
+            <div class="body">
+              <h5>Sunitha S S</h5>
+              <div class="meta">Everest – Kerala</div>
+              <p class="bio">Internationally certified; teaches mind‑body‑spirit centric yoga with focus on flexibility
+                & awareness.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4: SHIVAM SHARMA -->
+        <!-- <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="India,Teaching" data-name="Shivam Sharma" data-city="">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2022/04/SHIVAM-SHARMA-300x300.png"
+                alt="Shivam Sharma">
+              <span class="badge-role">YTTC • Multi-level</span>
+            </div>
+            <div class="body">
+              <h5>Shivam Sharma</h5>
+              <div class="meta">Lead Trainer</div>
+              <p class="bio">Guides beginners to advanced practitioners; alignment, strength & breath led mastery for
+                safe progress.</p>
+            </div>
+          </article>
+        </div> -->
+
+        <!-- 5: RABEYA SHARMIN LISON -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="International,Teaching" data-name="Rabeya Sharmin Lison" data-city="">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2024/12/IMG_7447-300x300.jpg"
+                alt="Rabeya Sharmin Lison">
+              <span class="badge-role">International</span>
+            </div>
+            <div class="body">
+              <h5>Rabeya Sharmin Lison</h5>
+              <div class="meta">Multistyle Yoga Teacher</div>
+              <p class="bio">Championing resilience & holistic growth; MBA & leadership background with Disaster
+                Management post graduation.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6: Dt Bhavna Jadhav – Bengaluru -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="person" data-tags="India,Therapy" data-name="Dt Bhavna Jadhav" data-city="Bengaluru">
+            <div class="photo">
+              <img src="https://everestyogainstitute.in/wp-content/uploads/2024/12/Bhavna-Photo-1-300x300.png"
+                alt="Dt Bhavna Jadhav">
+              <span class="badge-role">Bengaluru</span>
+            </div>
+            <div class="body">
+              <h5>Dt Bhavna Jadhav</h5>
+              <div class="meta">Centre Head – Bengaluru (India)</div>
+              <p class="bio">Yoga Instructor & Dietitian with IT & client servicing experience—simplifies lifestyle
+                change with integrative nutrition.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-3" style="font-family:'Playfair Display',serif;font-weight:700;">Open a New Centre with Everest</h2>
+      <p class="text-muted mb-4 mx-auto" style="max-width:720px">Join our growing network of centres. Get curriculum,
+        branding, teacher training support and national events access.</p>
+      <a href="#" class="btn btn-pill">Enquire Now</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us.html">Contact</a></li>
+            <li><a href="/yoga.html">Yoga</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+            <li><a href="/centre-heads.html">Centre Heads</a></li>
+            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc300">YTTC 300</a></li>
+            <li><a href="/pilates.html">Pilates Training</a></li>
+            <li><a href="/yoga.html#corporate">Corporate Wellness</a></li>
+            <li><a href="/yoga.html#workshops">Workshops & Retreats</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+
+          <div class="newsletter">
+            <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+              <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Your email for updates" required>
+              </div>
+              <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+  <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Add subtle shadow to navbar on scroll
+    (function () {
+      const nav = document.querySelector('.navbar-evy');
+      function onScroll() {
+        if (!nav) return;
+        if (window.scrollY > 6) nav.classList.add('nav-shadow');
+        else nav.classList.remove('nav-shadow');
+      }
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // Mark active nav item by URL (basic)
+    (function () {
+      var path = location.pathname.replace(/\/$/, '');
+      document.querySelectorAll('.navbar-evy .nav-link, .dropdown-item').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#') return;
+        var target = href.replace(/\/$/, '');
+        if (target && path.endsWith(target)) {
+          a.classList.add('active'); a.style.color = 'var(--leaf)';
+          var li = a.closest('.nav-item.dropdown'); if (li) { li.querySelector('.nav-link').classList.add('active'); }
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    // Parallax
+    const hero = document.querySelector('.hero');
+    const setParallax = () => {
+      if (!hero) return; const y = Math.min(40, window.scrollY * 0.15);
+      hero.style.setProperty('--parallax', `${y * -1}px`);
+    };
+    setParallax(); window.addEventListener('scroll', setParallax, { passive: true });
+
+    // Reveal on scroll
+    const reveals = [...document.querySelectorAll('.reveal')];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+
+    // Filter + search
+    let current = 'all';
+    const chips = document.querySelectorAll('.chip');
+    const cards = document.querySelectorAll('.person');
+    function applyFilter() {
+      const q = (document.getElementById('search')?.value || '').trim().toLowerCase();
+      cards.forEach(card => {
+        const tags = (card.dataset.tags || '').toLowerCase();
+        const name = (card.dataset.name || '').toLowerCase();
+        const city = (card.dataset.city || '').toLowerCase();
+        const byTag = current === 'all' || tags.includes(current.toLowerCase());
+        const byText = !q || name.includes(q) || city.includes(q) || tags.includes(q);
+        card.parentElement.style.display = (byTag && byText) ? '' : 'none';
+      });
+    }
+    chips.forEach(ch => ch.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active')); ch.classList.add('active');
+      current = ch.dataset.filter || 'all'; applyFilter();
+    }));
+    document.getElementById('search')?.addEventListener('input', applyFilter);
+  </script>
+</body>
+
+</html>

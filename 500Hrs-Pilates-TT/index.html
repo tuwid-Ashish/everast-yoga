@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>500-Hour Pilates Teacher Training • 
+Institute</title>
+
+  <!-- Bootstrap 4 + Icons + Fonts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+  <!-- Theme: Royal blue (no gradients), pill buttons -->
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
+          alt="
+Logo" style="height:40px; width:auto; margin-right:.6rem;">
+        <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" onmouseover="$(this).prev().dropdown('show')"
+              onmouseout="$(this).prev().dropdown('hide')" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- yogo (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href=" " id="fusionDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                   
+                </div>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Primary items -->
+
+          <!-- Pilates (with second-level submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+
+              <div class="dropdown-divider"></div>
+
+              <!-- Submenu parent -->
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="PilatesDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contacts Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0 reveal">
+          <span class="eyebrow">Residential & Non-Residential • 25 Days</span>
+          <h1 class="mt-3">500-Hour Pilates Teacher Training</h1>
+          <p class="lead mt-3">
+            Our most comprehensive pathway—combining the 200H & 300H tracks—built to master Pilates pedagogy, anatomy,
+            cueing, and full equipment repertoire.
+          </p>
+          <div class="mt-3">
+            <a href="#apply" class="btn btn-primary-pill btn-pill mr-2">Apply Now</a>
+            <a href="#curriculum" class="btn btn-pill btn-outline-light-pill">View Curriculum</a>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <img class="img-fluid hero-img"
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop"
+            alt="Pilates training" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="section alt" style="padding-top:32px">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-card reveal">
+            <div class="stat-num">500 Hrs</div>
+            <div class="stat-label">Total Training</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-card reveal">
+            <div class="stat-num">25 Days</div>
+            <div class="stat-label">Cohort Duration</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-card reveal">
+            <div class="stat-num">2 Tracks</div>
+            <div class="stat-label">200H + 300H</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-card reveal">
+            <div class="stat-num"><i class="fa-solid fa-certificate"></i></div>
+            <div class="stat-label">Certification</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 reveal">
+          <h2 style="font-family:'Playfair Display',serif;font-weight:700">Program Overview</h2>
+          <p class="text-muted">
+            The 500-hour certification integrates the complete 200H foundation with the advanced 300H sequence. Choose
+            residential or non-residential format; both deliver the same rigorous syllabus and assessment standards over
+            an intensive 25-day cohort.
+          </p>
+          <ul class="tick mt-3">
+            <li>Full classical mat & equipment repertoire</li>
+            <li>Applied anatomy & biomechanics for movement</li>
+            <li>Professional cueing, class design & safety</li>
+            <li>Practice teaching, observation & feedback</li>
+          </ul>
+          <div class="mt-3">
+            <a href="#machines" class="btn btn-primary-pill btn-pill">Machines You’ll Master</a>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="card-evy">
+            <div class="head">
+              <span class="eyebrow">Format</span>
+              <h5 class="mt-2 mb-0" style="font-weight:700">Residential & Non-Residential</h5>
+            </div>
+            <div class="body">
+              <div class="timeline">
+                <div class="item">
+                  <h6 class="mb-1" style="font-weight:700">Cohort Length: 25 Days</h6>
+                  <p class="text-muted mb-0 small">Intensive daily schedule with structured practice & theory.</p>
+                </div>
+                <div class="item">
+                  <h6 class="mb-1" style="font-weight:700">Same Syllabus, Dual Path</h6>
+                  <p class="text-muted mb-0 small">500H = 200H foundations + 300H advanced equipment & methodology.</p>
+                </div>
+                <div class="item">
+                  <h6 class="mb-1" style="font-weight:700">Assessment & Certification</h6>
+                  <p class="text-muted mb-0 small">Written + practical exams; teaching evaluation & class planning.</p>
+                </div>
+              </div>
+              <a href="#apply" class="btn btn-primary-pill btn-pill mt-3">Secure Your Seat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Curriculum -->
+  <section id="curriculum" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="reveal">
+          <span class="badge badge-soft mb-3">
+            <i class="fas fa-book-open me-2"></i>Comprehensive Curriculum
+          </span>
+          <h2 class="display-5 fw-bold mb-4">Training Modules</h2>
+          <p class="lead text-muted">Eight carefully structured modules covering all aspects of Pilates instruction</p>
+        </div>
+      </div>
+<div class="row modules-grid">
+  <!-- 1. Anatomy & Biomechanics -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-bone"></i></div>
+      <h5 class="fw-bold mb-3">Module 1: Anatomy &amp; Biomechanics</h5>
+      <ul class="text-muted small mb-3">
+        <li>Skeletal system</li>
+        <li>Muscular system</li>
+        <li>Nervous system</li>
+        <li>Movement principles</li>
+        <li>Joint mechanics</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 85%"></div>
+      </div>
+      <small class="text-muted">Core theory • Foundations</small>
+    </div>
+  </div>
+
+  <!-- 2. Pilates History & Principles -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-book-open"></i></div>
+      <h5 class="fw-bold mb-3">Module 2: Pilates History &amp; Principles</h5>
+      <ul class="text-muted small mb-3">
+        <li>Joseph Pilates' life &amp; work</li>
+        <li>100-Year Legacy</li>
+        <li>Centering, Concentration, Control, Precision, Breath, Flow</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 90%"></div>
+      </div>
+      <small class="text-muted">Philosophy • Method</small>
+    </div>
+  </div>
+
+  <!-- 3. Exercise Science & Physiology -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-dumbbell"></i></div>
+      <h5 class="fw-bold mb-3">Module 3: Exercise Science &amp; Physiology</h5>
+      <ul class="text-muted small mb-3">
+        <li>Muscle action &amp; function</li>
+        <li>Movement patterns &amp; planes</li>
+        <li>Breathing techniques &amp; benefits</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 95%"></div>
+      </div>
+      <small class="text-muted">Applied science</small>
+    </div>
+  </div>
+
+  <!-- 4. Injury Prevention & Management -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-shield-heart"></i></div>
+      <h5 class="fw-bold mb-3">Module 4: Injury Prevention &amp; Management</h5>
+      <ul class="text-muted small mb-3">
+        <li>Common injuries &amp; conditions</li>
+        <li>Modification techniques</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 80%"></div>
+      </div>
+      <small class="text-muted">Safety • Care</small>
+    </div>
+  </div>
+
+  <!-- 5. Teaching Methodology & Cueing -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+      <h5 class="fw-bold mb-3">Module 5: Teaching Methodology &amp; Cueing</h5>
+      <ul class="text-muted small mb-3">
+        <li>Lesson planning &amp; structuring</li>
+        <li>Verbal cueing &amp; correction techniques</li>
+        <li>Visual demonstration &amp; observation skills</li>
+        <li>Class management &amp; safety protocols</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 88%"></div>
+      </div>
+      <small class="text-muted">Pedagogy • Delivery</small>
+    </div>
+  </div>
+
+  <!-- 6. Mat work Classes -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-grip-lines"></i></div>
+      <h5 class="fw-bold mb-3">Module 6: Mat work Classes</h5>
+      <ul class="text-muted small mb-3">
+        <li>Beginner, intermediate, advanced exercises</li>
+        <li>Modifications &amp; variations</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 92%"></div>
+      </div>
+      <small class="text-muted">Mat repertoire</small>
+    </div>
+  </div>
+
+  <!-- 7. Practice Teaching & Observation -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-user-check"></i></div>
+      <h5 class="fw-bold mb-3">Module 7: Practice Teaching &amp; Observation</h5>
+      <ul class="text-muted small mb-3">
+        <li>Student practice teaching sessions</li>
+        <li>Peer observation &amp; feedback</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 86%"></div>
+      </div>
+      <small class="text-muted">Hands-on practice</small>
+    </div>
+  </div>
+
+  <!-- 8. Small Apparatus & Props Classes -->
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="module-card reveal">
+      <div class="module-icon"><i class="fas fa-ring"></i></div>
+      <h5 class="fw-bold mb-3">Module 8: Small Apparatus &amp; Props Classes</h5>
+      <ul class="text-muted small mb-3">
+        <li>Magic circle, resistance bands, stick &amp; balls</li>
+        <li>Creative sequencing &amp; class design</li>
+      </ul>
+      <div class="progress-animated mb-3">
+        <div class="progress-bar-animated" style="--progress-width: 100%"></div>
+      </div>
+      <small class="text-muted">Props • Programming</small>
+    </div>
+  </div>
+</div>
+
+  <!-- Benefits Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="reveal">
+          <span class="badge badge-soft mb-3">
+            <i class="fas fa-star me-2"></i>Career Benefits
+          </span>
+          <h2 class="display-5 fw-bold mb-4">Why Choose Our Program</h2>
+          <p class="lead text-muted">Comprehensive training that opens doors to exciting career opportunities</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h5 class="fw-bold mb-3">International Certification</h5>
+            <p class="text-muted">Receive globally recognized Pilates Alliance certification upon completion.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Expert Instructors</h5>
+            <p class="text-muted">Learn from master trainers with 15+ years of experience and international recognition.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Career Support</h5>
+            <p class="text-muted">Job placement assistance, studio partnerships, and ongoing career guidance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Complete Equipment Training</h5>
+            <p class="text-muted">Hands-on experience with all major Pilates equipment and apparatus.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Flexible Schedule</h5>
+            <p class="text-muted">Weekend intensives and flexible timing to accommodate working professionals.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <h5 class="fw-bold mb-3">Lifetime Support</h5>
+            <p class="text-muted">Access to continued education, workshops, and our alumni network.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MACHINES -->
+  <section id="machines" class="section">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <span class="eyebrow">Equipment</span>
+        <h2 style="font-family:'Playfair Display',serif;font-weight:700" class="mt-2">Machines You’ll Master</h2>
+      </div>
+
+      <div class="row machines-grid">
+        <!-- Reformer -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Reformer</span>
+              <img loading="lazy"
+                src="https://5.imimg.com/data5/SELLER/Default/2020/11/UQ/UW/BF/24186113/wood-pilates-reformer-500x500.jpg"
+                alt="Pilates Reformer equipment">
+            </div>
+            <div class="machine-body">
+              <h5>Reformer</h5>
+              <p>Beginner → advanced exercises; spring settings & adjustments; alignment, control and flow sequencing.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Wunda Chair -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Wunda Chair</span>
+              <img loading="lazy"
+                src="https://www.bodylinesports.co.in/common/images/product_img/commercial-small/1105704822.jpg"
+                alt="Pilates Wunda Chair">
+            </div>
+            <div class="machine-body">
+              <h5>Wunda Chair</h5>
+              <p>Setup & safety; stability challenges; core-centric progressions and athletic conditioning options.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Spine Corrector -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Spine Corrector</span>
+              <img loading="lazy"
+                src="https://pilatesdirect.com.au/cdn/shop/articles/How_To_Use_A_Pilates_Spine_Corrector.jpg?v=1726176945"
+                alt="Pilates Spine Corrector">
+            </div>
+            <div class="machine-body">
+              <h5>Spine Corrector</h5>
+              <p>Mobility, posture & core integration; safe progressions and targeted rehab-friendly adaptations.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Cadillac Bed -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Cadillac Bed</span>
+              <img loading="lazy"
+                src="https://image.made-in-china.com/43f34j00ObkqGCfPJDpQ/Senrui-Fitness-Pilates-Equipment-Wooden-Cadillac-Pilates-Reformer.jpg"
+                alt="Pilates Cadillac Bed">
+            </div>
+            <div class="machine-body">
+              <h5>Cadillac Bed</h5>
+              <p>Beginner → advanced repertoire; three-dimensional movement coaching; strength, control & coordination.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Ladder Barrel -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Ladder Barrel</span>
+              <img loading="lazy"
+                src="https://cdn.shopify.com/s/files/1/0539/1476/3457/files/product01_2ea5234c-df08-46a5-b559-4a1db05f13e8.jpg?v=1726860217"
+                alt="Pilates Ladder Barrel">
+            </div>
+            <div class="machine-body">
+              <h5>Ladder Barrel</h5>
+              <p>Extension, lateral flexion & spinal articulation; alignment cues and progressive strength work.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Small Apparatus -->
+        <div class="col-md-6 col-lg-4 mb-4 reveal">
+          <article class="machine-card">
+            <div class="machine-media">
+              <span class="machine-badge">Small Apparatus</span>
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=1200&auto=format&fit=crop"
+                alt="Pilates ring, bands and props">
+            </div>
+            <div class="machine-body">
+              <h5>Small Apparatus</h5>
+              <p>Magic circle, resistance bands, stick & balls—creative sequencing for targeted outcomes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="text-center mt-2">
+        <a href="#apply" class="btn btn-primary-pill btn-pill">Talk to Admissions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="apply" class="section alt">
+    <div class="container">
+      <div class="text-center reveal">
+        <h2 style="font-family:'Playfair Display',serif;font-weight:700">Ready to Start Your 500H Journey?</h2>
+        <p class="text-muted mx-auto" style="max-width:760px">Seats are limited for our next cohort. Apply now or
+          request the detailed brochure with schedules, eligibility & fee structure.</p>
+        <div class="mt-2">
+          <a href="/contact-us/" class="btn btn-primary-pill btn-pill mr-2"><i class="fa-solid fa-phone mr-1"></i> Call
+            / WhatsApp</a>
+          <a href="#" class="btn btn-pill" style="border:1px solid rgba(11,42,74,.2)"><i
+              class="fa-solid fa-download mr-1"></i> Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (reuse) -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="d-flex align-items-center mb-2" style="font-family:'Playfair Display',serif;font-weight:700">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted" style="max-width:420px">Authentic yoga & Pilates education—teacher trainings, therapy,
+            pilates & corporate wellness.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/Pilates-Fitness-Classes/">Pilates</a></li>
+            <li><a href="/who-we-are.html">Who We Are</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="/200Hrs-Pilates-TT/">200H Pilates TTC</a></li>
+            <li><a href="/500Hrs-Pilates-TT/">500H Pilates TTC</a></li>
+            <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
+            <li><a href="/yoga.html#yttc500">YTTC 500</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-0"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+        </div>
+      </div>
+      <div class="bottom text-center py-3">
+        <small>© 2025 
+Institute. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+    style="position:fixed;right:18px;bottom:18px;width:54px;height:54px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.2)">
+    <i class="fab fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Navbar shadow (keep)
+  (function () {
+    const n = document.querySelector('.navbar-evy');
+    function s() { if (!n) return; window.scrollY > 6 ? n.classList.add('nav-shadow') : n.classList.remove('nav-shadow'); }
+    s(); window.addEventListener('scroll', s, { passive: true });
+  })();
+
+  // Reveal on view + progress bars
+  (function () {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        // if the element contains progress bars, animate them
+        e.target.querySelectorAll('.progress-bar-animated').forEach(bar => {
+          bar.classList.add('animate');
+        });
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => io.observe(el));
+
+    // Also fire for any progress bars already in view on load
+    function bootProgress() {
+      document.querySelectorAll('.progress-bar-animated').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          bar.classList.add('animate');
+        }
+      });
+    }
+    window.addEventListener('load', bootProgress, { once: true });
+  })();
+
+  // Smooth scroll for anchors (optional)
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+  <script>
+    // navbar shadow
+    (function () { const n = document.querySelector('.navbar-evy'); function s() { if (!n) return; window.scrollY > 6 ? n.classList.add('nav-shadow') : n.classList.remove('nav-shadow') } s(); window.addEventListener('scroll', s, { passive: true }); })();
+    // reveal on view
+    const ob = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ob.unobserve(e.target); } }) }, { threshold: .1 });
+    document.querySelectorAll('.reveal').forEach(el => ob.observe(el));
+  </script>
+</body>
+
+</html>
