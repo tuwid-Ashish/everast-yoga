@@ -25,87 +25,104 @@
 </head>
 
 <body>
-  <!-- NAVBAR (from global.css styles) -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
-    <div class="container">
-       <a class="navbar-brand d-flex" href="/">
-        <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
-          alt="Everest Yoga Logo" style="height:40px; width:auto; margin-right:.6rem;">
-        <span style="font-family:'Playfair Display',serif; font-weight:700;">Everest Yoga & Pilates Institute</span>
-      </a>
+  <!-- ========== NAVBAR (reuse on every page) ========== -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+  <div class="container">
+    <!-- Brand with logo -->
+     <a class="navbar-brand d-flex" href="/">
+      <img src="/img/Everest-Yoga-logo.png"
+        alt="Everest Yoga Logo" class="navbar-logo">
+      <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
+    </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" 
+            aria-controls="evyNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="evyNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+    <div class="collapse navbar-collapse" id="evyNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Home -->
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        
+        <!-- About Us (dropdown) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+            <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+            <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+            <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+            <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+            <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+            <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+          </div>
+        </li>
 
-          <!-- About Us -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
-              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
-              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
-              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
-              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
-              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
-              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
-            </div>
-          </li>
-
-          <!-- Yoga -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href=" " id="yogaDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Yoga</a>
-            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="/fusion-yoga.html" id="fusionDropdown" role="button"
-                  aria-haspopup="true" aria-expanded="false">Fusion Yoga Teacher Training</a>
-                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
-                  <a class="dropdown-item" href="/200hrs-foundational.html">200 Hrs Foundational YTTC</a>
-                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Professional YTTC</a>
-                  <a class="dropdown-item" href="/airborne-athletic.html">Air Borne Athletic TT</a>
-                  <a class="dropdown-item" href="/prenatal-yoga.html">Prenatal Yoga TT</a>
-                </div>
-              </div>
-
-              <div class="dropdown-divider"></div>
-
-              <a class="dropdown-item" href="/group_class.html">Group Yoga Class</a>
-              <a class="dropdown-item" href="/kid-class.html">Kids Yoga Class</a>
-              <a class="dropdown-item" href="/Therapy-class.html">Therapy Yoga Class</a>
-              <a class="dropdown-item" href="/Private-class.html">Private Yoga Class</a>
-            </div>
-          </li>
-
-          <!-- Pilates -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/yoga.html" id="pilatesDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pilates</a>
-            <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
-              <a class="dropdown-item" href="/group_class.html">Pilates Fitness Classes</a>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="/fusion-yoga.html" id="PilatesDropdown" role="button"
-                  aria-haspopup="true" aria-expanded="false">Pilates Teacher Training</a>
-                <div class="dropdown-menu" aria-labelledby="PilatesDropdown">
-                  <a class="dropdown-item" href="/200hrs-foundational.html">200 Hrs Pilates Teacher Training</a>
-                  <a class="dropdown-item" href="/500hrs-professional.html">500 Hrs Pilates Teacher Training</a>
-                </div>
+        <!-- Yoga (with submenu) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Yoga
+          </a>
+          <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+            <!-- Submenu parent -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="fusionDropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                Fusion Yoga Teacher Training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
               </div>
             </div>
-          </li>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+            <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+            <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+            <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+          </div>
+        </li>
 
-          <li class="nav-item"><a class="nav-link" href="/store.html">Store</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
-        </ul>
-      </div>
+        <!-- Pilates (with submenu) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pilates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
+            <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+            <div class="dropdown-divider"></div>
+            <!-- Submenu parent -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                Pilates Teacher Training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
+                <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- HERO -->
   <header class="hero">
@@ -157,11 +174,11 @@
             <div class="body">
               <h5>Sanjeev Tyagi</h5>
               <div class="meta">Founder & Managing Director</div>
-              <p class="bio">Traditional Hatha with modern cues—posture, breath and mindfulness for all levels.</p>
-              <div class="d-flex align-items-center justify-content-between">
+              <p class="bio">Founder & Managing Director of Everest Yoga Institute. Holds B.Sc., BPED, MPED, and M.A Yoga. Experienced Registered Yoga Teacher (E-RYT 200 hrs & 500 hrs – YA, USA), Yoga Alliance Continuing Education Provider (YACEP), International Yoga Coach, and International Yoga Judge.</p>
+<div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -179,11 +196,11 @@
             <div class="body">
               <h5>Kavita Tyagi</h5>
               <div class="meta">Founder & Managing Director</div>
-              <p class="bio">Traditional Hatha with modern cues—posture, breath and mindfulness for all levels.</p>
+              <p class="bio">Founder & Director with over 25 years of experience in teaching, guidance, and counselling. Holds B.Sc., M.Sc., and B.Ed. Certified in Yoga Teacher Training 200 hrs & 500 hrs (YA, USA) and Prenatal Yoga Teacher Training (YA, USA).</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -202,12 +219,12 @@
             <div class="body">
               <h5>Ruchi Gupta</h5>
               <div class="meta">Manager & Psychology Teacher</div>
-              <p class="bio">Dynamic series guidance with injury-safe alignment and breath control for progressive
-                growth.</p>
+              <p class="bio">Manager, Anatomy & Physiology Teacher. Holds a Bachelor in Science (Biology) and B.Ed. Internationally Certified Professional Yoga Teacher (YA, USA) and Prenatal Yoga Teacher.</p>
+
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -229,8 +246,8 @@
                 Teacher (Level 1). National & State Level Gold Medalist in Yogasanas.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -254,8 +271,8 @@
                 Graphics Design.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -273,12 +290,11 @@
             <div class="body">
               <h5>Vaishnavi Kukreti</h5>
               <div class="meta">Student Services Coordinator</div>
-              <p class="bio">Graduate in Commerce. Supporting students through their journey with guidance, resources,
-                and program coordination.</p>
+              <p class="bio">Graduated with a Bachelor of Commerce (B.Com). Supports the operations team with administrative and organizational tasks.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -299,8 +315,8 @@
                 & Bungee Yoga Teacher (Level 1). Silver Medalist in Everest's In-House Yogasana Championship.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -322,8 +338,8 @@
                 & Bungee Yoga Teacher (Level 1). Bachelor in Arts. NCC Cadet with A Grade in A & C Certificates.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -340,12 +356,11 @@
             <div class="body">
               <h5>Kritika Sharma</h5>
               <div class="meta">Yoga Instructor</div>
-              <p class="bio">Certified in multiple yoga styles with focus on alignment-based practice and mindful
-                movement.</p>
+              <p class="bio">TTC Teacher specializing in Advanced Level Yoga Training, Ashtanga & Hatha Yoga, Acro Yoga, Kids Yoga, and Prenatal Yoga. Holds Bachelor in Yoga, internationally certified (YA, USA), and a National Level Yoga Player.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -363,12 +378,11 @@
             <div class="body">
               <h5>Atul Ratur</h5>
               <div class="meta">Yoga Instructor</div>
-              <p class="bio">Experienced in traditional Hatha and Vinyasa styles, emphasizing breath awareness and
-                spiritual growth.</p>
+              <p class="bio">TTC Teacher with expertise in Vedic Sahitya & Mantra Shastri and Raj Yoga. Certified Mat-1 & Reformer-1 Pilates Teacher. Holds Bachelor in Sahitya Sanskrit and Master in Yogic Science. Internationally Certified Multistyle Yoga Teacher (YA, USA).</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -392,8 +406,8 @@
                 State Level Handball Player - Silver Medalist.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -411,12 +425,12 @@
             <div class="body">
               <h5>Harleen Kaur</h5>
               <div class="meta">Yoga Instructor</div>
-              <p class="bio">Passionate about power yoga and dynamic flows, helping students build strength and
-                flexibility.</p>
+              <p class="bio">Senior Yoga Teacher certified in Multistyle and Prenatal Yoga. Holds MBA in HR & Marketing. Internationally Certified Professional Yoga Teacher (YA, USA) and State-level Bhangra Champion.</p>
+
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -434,12 +448,11 @@
             <div class="body">
               <h5>Shiv Kumar</h5>
               <div class="meta">Yoga Instructor</div>
-              <p class="bio">Expert in traditional yoga philosophy and pranayama techniques with focus on spiritual
-                development.</p>
+              <p class="bio">Senior Yoga Teacher specialized in Multistyle Yoga and Therapeutic Yoga. Holds Master in Yoga and is an Internationally Certified Professional Multistyle Yoga Teacher (YA, USA). National Level Gold Medalist and Certified Mat-1 & Reformer-1 Pilates Teacher.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -457,12 +470,11 @@
             <div class="body">
               <h5>Anshul Kataria</h5>
               <div class="meta">Yoga Instructor</div>
-              <p class="bio">Certified yoga therapist specializing in injury rehabilitation and therapeutic yoga
-                practices.</p>
+              <p class="bio">Internationally Certified Multistyle Yoga Teacher and Certified Laughter Yoga Teacher. Completed 500 hrs Professional Yoga Training (YA, USA). Pursuing Graduation in Yoga and National Level Gold Medalist in Artistic Yogasana.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -480,12 +492,11 @@
             <div class="body">
               <h5>Shivam Malik</h5>
               <div class="meta">Pilates Instructor</div>
-              <p class="bio">Certified Pilates instructor focusing on core strengthening, postural alignment, and
-                functional movement. Master in Yoga.</p>
+              <p class="bio">Certified Mat-1 & Reformer-1 Pilates Teacher, Ashtanga Vinyasa Yoga Teacher, and Prenatal Yoga Teacher. Holds Bachelor in Yoga, Internationally Certified (YA, USA), and National Gold Medalist in Traditional & Artistic Yogasana Championships.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -503,12 +514,11 @@
             <div class="body">
               <h5>Arya Tyagi</h5>
               <div class="meta">Pilates Instructor</div>
-              <p class="bio">Specializing in mat Pilates and equipment-based training for improved flexibility and
-                strength.</p>
+              <p class="bio">Certified Mat-1 & Reformer-1 Pilates Teacher and Internationally Certified Multistyle Yoga Teacher & Therapist. Holds Master in Yogic Science. Certified Mat-1 & Reformer-1 Pilates Teacher (YA, USA).</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -526,12 +536,11 @@
             <div class="body">
               <h5>Sapna Gupta</h5>
               <div class="meta">Store Manager</div>
-              <p class="bio">Managing yoga accessories, books, and wellness products with expert guidance on yoga
-                equipment.</p>
+              <p class="bio">Certified Mat-1 & Reformer-1 Pilates Teacher and Internationally Certified Multistyle Yoga Teacher. Certified Aerial Yoga Teacher (YA, USA). Holds MBA in Fashion Designing, Reiki Healer, and pursuing PG Diploma in Art Therapy.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -549,12 +558,11 @@
             <div class="body">
               <h5>Supreet Kaur</h5>
               <div class="meta">Store Assistant</div>
-              <p class="bio">Assisting customers with product selection and maintaining inventory of yoga and wellness
-                products.</p>
+              <p class="bio">Certified Mat-1 & Reformer-1 Pilates Teacher, Multistyle Yoga Teacher, and Prenatal Yoga Teacher. Holds Bachelor in Yoga and has achieved Gold Medals at National & State Level Yogasana Championships.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
@@ -577,8 +585,8 @@
                 Aerial & Bungee Yoga (Level 1). National Level Yogasana Player.</p>
               <div class="d-flex align-items-center justify-content-between">
                 <div class="social">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
                 </div>
                 <button class="btn btn-sm btn-pill" data-modal="profile">View Profile</button>
               </div>
