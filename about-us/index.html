@@ -173,8 +173,8 @@
             padding: .55rem 1.05rem;
             font-weight: 700;
             color: #fff !important;
-            /* background: linear-gradient(135deg, var(--leaf), var(--saffron)); */
-            background: #35aeff;
+            background: linear-gradient(135deg, var(--royal), var(--leaf));
+            /* background: #35aeff; */
             border: none;
             box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
         }
@@ -318,7 +318,7 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <!-- About Us (dropdown) -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
               style="outline: none !important; border: none !important; box-shadow: none !important;"
               onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
               onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
@@ -508,7 +508,7 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
                         <h5>YTTC 200</h5>
                         <p class="text-muted mb-3">Foundational training in Hatha/Ashtanga with pedagogy & sequencing.
                         </p>
-                        <a href="/yoga.html#yttc200" class="btn btn-sm btn-pill">Explore</a>
+                        <a href="/200Hrs-Foundational-YTTC/" class="btn btn-sm btn-pill">Explore</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 reveal">
@@ -516,7 +516,7 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
                         style="background:#fff;border-radius:16px;border:1px solid rgba(10,44,79,.06);box-shadow:var(--shadow)">
                         <h5>YTTC 300/500</h5>
                         <p class="text-muted mb-3">Advanced modules, therapy integration & practicum.</p>
-                        <a href="/yoga.html#yttc300" class="btn btn-sm btn-pill">Explore</a>
+                        <a href="/500Hrs-Foundational-YTTC/" class="btn btn-sm btn-pill">Explore</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 reveal">
@@ -524,7 +524,7 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
                         style="background:#fff;border-radius:16px;border:1px solid rgba(10,44,79,.06);box-shadow:var(--shadow)">
                         <h5>Therapy & Rehab</h5>
                         <p class="text-muted mb-3">Evidence-aware protocols for pain, stress & lifestyle disorders.</p>
-                        <a href="/yoga.html#therapy" class="btn btn-sm btn-pill">Explore</a>
+                        <a href="/Therapy-Yoga-Class/" class="btn btn-sm btn-pill">Explore</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4 reveal">
@@ -532,33 +532,12 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
                         style="background:#fff;border-radius:16px;border:1px solid rgba(10,44,79,.06);box-shadow:var(--shadow)">
                         <h5>Pilates & Mobility</h5>
                         <p class="text-muted mb-3">Core strength, alignment and breath-led movement.</p>
-                        <a href="/pilates.html" class="btn btn-sm btn-pill">Explore</a>
+                        <a href="/200Hrs-Pilates-TT/" class="btn btn-sm btn-pill">Explore</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- =================== ACCREDITATIONS / TRUST =================== -->
-    <!-- <section class="py-5" style="background:var(--bg)">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-5 mb-4 mb-lg-0 reveal">
-        <h2 style="font-family:'Playfair Display',serif;font-weight:700">Accreditations & Partnerships</h2>
-        <p class="text-muted mb-3">Backed by respected educators and institutions. Replace placeholders with your official badges (e.g., Yoga Alliance / University / Govt. bodies / CSR partners).</p>
-        <a href="/who-we-are.html" class="btn btn-pill">Know More</a>
-      </div>
-      <div class="col-lg-7 reveal">
-        <div class="d-flex flex-wrap align-items-center justify-content-around p-3" style="background:#fff;border-radius:16px;box-shadow:var(--shadow)">
-          <img src="https://dummyimage.com/140x60/ffffff/0a2c4f&text=Partner+1" class="mb-3"/>
-          <img src="https://dummyimage.com/140x60/ffffff/0a2c4f&text=Partner+2" class="mb-3"/>
-          <img src="https://dummyimage.com/140x60/ffffff/0a2c4f&text=Partner+3" class="mb-3"/>
-          <img src="https://dummyimage.com/140x60/ffffff/0a2c4f&text=Partner+4" class="mb-3"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
     <!-- =================== TIMELINE =================== -->
     <section class="py-5">
@@ -703,83 +682,71 @@ Locations" src="https://www.google.com/maps?q=India&output=embed"
         </div>
     </section>
 
-
-    <!-- ========== FOOTER (reuse on every page) ========== -->
-    <footer class="footer-evy">
-        <div class="container">
-            <div class="row">
-                <!-- Brand / About -->
-                <div class="col-md-4 mb-4">
-                    <div class="logo mb-2">
-                        <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
-                    </div>
-                    <p class="text-muted mb-3" style="max-width:420px">
-                        Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training,
-                        therapy, pilates
-                        & corporate wellness.
-                    </p>
-                    <div class="social">
-                        <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-md-2 mb-4">
-                    <h6>Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/contact-us.html">Contact</a></li>
-                        <li><a href="/yoga.html">Yoga</a></li>
-                        <li><a href="/who-we-are.html">Who We Are</a></li>
-                        <li><a href="/centre-heads.html">Centre Heads</a></li>
-                        <li><a href="/guest-faculty.html">Guest Faculty</a></li>
-                    </ul>
-                </div>
-
-                <!-- Programs -->
-                <div class="col-md-3 mb-4">
-                    <h6>Programs</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="/yoga.html#yttc200">YTTC 200</a></li>
-                        <li><a href="/yoga.html#yttc300">YTTC 300</a></li>
-                        <li><a href="/pilates.html">Pilates Training</a></li>
-                        <li><a href="/yoga.html#corporate">Corporate Wellness</a></li>
-                        <li><a href="/yoga.html#workshops">Workshops & Retreats</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact / Newsletter -->
-                <div class="col-md-3 mb-4">
-                    <h6>Contact</h6>
-                    <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-                    <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a>
-                    </p>
-                    <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-                            href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
-
-                    <div class="newsletter">
-                        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
-                            <div class="form-group mb-2">
-                                <input type="email" class="form-control" placeholder="Your email for updates" required>
-                            </div>
-                            <button class="btn btn-pill btn-sm" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom py-3 mt-2 text-center">
-                <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
-            </div>
+  <!-- ========== FOOTER (reuse on every page) ========== -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
         </div>
-    </footer>
+
+        <!-- Quick Links -->
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/yoga/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/200Hrs-Foundational-YTTC/">YTTC 200</a></li>
+            <li><a href="/500Hrs-Foundational-YTTC/">YTTC 500</a></li>
+            <li><a href="/200Hrs-Pilates-TT/">Pilates Training</a></li>
+            <li><a href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a></li>
+            <li><a href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact / Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 
     <!-- Floating WhatsApp Button -->
     <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"

@@ -41,7 +41,7 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <!-- About Us (dropdown) -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us.html" id="aboutDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
               style="outline: none !important; border: none !important; box-shadow: none !important;"
               onclick="window.location.href='/about-us.html'; return false;" onmouseover="$(this).dropdown('show')"
               onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
@@ -513,71 +513,69 @@ Logo" style="height:40px; width:auto; margin-right:.6rem;">
     </div>
   </section>
 
-  <!-- Footer -->
+ 
+  <!-- ========== FOOTER (reuse on every page) ========== -->
   <footer class="footer-evy">
     <div class="container">
       <div class="row">
         <!-- Brand / About -->
         <div class="col-md-4 mb-4">
-          <div class="logo d-flex align-items-center mb-3">
-            <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
-              alt="
-Logo" style="height:40px; width:auto; margin-right:.6rem;">
-            <span style="font-family:'Playfair Display',serif; font-weight:700; color:var(--ink)">Everest Yoga & Pilates Institute</span>
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
           </div>
-          <p class="mb-3" style="color:var(--muted); line-height:1.6">
-            Transforming lives through authentic Pilates education and practice. 
-            Your journey to becoming a certified instructor starts here.
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
           </p>
-          <div class="social d-flex align-items-center">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
         <!-- Quick Links -->
         <div class="col-md-2 mb-4">
           <h6>Quick Links</h6>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="index.html">Home</a></li>
-            <li class="mb-2"><a href="who-we-are.html">About Us</a></li>
-            <li class="mb-2"><a href="200hrs-Pilates-Training.html">Training</a></li>
-            <li class="mb-2"><a href="#">Contact</a></li>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/yoga/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
         <!-- Programs -->
         <div class="col-md-3 mb-4">
           <h6>Programs</h6>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="200hrs-Pilates-Training.html">200Hr Pilates TTC</a></li>
-            <li class="mb-2"><a href="Pilates_Fitness_Classes.html">Pilates Fitness</a></li>
-            <li class="mb-2"><a href="kid-class.html">Kids Yoga</a></li>
-            <li class="mb-2"><a href="Therapy-class.html">Therapy Yoga</a></li>
-            <li class="mb-2"><a href="Private-class.html">Private Classes</a></li>
+          <ul class="list-unstyled">
+            <li><a href="/200Hrs-Foundational-YTTC/">YTTC 200</a></li>
+            <li><a href="/500Hrs-Foundational-YTTC/">YTTC 500</a></li>
+            <li><a href="/200Hrs-Pilates-TT/">Pilates Training</a></li>
+            <li><a href="/airborne-athletic.html">Air Borne Athletic TT</a></li>
+            <li><a href="/prenatal-yoga.html">Prenatal Yoga TT</a></li>
           </ul>
         </div>
 
         <!-- Contact / Newsletter -->
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
-          <p class="mb-2" style="color:var(--muted); font-size:.9rem">
-            <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Street, Mumbai
-          </p>
-          <p class="mb-2" style="color:var(--muted); font-size:.9rem">
-            <i class="fas fa-phone me-2"></i>+91 98765 43210
-          </p>
-          <p class="mb-3" style="color:var(--muted); font-size:.9rem">
-            <i class="fas fa-envelope me-2"></i>training@everestyoga.com
-          </p>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
+          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
+              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
         </div>
       </div>
 
       <div class="bottom py-3 mt-2 text-center">
-        <small>&copy; 2025 
-Institute. All rights reserved.</small>
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
       </div>
     </div>
   </footer>
