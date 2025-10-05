@@ -15,8 +15,9 @@ Institute</title>
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
-  <!-- Icons -->
+    <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/global.css">
 
   <!-- START: THEME OVERRIDES (Royal blue, no gradients) -->
   <style>
@@ -900,7 +901,7 @@ Institute</title>
 <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
   <div class="container">
     <!-- Brand with logo -->
-    <a class="navbar-brand d-flex align-items-center" href="/">
+     <a class="navbar-brand d-flex" href="/">
       <img src="https://everestyogainstitute.in/wp-content/themes/EverestYogaInstitute/img/Everest-Yoga-logo.png"
         alt="Everest Yoga Logo" class="navbar-logo">
       <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
@@ -920,8 +921,11 @@ Institute</title>
         <!-- About Us (dropdown) -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Us
+              style="outline: none !important; border: none !important; box-shadow: none !important;"
+              onclick="window.location.href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
+              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
           </a>
           <div class="dropdown-menu" aria-labelledby="aboutDropdown">
             <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
@@ -997,7 +1001,7 @@ Institute</title>
   <header class="hero">
     <div class="container wrap text-center">
       <span class="eyebrow">Personalized • Private • Professional</span>
-      <h1>One-on-One Home Classes</h1>
+      <h1 class="text-white">One-on-One Home Classes</h1>
       <p class="lead mx-auto">Bringing mindful yoga practice to the comfort of your home. Experience personalized attention and customized yoga plans tailored specifically to your needs, schedule, and goals.</p>
       <div class="mt-4">
         <a href="#schedule" class="btn btn-pill btn-lg mr-3">Book Session</a>

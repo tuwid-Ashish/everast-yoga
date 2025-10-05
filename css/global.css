@@ -98,127 +98,6 @@ a:hover{ color: var(--royal); text-decoration: none; }
 }
 .dropdown-submenu.open-left > a.dropdown-toggle::after{ content: "‹"; }
 
-/* Hover to open menus on desktop (keeps click on mobile) */
-@media (min-width:992px){
-  .navbar-evy .dropdown:hover > .dropdown-menu{ display:block; }
-  .navbar-evy .dropdown-submenu:hover > .dropdown-menu{ display:block; }
-}
-
-/* Navbar logo responsive sizing */
-.navbar-logo {
-  height: 40px;
-  width: auto;
-  margin-right: 0.6rem;
-  transition: all 0.3s ease;
-}
-
-.navbar-brand-text {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: var(--ink);
-  transition: all 0.3s ease;
-}
-
-/* Mobile responsive adjustments */
-@media (max-width: 991.98px) {
-  .navbar-logo {
-    height: 32px; /* Smaller logo on mobile */
-    margin-right: 0.4rem;
-  }
-  
-  .navbar-brand-text {
-    font-size: 0.9rem; /* Smaller text on mobile */
-    line-height: 1.2;
-  }
-  
-  /* Stack logo and text for very small screens */
-  @media (max-width: 576px) {
-    .navbar-brand {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-    }
-    
-    .navbar-logo {
-      height: 28px;
-      margin-right: 0;
-      margin-bottom: 0.2rem;
-    }
-    
-    .navbar-brand-text {
-      font-size: 0.8rem;
-      text-align: left;
-    }
-  }
-}
-
-/* Hamburger button styling */
-.navbar-toggler {
-  border: none;
-  padding: 0.25rem 0.5rem;
-  font-size: 1rem;
-  line-height: 1;
-  background-color: transparent;
-  border-radius: 0.25rem;
-}
-
-.navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* Mobile dropdown improvements */
-@media (max-width: 991.98px) {
-  .dropdown-menu {
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    padding: 0;
-  }
-  
-  .dropdown-item {
-    padding: 0.5rem 1rem;
-    color: var(--ink);
-  }
-  
-  .dropdown-item:hover {
-    background-color: var(--royal-50);
-    color: var(--royal);
-  }
-  
-  /* Handle nested dropdowns on mobile */
-  .dropdown-submenu .dropdown-menu {
-    position: static !important;
-    float: none;
-    box-shadow: none;
-    border: none;
-    margin-left: 1rem;
-  }
-}
-
-/* Ensure proper spacing for contact button */
-.navbar-nav .nav-item:last-child .nav-link.btn {
-  margin-left: 0;
-  margin-top: 0.5rem;
-}
-
-@media (min-width: 992px) {
-  .navbar-nav .nav-item:last-child .nav-link.btn {
-    margin-left: 1rem;
-    margin-top: 0;
-  }
-}
 
 /* -------------------------- Footer --------------------------- */
 .footer-evy{
@@ -277,3 +156,140 @@ a:hover{ color: var(--royal); text-decoration: none; }
 .section{ padding:64px 0; }
 .section.alt{ background: var(--royal-50); }
  
+
+
+
+/* Add this to your existing global.css file */
+
+/* --------------------------- Navbar Logo Responsive -------------------------- */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--ink);
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar-logo {
+    height: 32px; /* Smaller logo on mobile */
+    margin-right: 0.4rem;
+  }
+  
+  .navbar-brand-text {
+    font-size: 0.9rem; /* Smaller text on mobile */
+    line-height: 1.2;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 576px) {
+  .navbar-brand {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .navbar-logo {
+    height: 28px;
+    margin-right: 0;
+    margin-bottom: 0.2rem;
+  }
+  
+  .navbar-brand-text {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+}
+
+/* Hamburger button styling */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Mobile dropdown improvements */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: var(--ink);
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--royal-50);
+    color: var(--royal);
+  }
+  
+  /* Handle nested dropdowns on mobile */
+  .dropdown-submenu .dropdown-menu {
+    position: static !important;
+    float: none;
+    box-shadow: none;
+    border: none;
+    margin-left: 1rem;
+    display: none;
+  }
+}
+
+/* Contact button spacing */
+.navbar-nav .nav-item:last-child .nav-link.btn {
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item:last-child .nav-link.btn {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+
+/* Dropdown hover functionality for desktop */
+@media (min-width: 992px) {
+  .navbar-evy .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar-evy .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Ensure submenu appears on top */
+.dropdown-submenu .dropdown-menu {
+  z-index: 1060;
+}
