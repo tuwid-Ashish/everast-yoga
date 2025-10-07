@@ -259,7 +259,27 @@
 
     d.getElementById('profileName').textContent = name;
     d.getElementById('profileTitle').textContent = data.title;
-    d.getElementById('profileBio').textContent = data.bio;
+    const bioEl = d.getElementById('profileBio');
+    if (bioEl) {
+      const bioSentences = data.bio.split('. ').filter(sentence => sentence.trim());
+      bioEl.innerHTML = '';
+      
+      if (bioSentences.length > 1) {
+      const ul = document.createElement('ul');
+      bioSentences.forEach((sentence, index) => {
+        const li = document.createElement('li');
+        if (index === bioSentences.length - 1) {
+        li.textContent = sentence.trim();
+        } else {
+        li.textContent = sentence.trim() + '.';
+        }
+        ul.appendChild(li);
+      });
+      bioEl.appendChild(ul);
+      } else {
+      bioEl.textContent = data.bio;
+      }
+    }
     const imgEl = d.querySelector('#profileModal .profile-img');
     if (imgEl) imgEl.src = data.image;
 
