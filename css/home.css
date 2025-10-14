@@ -1,0 +1,271 @@
+/* Page-specific styles for home page */
+
+:root{
+  --primary:#0a2c4f;
+  --accent:#2a9d8f;
+}
+
+/* Hero */
+.hero{
+  position:relative;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  background-image: url('/img/facilities/hero-pilates.jpg');
+  background-size:cover;
+  background-position:center right;
+  color:#fff;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(10,44,79,0.65) 0%, rgba(10,44,79,0.25) 60%);
+}
+.hero .container{position:relative; z-index:2}
+.hero h1, .hero p{color:#fff}
+
+/* Reveal animation utility */
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1; transform:none}
+
+/* Cards hover */
+.hover-up:hover{transform:translateY(-6px); transition:transform .25s ease}
+
+/* Machines grid small cards */
+.machines .card-img-top{height:120px; object-fit:cover}
+
+/* Testimonials */
+.testimonials .carousel-item img{object-fit:cover}
+
+/* Utilities */
+.btn-pill{border-radius:999px; padding:.6rem 1.2rem; font-weight:700}
+
+/* Responsive tweaks */
+@media(max-width:991px){
+  .hero{min-height:50vh; background-position:center}
+}
+
+@media(max-width:767px){
+  .hero{padding:3rem 0}
+  .hero h1{font-size:1.6rem}
+}
+/* Page-specific styles for Home (do not duplicate global tokens) */
+
+/* 60:40 layout helper using Bootstrap grid (col-lg-7 / col-lg-5) */
+.home-60-40 .content { /* content column helper */ display:block }
+.home-60-40 .media { /* media column helper */ display:block }
+
+/* Hero adjustments */
+.home-hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.home-hero .hero-copy {
+  color: #fff;
+}
+.home-hero .hero-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+/* Pilates highlight strip */
+.pilates-strip {
+  background: linear-gradient(90deg, rgba(11,42,74,0.06), rgba(42,111,151,0.03));
+  border-left: 4px solid var(--primary);
+  padding: 18px 20px;
+  border-radius: 12px;
+}
+.pilates-strip h5 { margin:0; font-weight:700; }
+
+/* Programs cards - make feature card larger and image-rich */
+.program-feature .card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.program-feature .card .card-img {
+  width:100%; height:100%; object-fit:cover;
+}
+
+/* Small visual tweaks */
+.section-60-40 { padding-top:40px; padding-bottom:40px; }
+.section-60-40 .content { display:flex; flex-direction:column; justify-content:center; }
+
+/* Reveal tuning (faster) */
+.reveal { transition: opacity .45s ease, transform .45s ease !important; }
+
+/* Ensure images are responsive and not exceed container height */
+.img-framed { border-radius:12px; box-shadow:var(--shadow); }
+
+/* Section padding helper used by many sections */
+.section-pad { padding-top:60px; padding-bottom:60px; }
+
+/* About chips */
+.chip { display:inline-block; background:rgba(42,157,143,0.12); color:var(--primary); padding:.4rem .75rem; border-radius:999px; margin-right:.5rem; font-weight:600; font-size:.95rem; }
+.chip + .chip { margin-left:0.25rem }
+
+/* About image tweaks */
+.section-about .img-framed{ border-radius:14px; box-shadow:0 8px 26px rgba(10,44,79,0.08); }
+
+/* WHY PILATES section styles */
+.section-why-pilates { background: transparent; }
+.section-why-pilates .icon { font-size:2.25rem; color:var(--accent); }
+.section-why-pilates .card { transition: transform .22s ease, box-shadow .22s ease; border-radius:12px }
+.section-why-pilates .card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(10,44,79,0.12); }
+.section-why-pilates h5{ margin-top:.4rem }
+.section-why-pilates .small{ color:var(--muted); }
+
+/* Section split helper for left content / right media (60:40 at md+) */
+.section-split .media-framed{ display:block }
+.section-split .img-framed{ border-radius:14px; box-shadow:0 12px 32px rgba(10,44,79,0.10); }
+
+@media(min-width:768px){
+  /* ensure approx 60:40 at md+ using the grid columns set in the HTML */
+  .section-split .col-md-7{flex:0 0 58.333333%; max-width:58.333333%;}
+  .section-split .col-md-5{flex:0 0 41.666667%; max-width:41.666667%;}
+}
+
+
+
+
+/* Accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none !important; }
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .home-hero .hero-image img { height: 320px; }
+  .pilates-strip { padding: 14px; }
+}
+
+/* SECTION HERO: video background, left-aligned copy */
+.section-hero {
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  --parallax-factor: 0.35; /* default; overridden by data-parallax attr */
+}
+
+.section-hero .hero-video,
+.section-hero .hero-fallback{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.section-hero .hero-fallback{background-image:url('/img/facilities/hero-pilates.jpg'); background-size:cover; background-position:center right}
+
+/* Overlay to ensure AA contrast (dark overlay) */
+.section-hero::before{
+  content:'';
+  position:absolute; inset:0; z-index:1;
+  background: linear-gradient(90deg, rgba(6,12,25,0.72) 0%, rgba(6,12,25,0.48) 60%);
+}
+
+.section-hero .container{position:relative; z-index:2;}
+.section-hero .hero-copy{max-width:680px}
+.section-hero h1{color:#ffffff}
+.section-hero p.lead{color:rgba(255,255,255,0.92)}
+
+/* Button colors: primary (btn-pill) high contrast; secondary outline light */
+.section-hero .btn-pill{background:#2a9d8f; color:#fff; border:1px solid rgba(255,255,255,0.06)}
+.section-hero .btn-pill:focus,.section-hero .btn-pill:hover{background:#237b6f}
+.section-hero .btn-outline-light{color:#fff; border:1px solid rgba(255,255,255,0.9); background:transparent}
+.section-hero .btn-outline-light:hover{background:rgba(255,255,255,0.06)}
+
+/* Responsive spacing */
+@media(max-width:991px){
+  .section-hero{min-height:48vh}
+}
+@media(max-width:767px){
+  .section-hero{padding:3rem 0}
+  .section-hero .hero-copy{max-width:100%}
+  .section-hero h1{font-size:1.6rem}
+}
+
+/* Pilates Fitness Classes (equal-height cards) */
+.section-pfc .card { display:flex; flex-direction:column; border-radius:12px; overflow:hidden }
+.section-pfc .card-img-top{ height:180px; object-fit:cover; width:100% }
+.section-pfc .card-body{ flex:1 1 auto; display:flex; flex-direction:column }
+.section-pfc .stretched-link{ position:relative; z-index:1 }
+.section-pfc .btn{ z-index:2 }
+
+@media(max-width:767px){
+  .section-pfc .card-img-top{ height:160px }
+}
+
+/* Machines section styling */
+.section-machines .small-link{ position:absolute; right:16px; top:12px; font-size:.9rem; color:var(--primary); text-decoration:none }
+.section-machines .small-link:hover{ text-decoration:underline }
+
+/* Simple ratio helper (4:3) for Bootstrap 4 fallback */
+.ratio { position: relative; width: 100%; overflow: hidden; }
+.ratio::before { content: ""; display:block; padding-top:75%; } /* 4:3 -> 3/4 = 75% */
+.ratio img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover }
+
+.section-machines .card { border-radius:12px; overflow:hidden }
+.section-machines .card-body { padding:12px }
+
+@media(min-width:992px){
+  /* 3 columns per row at lg */
+  .section-machines .col-lg-4{ flex:0 0 33.333333%; max-width:33.333333%; }
+}
+
+/* Community & Internship styled band */
+.pattern-band{ background-image: repeating-linear-gradient(45deg, rgba(10,44,79,0.02) 0 6px, transparent 6px 12px); padding:28px 0; border-radius:12px }
+.community-card, .internship-card{ border:0; border-radius:12px; overflow:hidden }
+.community-card .card-body, .internship-card .card-body{ background:#fff; padding:24px; border-top:6px solid transparent }
+.community-card{ box-shadow:0 10px 30px rgba(10,44,79,0.06); }
+.internship-card{ box-shadow:0 10px 30px rgba(10,44,79,0.06); }
+.community-card::before, .internship-card::before{ content:""; display:block; height:6px; background:linear-gradient(90deg,var(--accent),var(--primary)); }
+
+
+/* Testimonials */
+.section-testimonials .testimonial-card { opacity: 0.2; transform: translateY(6px); transition: opacity .45s ease, transform .45s ease; }
+.section-testimonials .testimonial-card.active { opacity: 1; transform: none; }
+.section-testimonials .card { border-radius:12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .section-testimonials .testimonial-card { transition: none; }
+}
+
+/* Final CTA section - high contrast overlay */
+.section-cta-final{
+  position:relative; overflow:hidden; color:#fff; border-radius:8px;
+  background-image: url('/img/facilities/cta-bg.jpg');
+  background-size:cover; background-position:center center;
+}
+.section-cta-final::before{
+  /* dark overlay to ensure AA contrast for white text/buttons */
+  content:""; position:absolute; inset:0; z-index:0;
+  background: linear-gradient(180deg, rgba(6,12,25,0.76) 0%, rgba(6,12,25,0.64) 100%);
+}
+.section-cta-final .container{position:relative; z-index:2}
+.section-cta-final h2{color:#fff; font-size:2rem; margin-bottom:.5rem}
+.section-cta-final p{color:rgba(255,255,255,0.92)}
+
+/* Buttons: ensure contrast and accessible focus */
+.section-cta-final .btn-pill{background:var(--accent); color:#052028; border:0}
+.section-cta-final .btn-pill:hover,.section-cta-final .btn-pill:focus{background:#1f8b7b}
+.section-cta-final .btn-outline-light{color:#fff; border:1px solid rgba(255,255,255,0.9); background:transparent}
+.section-cta-final .btn-outline-light:hover,.section-cta-final .btn-outline-light:focus{background:rgba(255,255,255,0.06)}
+
+/* Responsive layout for CTA buttons */
+@media(max-width:575.98px){
+  .section-cta-final .btn{display:block; width:100%; margin-bottom:.6rem}
+  .section-cta-final .btn:last-child{margin-bottom:0}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .section-cta-final * { transition: none !important }
+}
+
+
+
+
