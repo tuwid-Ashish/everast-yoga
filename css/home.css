@@ -142,51 +142,178 @@
   .pilates-strip { padding: 14px; }
 }
 
-/* SECTION HERO: video background, left-aligned copy */
+/* SECTION HERO: centered layout with background image and card grid */
 .section-hero {
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   color: #ffffff;
-  --parallax-factor: 0.35; /* default; overridden by data-parallax attr */
+  background-image: url('/img/facilities/hero-pilates.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-.section-hero .hero-video,
-.section-hero .hero-fallback{
+/* Background overlay for contrast */
+.hero-bg-overlay {
   position: absolute;
   inset: 0;
-  width: 100%;
+  background: linear-gradient(135deg, rgba(10, 44, 79, 0.85) 0%, rgba(6, 12, 25, 0.75) 100%);
+  z-index: 1;
+}
+
+.section-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-hero .hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Description */
+.hero-description {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Cards Grid */
+.hero-cards {
+  margin-top: 3rem;
+}
+
+.hero-card {
+  display: block;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .25s ease, transform .25s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-.section-hero .hero-fallback{background-image:url('/img/facilities/hero-pilates.jpg'); background-size:cover; background-position:center right}
-
-/* Overlay to ensure AA contrast (dark overlay) */
-.section-hero::before{
-  content:'';
-  position:absolute; inset:0; z-index:1;
-  background: linear-gradient(90deg, rgba(6,12,25,0.72) 0%, rgba(6,12,25,0.48) 60%);
 }
 
-.section-hero .container{position:relative; z-index:2;}
-.section-hero .hero-copy{max-width:680px}
-.section-hero h1{color:#ffffff}
-.section-hero p.lead{color:rgba(255,255,255,0.92)}
-
-/* Button colors: primary (btn-pill) high contrast; secondary outline light */
-.section-hero .btn-pill{background:#2a9d8f; color:#fff; border:1px solid rgba(255,255,255,0.06)}
-.section-hero .btn-pill:focus,.section-hero .btn-pill:hover{background:#237b6f}
-.section-hero .btn-outline-light{color:#fff; border:1px solid rgba(255,255,255,0.9); background:transparent}
-.section-hero .btn-outline-light:hover{background:rgba(255,255,255,0.06)}
-
-/* Responsive spacing */
-@media(max-width:991px){
-  .section-hero{min-height:48vh}
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  text-decoration: none;
 }
-@media(max-width:767px){
-  .section-hero{padding:3rem 0}
-  .section-hero .hero-copy{max-width:100%}
-  .section-hero h1{font-size:1.6rem}
+
+.hero-card-icon {
+  font-size: 1.85rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.hero-card-text {
+  font-size: 0.85rem;
+  color: #667085;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .section-hero {
+    min-height: 90vh;
+    background-attachment: scroll;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .hero-description {
+    font-size: 1.05rem;
+  }
+  
+  .hero-card {
+    padding: 0.9rem 0.75rem;
+  }
+  
+  .hero-card-icon {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-hero {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  
+  .section-hero .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-cards {
+    margin-top: 2rem;
+  }
+  
+  .hero-card {
+    padding: 0.85rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-card-icon {
+    font-size: 1.6rem;
+  }
+  
+  .hero-card-title {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+  }
+  
+  .hero-card-icon {
+    font-size: 2rem;
+  }
 }
 
 /* Pilates Fitness Classes (equal-height cards) */

@@ -117,26 +117,53 @@
   <!-- MAIN CONTENT -->
   <main id="home">
     <!-- 1. HERO -->
-    <section class="section-hero hero-home reveal" data-reveal data-parallax="0.35">
-      <!-- Background video with poster fallback. playsinline for mobile; muted+autoplay required on many browsers -->
-      <video class="hero-video" autoplay muted loop playsinline poster="/img/facilities/hero-pilates.jpg" aria-hidden="true">
-        <source src="/img/facilities/hero-pilates.mp4" type="video/mp4">
-        <!-- Fallback: poster image will show if video unsupported -->
-      </video>
-
-      <!-- optional fallback image div (visible if video not available via CSS) -->
-      <div class="hero-fallback" aria-hidden="true"></div>
+    <section class="section-hero hero-home reveal" data-reveal style="background-image: url('/img/bg-one.jpg')">
+      <!-- Background image overlay -->
+      <div class="hero-bg-overlay"></div>
 
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="hero-copy">
-              <h1 class="display-4">Move Stronger. Live Better.</h1>
-              <p class="lead">Pilates & fitness programs tailored for every body — from rehabilitation to performance.</p>
-              <p>
-                <a href="/200Hrs-Pilates-TT/" class="btn btn-pill mr-2" aria-label="Explore 200 hour Pilates teacher training">Explore Pilates Training</a>
-                <a href="/Pilates-Fitness-Classes/" class="btn btn-outline-light" aria-label="Join Pilates fitness classes">Join Fitness Classes</a>
-              </p>
+        <div class="hero-content text-center">
+          <!-- Institute Name -->
+          <h1 class="hero-title">Everest Yoga & Pilates Institute</h1>
+          
+          <!-- Description -->
+          <p class="hero-description">
+            Transform your life through authentic yoga and pilates education. Professional training, holistic wellness, and premium equipment — all under one roof.
+          </p>
+
+          <!-- Quick Access Cards -->
+          <div class="row hero-cards justify-content-center mt-5">
+            <!-- Pilates Card -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <a href="/Pilates-Fitness-Classes/" class="hero-card" aria-label="Explore Pilates Programs">
+                <div class="hero-card-icon">
+                  <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3 class="hero-card-title">Pilates</h3>
+                <p class="hero-card-text">Fitness & Teacher Training</p>
+              </a>
+            </div>
+
+            <!-- Yoga Card -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <a href="/Group-Yoga-Class/" class="hero-card" aria-label="Explore Yoga Programs">
+                <div class="hero-card-icon">
+                  <i class="fas fa-spa"></i>
+                </div>
+                <h3 class="hero-card-title">Yoga</h3>
+                <p class="hero-card-text">Classes & Certifications</p>
+              </a>
+            </div>
+
+            <!-- Store Card -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <a href="/store/" class="hero-card" aria-label="Visit our Store">
+                <div class="hero-card-icon">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h3 class="hero-card-title">Store</h3>
+                <p class="hero-card-text">Equipment & Props</p>
+              </a>
             </div>
           </div>
         </div>
@@ -159,7 +186,7 @@
 
           <div class="col-lg-5 col-md-5">
             <div class="media-framed">
-              <img src="/img/facilities/reformer.jpg" alt="Pilates reformer training" class="img-fluid img-framed">
+              <img src="/img/pilates-reformer-training.jpg" alt="Pilates reformer training" class="img-fluid img-framed">
             </div>
           </div>
         </div>
@@ -183,7 +210,7 @@
             <a href="/about-us/" class="btn btn-pill mt-3" aria-label="Read more about the institute">Read More →</a>
           </div>
           <div class="col-lg-5 col-md-5">
-            <img src="/img/facilities/pilates-studio.jpg" alt="Pilates studio" class="img-fluid rounded img-framed">
+            <img src="/img/pilates-studios.jpg" alt="Pilates studio" class="img-fluid rounded img-framed">
           </div>
         </div>
       </div>
@@ -252,7 +279,7 @@
             </p>
           </div>
           <div class="col-lg-5 d-none d-lg-block">
-            <img src="/img/facilities/tt-class.jpg" alt="Teacher training" class="img-fluid rounded shadow-sm">
+            <img src="/img/pilates-home.jpg" alt="Teacher training" class="img-fluid rounded shadow-sm">
           </div>
         </div>
       </div>
@@ -266,7 +293,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-              <img loading="lazy" src="/img/facilities/group-class.jpg" class="card-img-top" alt="Group classes">
+              <img loading="lazy" src="/img/bg-one.jpg" class="card-img-top" alt="Group classes">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Group Classes</h5>
                 <p class="card-text small">Energetic studio sessions designed for progressive improvement.</p>
@@ -278,7 +305,7 @@
 
           <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-              <img loading="lazy" src="/img/facilities/personal-training.jpg" class="card-img-top" alt="Personal training">
+              <img loading="lazy" src="/img/personal-training.jpg" class="card-img-top" alt="Personal training">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Personal Training</h5>
                 <p class="card-text small">One-on-one coaching tailored to your goals.</p>
@@ -290,11 +317,11 @@
 
           <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-              <img loading="lazy" src="/img/facilities/therapy.jpg" class="card-img-top" alt="Therapy and rehab">
+              <img loading="lazy" src="/img/therapy-yoga.jpg" class="card-img-top" alt="Therapy and rehab">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Therapy / Rehab</h5>
                 <p class="card-text small">Clinical programs focused on safe rehabilitation.</p>
-                <a href="/Pilates-Fitness-Classes/" class="stretched-link" aria-label="Enroll in therapy or rehab classes"></a>
+                <a href="/Therapy-Yoga-Class/" class="stretched-link" aria-label="Enroll in therapy or rehab classes"></a>
                 <a class="btn btn-outline-primary mt-auto" href="/Pilates-Fitness-Classes/">Enroll</a>
               </div>
             </div>
@@ -302,7 +329,7 @@
 
           <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100">
-              <img loading="lazy" src="/img/facilities/prenatal.jpg" class="card-img-top" alt="Prenatal Pilates">
+              <img loading="lazy" src="/img/Prenatal Pilates.jpg" class="card-img-top" alt="Prenatal Pilates">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Prenatal Pilates</h5>
                 <p class="card-text small">Safe, specialist-led sessions for pregnancy and postpartum.</p>
@@ -374,7 +401,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/reformer.jpg" class="card-img-top" alt="Reformer">
+                <img loading="lazy" src="/img/store/pilates-reformer.png" class="card-img-top" alt="Reformer">
               </div>
               <div class="card-body">
                 <h6>Reformer</h6>
@@ -387,7 +414,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/cadillac.jpg" class="card-img-top" alt="Cadillac">
+                <img loading="lazy" src="/img/store/cadillac.png" class="card-img-top" alt="Cadillac">
               </div>
               <div class="card-body">
                 <h6>Cadillac</h6>
@@ -400,7 +427,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/wunda.jpg" class="card-img-top" alt="Wunda Chair">
+                <img loading="lazy" src="/img/store/wunda-chair.png" class="card-img-top" alt="Wunda Chair">
               </div>
               <div class="card-body">
                 <h6>Wunda Chair</h6>
@@ -413,7 +440,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/ladder.jpg" class="card-img-top" alt="Ladder Barrel">
+                <img loading="lazy" src="/img/store/ladder-barrel.png" class="card-img-top" alt="Ladder Barrel">
               </div>
               <div class="card-body">
                 <h6>Ladder Barrel</h6>
@@ -426,7 +453,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/spine.jpg" class="card-img-top" alt="Spine Corrector">
+                <img loading="lazy" src="/img/store/spine-corrector.png" class="card-img-top" alt="Spine Corrector">
               </div>
               <div class="card-body">
                 <h6>Spine Corrector</h6>
@@ -439,7 +466,7 @@
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="card h-100">
               <div class="ratio ratio-4x3">
-                <img loading="lazy" src="/img/store/foldable.jpg" class="card-img-top" alt="Foldable Reformer">
+                <img loading="lazy" src="/img/store/foldable-reformer.png" class="card-img-top" alt="Foldable Reformer">
               </div>
               <div class="card-body">
                 <h6>Foldable Reformer</h6>
