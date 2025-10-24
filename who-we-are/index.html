@@ -357,6 +357,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
+
     /* CARDS */
     .card-custom {
       border: none;
@@ -461,9 +462,200 @@
       font-family: 'Playfair Display', serif;
     }
 
+    .cert-badge {
+      padding: 1rem;
+      border-radius: 12px;
+      border: 2px solid rgba(42, 157, 143, 0.2);
+      background: rgba(42, 157, 143, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .cert-link:hover .cert-badge {
+      transform: translateY(-3px);
+      border-color: var(--leaf);
+      background: rgba(42, 157, 143, 0.1);
+      box-shadow: 0 8px 20px rgba(42, 157, 143, 0.2);
+    }
+
+    .cert-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .cert-link:hover {
+      text-decoration: none;
+      color: var(--leaf);
+    }
+
     @media (min-width: 992px) {
       .philosophy-text {
         font-size: 1.35rem;
+      }
+    }
+
+    /* About Section Improvements */
+    .about-section {
+      background: #f9f9f9;
+    }
+
+    .about-text-content {
+      padding: 0;
+    }
+
+    .about-text-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: var(--royal);
+      line-height: 1.3;
+      font-size: 1.8rem;
+    }
+
+    .about-paragraph {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--ink);
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(42, 157, 143, 0.08), rgba(10, 44, 79, 0.05));
+      border-left: 4px solid var(--leaf);
+      border-radius: 8px;
+    }
+
+    .highlight-box p {
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      height: 100%;
+    }
+
+    .about-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .about-image-wrapper:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Certification badges improvements */
+    .certifications-wrapper h6 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .certification-logos {
+      margin-top: 0.5rem;
+    }
+
+    .certification-logos .row {
+      margin: 0 -0.5rem;
+    }
+
+    .certification-logos .col-4 {
+      padding: 0 0.5rem;
+    }
+
+    .cert-badge {
+      padding: 0.8rem;
+      border-radius: 10px;
+      border: 2px solid rgba(42, 157, 143, 0.15);
+      background: rgba(42, 157, 143, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .cert-badge small {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--royal);
+      display: block;
+      margin-top: 0.4rem;
+    }
+
+    .cert-link:hover .cert-badge {
+      transform: translateY(-3px);
+      border-color: var(--leaf);
+      background: rgba(42, 157, 143, 0.1);
+      box-shadow: 0 8px 20px rgba(42, 157, 143, 0.2);
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 991.98px) {
+      .about-text-content {
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      .about-text-content h2 {
+        font-size: 1.6rem;
+      }
+
+      .about-paragraph {
+        font-size: 0.95rem;
+      }
+
+      .about-image-wrapper {
+        margin-top: 0;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .about-text-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .about-paragraph {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      .cert-badge {
+        padding: 0.6rem;
+      }
+
+      .cert-badge i {
+        font-size: 1.5rem !important;
+      }
+
+      .cert-badge small {
+        font-size: 0.65rem;
+      }
+
+      .highlight-box p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .about-section {
+        padding: 3rem 0 !important;
+      }
+
+      .about-text-content {
+        padding: 0;
+      }
+
+      .about-text-content h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-paragraph {
+        margin-bottom: 0.8rem;
       }
     }
   </style>
@@ -585,44 +777,77 @@
 
 
   <!-- PHILOSOPHY -->
-  <section class="about-section py-5">
+  <section class="about-section py-5" id="about">
     <div class="container">
-      <div class="row align-items-center gy-4">
+      <div class="row gy-4">
         <!-- Text Column -->
-        <div class="col-md-6 about-text px-3">
-          <h2 class="text-center mb-4">Our Philosophy</h2>
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <div class="about-text-content">
+            <h2 class="mb-3">Empowering Health, Learning & Growth — All Under One Roof</h2>
 
-          <!-- Sanskrit Quote -->
-          <blockquote class="blockquote text-center mb-4">
-            <p class="mb-0 philosophy-text">“योगः कर्मसु कौशलम्”</p>
-            <p class="mb-0 philosophy-text">Yogah karmasu kaushalam</p>
-          </blockquote>
+            <p class="about-paragraph mb-3">
+              Welcome to <strong>Everest Yoga & Pilates Institute</strong>, your one-stop destination for
+              holistic health, professional learning, and premium wellness equipment.
+            </p>
 
-          <!-- Translation -->
-          <blockquote class="blockquote text-center mb-4">
-            <p class="mb-0 philosophy-text">कर्मो में कुशलता को ही योग कहते हैI</p>
-            <p class="mb-0 philosophy-text">Yoga is skill at work.</p>
-            <footer class="blockquote-footer mt-2">
-              Bhagavad Gita 2.50 — <cite title="Skill in Action">Yoga is skill in action</cite>
-            </footer>
-          </blockquote>
+            <p class="about-paragraph mb-3">
+              We bring together <strong>training and trading</strong> under one roof — empowering individuals to transform
+              their health, enhance their skills, and build a rewarding career in <strong>Yoga & Pilates</strong>. Whether
+              you want to learn, teach, or equip your studio, Everest offers it all.
+            </p>
 
-          <!-- Philosophy Statement -->
-          <P class="mt-4 philosophy-text">
-            Everest is a firm follower of
-          </P>
-          <strong class="mt-4 philosophy-text" style="font-size: 1.7rem;">Karma Yoga - the path of unselfish
-            action.</strong>
-          <P class="mt-4 philosophy-text">
-            We strongly believe that if we possess good health, we can practice our
-            karma/action with full
-            devotion. Yoga is a scientific approach towards good health.
-          </P>
+            <p class="about-paragraph mb-3">
+              From <strong>certified Yoga & Pilates Teacher Training Programs</strong> to a wide range of <strong> props,
+              reformers, and studio equipment</strong>, we're here to support your journey toward complete wellness.
+            </p>
+
+            <div class="highlight-box p-3 mb-3">
+              <p class="about-paragraph mb-0">
+                At Everest, it's all about <strong style="color: var(--leaf);">Health. Learning. Equipment.</strong> —
+                your complete path to a stronger, balanced, and more fulfilling life.
+              </p>
+            </div>
+
+            <!-- Certification Badges -->
+            <div class="certifications-wrapper mt-3">
+              <h6 class="text-muted mb-3">Our Certifications</h6>
+              <div class="certification-logos">
+                <div class="row g-3">
+                  <div class="col-4">
+                    <a href="/img/certificates/ISO RENEW.jpg" target="_blank" class="cert-link" title="ISO Certified">
+                      <div class="cert-badge">
+                        <i class="fas fa-certificate" style="font-size: 1.8rem; color: var(--leaf);"></i>
+                        <small class="d-block mt-2">ISO Certified</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="/img/certificates/Everest Yoga Institute 300 hrs advance teacher training_ 500 hrs teacher training in Hatha Ashtanga Vinyasa Raj Yoga Certificate.pdf" class="cert-link" target="_blank" title="Yoga Alliance USA">
+                      <div class="cert-badge">
+                        <i class="fas fa-globe-americas" style="font-size: 1.8rem; color: var(--leaf);"></i>
+                        <small class="d-block mt-2">Yoga Alliance USA</small>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="/img/certificates/Teacher training 100 & 200 hrs Ashtanga Vinyasa Hatha Yoga Raj Yoga & Multistyle Yoga Certificate.pdf" target="_blank" class="cert-link" title="Indian Yoga Association">
+                      <div class="cert-badge">
+                        <i class="fas fa-award" style="font-size: 1.8rem; color: var(--leaf);"></i>
+                        <small class="d-block mt-2">IYA Registered</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+        
         <!-- Image Column -->
-        <div class="col-md-6 text-center">
-          <img src="../img/1who-we-are.jpg" alt="Philosophy" class="img-fluid rounded shadow-sm">
+        <div class="col-lg-6 col-md-12">
+          <div class="about-image-wrapper">
+            <img src="../img/1who-we-are.jpg" alt="Everest Yoga & Pilates Institute" class="img-fluid rounded shadow-lg">
+          </div>
         </div>
       </div>
     </div>
@@ -676,18 +901,21 @@
         </div>
         <div class="col-md-6">
           <!-- <h2>Our History</h2> -->
-            <p>
+          <p>
             Everest came into existence in 2001 &amp; got formally recognized and registered on January 1, 2014
             with the Government of India, with our head office in Ludhiana, Punjab (India).</p>
-            <p>
+          <p>
             At Everest Yoga &amp; Pilates Institute, we teach yoga as a combination of <strong>"TRADITIONAL YOGA &amp;
-      PHILOSOPHY"</strong> and <strong>"MODERN YOGIC SCIENCE"</strong>. <br>
-      <br>
-      We coach <strong>Pilates</strong> using a variety of <strong>Equipments</strong> and
-      props -Mat, Reformer, Wunda Chair, Caformer, Spine Corrector, Ladder Barrel, Motor Pilates.<p>
-            <p>
-      Our yoga &amp; pilates training works on all layers of an individual- <strong>PHYSICAL HEALTH</strong>, <strong>EMOTIONAL
-      STABILITY</strong>, <strong>MENTAL BALANCE</strong>, <strong>SOCIAL GROWTH</strong> &amp; <strong>SPIRITUAL ELEVATION</strong>.</p>
+              PHILOSOPHY"</strong> and <strong>"MODERN YOGIC SCIENCE"</strong>. <br>
+            <br>
+            We coach <strong>Pilates</strong> using a variety of <strong>Equipments</strong> and
+            props -Mat, Reformer, Wunda Chair, Caformer, Spine Corrector, Ladder Barrel, Motor Pilates.
+          <p>
+          <p>
+            Our yoga &amp; pilates training works on all layers of an individual- <strong>PHYSICAL HEALTH</strong>,
+            <strong>EMOTIONAL
+              STABILITY</strong>, <strong>MENTAL BALANCE</strong>, <strong>SOCIAL GROWTH</strong> &amp;
+            <strong>SPIRITUAL ELEVATION</strong>.</p>
         </div>
       </div>
     </div>
@@ -722,7 +950,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class=" card-custom"  style="min-height: fit-content;">
+          <div class=" card-custom" style="min-height: fit-content;">
             <div class="icon">🌍</div>
             <h5>Workshops</h5>
             <p>Corporate workshops, Global outreach through retreats and webinars.</p>
@@ -732,7 +960,7 @@
     </div>
   </section>
 
- 
+
   <!-- OUR CONTRIBUTION -->
   <section class="py-5" style="background: linear-gradient(135deg, var(--royal), var(--accent)); color: white;">
     <div class="container">
@@ -779,9 +1007,9 @@
               <div class="card border-0 h-100 w-100"
                 style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
                 <div class="card-body p-4 d-flex flex-column">
-                  <h4 class="text-white mb-3">CONDUCTING  INTERNATIONAL YOGA FESTIVAL since 2021</h4>
+                  <h4 class="text-white mb-3">CONDUCTING INTERNATIONAL YOGA FESTIVAL since 2021</h4>
                   <p class="text-white-50 mb-0 flex-grow-1" style="text-align: justify;">
-                   TO BE UPDATED
+                    TO BE UPDATED
                   </p>
                 </div>
               </div>
@@ -793,42 +1021,43 @@
     </div>
   </section>
 
-<!-- Simple to Complex & Variations -->
-<section>
-  <div class="row mt-4">
-    <!-- Simple to Complex -->
-    <div class="col-lg-6 mb-4">
-      <div class="method-card p-4 h-100 text-center">
-        <h5 class="text-royal mb-3">
-          <i class="fas fa-layer-group me-2"></i>
-          Simple to Complex
-        </h5>
-        <p class="text-muted mb-0">
-          With immense planning, we teach Yoga & Pilates by translating complex information into easily accessible concepts during the first class. 
-          This is how we move into Yogasanas and Pilates exercises — from basic to advanced.
-        </p>
+  <!-- Simple to Complex & Variations -->
+  <section>
+    <div class="row mt-4">
+      <!-- Simple to Complex -->
+      <div class="col-lg-6 mb-4">
+        <div class="method-card p-4 h-100 text-center">
+          <h5 class="text-royal mb-3">
+            <i class="fas fa-layer-group me-2"></i>
+            Simple to Complex
+          </h5>
+          <p class="text-muted mb-0">
+            With immense planning, we teach Yoga & Pilates by translating complex information into easily accessible
+            concepts during the first class.
+            This is how we move into Yogasanas and Pilates exercises — from basic to advanced.
+          </p>
+        </div>
+      </div>
+
+      <!-- Individual Variations -->
+      <div class="col-lg-6 mb-4">
+        <div class="method-card p-4 h-100 text-center">
+          <h5 class="text-royal mb-3">
+            <i class="fas fa-adjust me-2"></i>
+            Individual Variations
+          </h5>
+          <p class="text-muted mb-0">
+            We offer variations that work best for individual bodies.
+            Each pose and movement is effectively broken down so one can understand its key components —
+            then masterfully brought together in a sequence to allow for a truly embodied experience.
+          </p>
+        </div>
       </div>
     </div>
-
-    <!-- Individual Variations -->
-    <div class="col-lg-6 mb-4">
-      <div class="method-card p-4 h-100 text-center">
-        <h5 class="text-royal mb-3">
-          <i class="fas fa-adjust me-2"></i>
-          Individual Variations
-        </h5>
-        <p class="text-muted mb-0">
-          We offer variations that work best for individual bodies. 
-          Each pose and movement is effectively broken down so one can understand its key components — 
-          then masterfully brought together in a sequence to allow for a truly embodied experience.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-   <!-- JOB OPPORTUNITIES -->
+  <!-- JOB OPPORTUNITIES -->
   <section class="py-5">
     <div class="container">
       <div class="row justify-content-center">
@@ -875,50 +1104,51 @@
   </section>
 
   <!-- YOUTH PROGRAMS & FESTIVALS -->
-<section class="py-5" style="background: var(--royal-50);">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="section-title text-left">
-          <h2 class="mb-3">Youth Programs & Festivals</h2>
-        </div>
-        <p class="lead mb-4">
-          We actively engage young minds through specialized programs and cultural celebrations.
-        </p>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="d-flex align-items-start">
-              <div class="icon-circle me-3">
-                <i class="fas fa-child text-white"></i>
+  <section class="py-5" style="background: var(--royal-50);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="section-title text-left">
+            <h2 class="mb-3">Youth Programs & Festivals</h2>
+          </div>
+          <p class="lead mb-4">
+            We actively engage young minds through specialized programs and cultural celebrations.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-start">
+                <div class="icon-circle me-3">
+                  <i class="fas fa-child text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Youth Festival</h6>
+                  <small class="text-muted">Encouraging young talent in yoga</small>
+                </div>
               </div>
-              <div>
-                <h6 class="mb-1">Youth Festival</h6>
-                <small class="text-muted">Encouraging young talent in yoga</small>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="d-flex align-items-start">
+                <div class="icon-circle me-3">
+                  <i class="fas fa-trophy text-white"></i>
+                </div>
+                <div>
+                  <h6 class="mb-1">Yogasana Competitions</h6>
+                  <small class="text-muted">District to international levels</small>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-3">
-            <div class="d-flex align-items-start">
-              <div class="icon-circle me-3">
-                <i class="fas fa-trophy text-white"></i>
-              </div>
-              <div>
-                <h6 class="mb-1">Yogasana Competitions</h6>
-                <small class="text-muted">District to international levels</small>
-              </div>
-            </div>
-          </div>
+          <p class="text-muted">
+            We conduct International Yoga Festivals, Youth Yoga Festival & Yogasana Competitions at District, State,
+            National & International levels.
+          </p>
         </div>
-        <p class="text-muted">
-          We conduct International Yoga Festivals, Youth Yoga Festival & Yogasana Competitions at District, State, National & International levels.
-        </p>
-      </div>
-      <div class="col-lg-6">
-        <img src="../img/yoga-festival.jpg" alt="Youth Programs" class="img-fluid rounded shadow">
+        <div class="col-lg-6">
+          <img src="../img/yoga-festival.jpg" alt="Youth Programs" class="img-fluid rounded shadow">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- COMPREHENSIVE PROGRAMS -->
   <section class="py-5" style="background: var(--bg);">
