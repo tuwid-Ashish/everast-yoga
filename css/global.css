@@ -137,7 +137,7 @@ a:hover {
   border-radius: 12px;
   border: 1px solid rgba(10, 44, 79, .08);
   box-shadow: var(--shadow);
-}
+} 
 
 /* Second-level submenu (Bootstrap 4 friendly) */
 .dropdown-submenu {
@@ -150,7 +150,7 @@ a:hover {
   margin-top: -.125rem;
   margin-left: .1rem;
   border-radius: .5rem;
-}
+} 
 
 .dropdown-submenu.open-left>.dropdown-menu {
   left: auto;
@@ -427,16 +427,10 @@ a:hover {
   }
 }
 
-/* Dropdown hover functionality for desktop */
-@media (min-width: 992px) {
-  .navbar-evy .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-
-  .navbar-evy .dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-  }
-}
+/* NOTE: Dropdowns should open on click for better UX. Removed the hover-to-open
+   behaviour so Bootstrap's click-driven dropdown (and our JS) controls visibility.
+   If a future design needs hover, reintroduce carefully and ensure keyboard
+   accessibility remains intact. */
 
 /* Ensure submenu appears on top */
 .dropdown-submenu .dropdown-menu {

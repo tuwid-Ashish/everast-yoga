@@ -90,3 +90,95 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   })();
 });
+
+(function () {
+  var $doc = $(document);
+
+  // Close all dropdowns
+  function closeAll() {
+    $('.navbar-evy .dropdown.show').removeClass('show')
+      .find('> .dropdown-menu').removeClass('show align-right');
+    $('.navbar-evy .dropdown-submenu .dropdown-menu.show').removeClass('show');
+  }
+
+  // Align top-level dropdown if overflowing viewport
+  function alignTopLevel($menu) {
+    $menu.removeClass('align-right');
+    var rect = $menu[0].getBoundingClientRect();
+    if (rect.right > (window.innerWidth - 8)) {
+      $menu.addClass('align-right');
+    }
+  }
+
+  // Flip submenu left if overflowing
+  function alignSubmenu($submenu) {
+    $submenu.removeClass('open-left');
+    var $subMenuPanel = $submenu.children('.dropdown-menu');
+    if (!$subMenuPanel.length) return;
+    // Temporarily show to measure
+    var wasHidden = $subMenuPanel.css('display') === 'none';
+    if (wasHidden) { $subMenuPanel.css({ visibility: 'hidden', display: 'block' }); }
+
+    var rect = $subMenuPanel[0].getBoundingClientRect();
+    if (rect.right > (window.innerWidth - 8)) {
+      $submenu.addClass('open-left');
+    }
+
+    if (wasHidden) { $subMenuPanel.css({ display: '', visibility: '' }); }
+  }
+
+  // Toggle top-level dropdown on click
+  $doc.on('click', '.navbar-evy .nav-item.dropdown > .nav-link.dropdown-toggle', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var $parent = $(this).closest('.dropdown');
+    var isOpen = $parent.hasClass('show');
+
+    closeAll();
+    if (!isOpen) {
+      $parent.addClass('show');
+      var $menu = $parent.children('.dropdown-menu').addClass('show');
+      alignTopLevel($menu);
+    }
+  });
+
+  // Toggle second-level submenu on click
+  $doc.on('click', '.navbar-evy .dropdown-submenu > .dropdown-toggle', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var $submenu = $(this).parent('.dropdown-submenu');
+    var $panel = $submenu.children('.dropdown-menu');
+    var isOpen = $panel.hasClass('show');
+
+    // Close sibling submenus
+    $submenu.siblings('.dropdown-submenu').removeClass('open-left')
+            .children('.dropdown-menu').removeClass('show');
+
+    if (isOpen) {
+      $panel.removeClass('show');
+      $submenu.removeClass('open-left');
+    } else {
+      $panel.addClass('show');
+      alignSubmenu($submenu);
+    }
+  });
+
+  // Click outside to close
+  $doc.on('click', function () { closeAll(); });
+
+  // ESC to close
+  $doc.on('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+
+  // Re-align on resize
+  $(window).on('resize', function () {
+    $('.navbar-evy .dropdown.show > .dropdown-menu').each(function () {
+      alignTopLevel($(this));
+    });
+    $('.navbar-evy .dropdown-submenu').each(function () {
+      alignSubmenu($(this));
+    });
+  });
+
+})();
