@@ -363,3 +363,95 @@ h1,h3,h2{
         transition: none
     }
 }
+
+/* ---------------------- Responsive tweaks ---------------------- */
+@media (max-width: 991.98px) {
+    /* Reduce hero padding on tablet and smaller */
+    .store-hero {
+        min-height: auto;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .store-hero .hero-wrap {
+        padding: 36px 0;
+    }
+
+    /* Toolbar sits inline rather than overlapping */
+    .toolbar {
+        margin-top: 0;
+    }
+
+    .toolbar .card {
+        padding: .6rem;
+    }
+
+    /* Slightly shorter product images so cards stay compact on narrow screens */
+    .product .media {
+        height: 160px;
+    }
+
+    /* Machine images less tall on tablet */
+    .machine-media img {
+        height: 220px;
+    }
+
+    /* Bundles stack vertically on narrow screens */
+    .bundle {
+        flex-direction: column;
+    }
+
+    .bundle .content {
+        padding: 12px;
+    }
+
+    /* Reduce spacing on section heads */
+    .section-pad {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Mobile-specific compacting */
+    .store-hero .lead {
+        padding: 0 1rem;
+        font-size: .95rem;
+    }
+
+    .store-hero h1 {
+        font-size: clamp(1.6rem, 6vw, 2.3rem);
+        margin-bottom: .5rem;
+    }
+
+    .product .media {
+        height: 140px;
+    }
+
+    .machine-media img {
+        height: 180px;
+    }
+
+    .chip {
+        padding: .45rem .75rem;
+        font-size: .9rem;
+    }
+
+    .product .content {
+        padding: 12px;
+    }
+
+    .cta-strip {
+        padding: 32px 0;
+    }
+
+    /* Make toolbar comfortable in small viewports */
+    .toolbar .card {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Ensure large shadows don't push the layout */
+    .product, .bundle, .card-why {
+        box-shadow: 0 8px 20px rgba(11,42,74,.08);
+    }
+}

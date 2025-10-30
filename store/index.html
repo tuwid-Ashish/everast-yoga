@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Our Teachers • Everest Yoga & Pilates Institute</title>
+  <title>Store • Everest Yoga & Pilates Institute</title>
 
   <!-- Bootstrap 4 (global) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <!-- ========== NAVBAR (reuse on every page) ========== -->
+  <!-- NAVBAR (copied from founder/index.html) -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
     <div class="container">
       <!-- Brand with logo -->
@@ -47,14 +47,16 @@
 
           <!-- About Us (dropdown) -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-              style="outline: none !important; border: none !important; box-shadow: none !important;"
-              onclick="window.location.href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
-              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
+                 The actual "About Us" overview page is provided as a menu item below. -->
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <!-- Extra explicit menu item linking to the standalone About page -->
+              <a class="dropdown-item" href="/about-us/">About Overview</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
               <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
               <a class="dropdown-item" href="/facilitators/">Facilitators</a>
@@ -72,9 +74,8 @@
               Yoga
             </a>
             <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-              <!-- Submenu parent -->
               <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="fusionDropdown" role="button" aria-haspopup="true"
+                <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">
                   Fusion Yoga Teacher Training
                 </a>
@@ -102,7 +103,6 @@
             <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
               <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
               <div class="dropdown-divider"></div>
-              <!-- Submenu parent -->
               <div class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
                   aria-haspopup="true" aria-expanded="false">
@@ -116,30 +116,14 @@
             </div>
           </li>
 
+
           <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
           <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Store • Everest Yoga & Pilates Institute</title>
 
-  <!-- Bootstrap 4 (match site) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- Page-specific styles -->
-  <link rel="stylesheet" href="css/store.css">
-</head>
-<body>
 
   <!-- ===================== HERO ===================== -->
   <header class="store-hero">
@@ -147,9 +131,12 @@
       <span class="eyebrow">Everest In-House Fitness Store</span>
       <h1>Yoga & Pilates Equipment, Built for Real Training</h1>
       <p class="lead mx-auto">
-        Our in-house Fitness Store offers a wide range of high-quality Yoga & Pilates props and equipment to support your practice.
-        From mats, blocks, straps, and bolsters to professional Pilates accessories and machines, we provide everything you need for comfort,
-        safety, and enhanced performance. Designed for both beginners and advanced practitioners, our products bring studio-quality training right to you.
+        Our in-house Fitness Store offers a wide range of high-quality Yoga & Pilates props and equipment to support
+        your practice.
+        From mats, blocks, straps, and bolsters to professional Pilates accessories and machines, we provide everything
+        you need for comfort,
+        safety, and enhanced performance. Designed for both beginners and advanced practitioners, our products bring
+        studio-quality training right to you.
       </p>
 
       <div class="mt-3">
@@ -187,7 +174,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1200&auto=format&fit=crop" alt="Premium Yoga Mat">
+              <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1200&auto=format&fit=crop"
+                alt="Premium Yoga Mat">
             </div>
             <div class="content">
               <h5>Premium Yoga Mat (6mm)</h5>
@@ -207,7 +195,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c2?q=80&w=1200&auto=format&fit=crop" alt="Cork Yoga Blocks">
+              <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c2?q=80&w=1200&auto=format&fit=crop"
+                alt="Cork Yoga Blocks">
             </div>
             <div class="content">
               <h5>Natural Cork Blocks (Set of 2)</h5>
@@ -227,7 +216,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1588286840106-388038c860f5?q=80&w=1200&auto=format&fit=crop" alt="Yoga Strap">
+              <img src="https://images.unsplash.com/photo-1588286840106-388038c860f5?q=80&w=1200&auto=format&fit=crop"
+                alt="Yoga Strap">
             </div>
             <div class="content">
               <h5>Cotton Alignment Strap (8ft)</h5>
@@ -247,7 +237,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1599050751795-5cda2b23f6b8?q=80&w=1200&auto=format&fit=crop" alt="Yoga Bolster">
+              <img src="https://images.unsplash.com/photo-1599050751795-5cda2b23f6b8?q=80&w=1200&auto=format&fit=crop"
+                alt="Yoga Bolster">
             </div>
             <div class="content">
               <h5>Restorative Bolster</h5>
@@ -267,7 +258,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1518614765251-0b6b0a6d8c59?q=80&w=1200&auto=format&fit=crop" alt="Yoga Wheel">
+              <img src="https://images.unsplash.com/photo-1518614765251-0b6b0a6d8c59?q=80&w=1200&auto=format&fit=crop"
+                alt="Yoga Wheel">
             </div>
             <div class="content">
               <h5>Backbend Wheel</h5>
@@ -287,7 +279,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1474073705359-5da2a8270c64?q=80&w=1200&auto=format&fit=crop" alt="Yoga Blanket">
+              <img src="https://images.unsplash.com/photo-1474073705359-5da2a8270c64?q=80&w=1200&auto=format&fit=crop"
+                alt="Yoga Blanket">
             </div>
             <div class="content">
               <h5>Cotton Yoga Blanket</h5>
@@ -320,7 +313,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1599050750308-2500a6b72b1b?q=80&w=1200&auto=format&fit=crop" alt="Pilates Ring">
+              <img src="https://images.unsplash.com/photo-1599050750308-2500a6b72b1b?q=80&w=1200&auto=format&fit=crop"
+                alt="Pilates Ring">
             </div>
             <div class="content">
               <h5>Magic Circle (Pilates Ring)</h5>
@@ -340,7 +334,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1599050749230-8b8e9bb1a23a?q=80&w=1200&auto=format&fit=crop" alt="Mini Pilates Ball">
+              <img src="https://images.unsplash.com/photo-1599050749230-8b8e9bb1a23a?q=80&w=1200&auto=format&fit=crop"
+                alt="Mini Pilates Ball">
             </div>
             <div class="content">
               <h5>Mini Stability Ball (20–25cm)</h5>
@@ -360,7 +355,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1597074866923-3ebd8b17376e?q=80&w=1200&auto=format&fit=crop" alt="Resistance Bands">
+              <img src="https://images.unsplash.com/photo-1597074866923-3ebd8b17376e?q=80&w=1200&auto=format&fit=crop"
+                alt="Resistance Bands">
             </div>
             <div class="content">
               <h5>Resistance Bands (Light/Med/Heavy)</h5>
@@ -380,7 +376,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1588286840105-a3aa0f1e3c7f?q=80&w=1200&auto=format&fit=crop" alt="Foam Roller">
+              <img src="https://images.unsplash.com/photo-1588286840105-a3aa0f1e3c7f?q=80&w=1200&auto=format&fit=crop"
+                alt="Foam Roller">
             </div>
             <div class="content">
               <h5>Long Foam Roller (90cm)</h5>
@@ -400,7 +397,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1512785471111-56c38ea68ef3?q=80&w=1200&auto=format&fit=crop" alt="Grip Socks">
+              <img src="https://images.unsplash.com/photo-1512785471111-56c38ea68ef3?q=80&w=1200&auto=format&fit=crop"
+                alt="Grip Socks">
             </div>
             <div class="content">
               <h5>Grip Socks</h5>
@@ -420,7 +418,8 @@
         <div class="col-md-6 col-lg-4 mb-4 reveal">
           <article class="product">
             <div class="media">
-              <img src="https://images.unsplash.com/photo-1599050750246-474c1b0f0c9a?q=80&w=1200&auto=format&fit=crop" alt="Head Cushion">
+              <img src="https://images.unsplash.com/photo-1599050750246-474c1b0f0c9a?q=80&w=1200&auto=format&fit=crop"
+                alt="Head Cushion">
             </div>
             <div class="content">
               <h5>Head/Neck Cushion</h5>
@@ -438,197 +437,197 @@
       </div>
     </div>
   </section>
-<!-- ===================== PILATES MACHINES ===================== -->
-<section id="pilates-machines" class="section-pad">
-  <div class="container">
-    <div class="section-head text-center reveal">
-      <h2>Pilates Machines</h2>
-      <p class="text-muted mb-0">Commercial-grade equipment curated for progressive, safe training.</p>
+  <!-- ===================== PILATES MACHINES ===================== -->
+  <section id="pilates-machines" class="section-pad">
+    <div class="container">
+      <div class="section-head text-center reveal">
+        <h2>Pilates Machines</h2>
+        <p class="text-muted mb-0">Commercial-grade equipment curated for progressive, safe training.</p>
+      </div>
+
+      <div class="row mt-4">
+        <!-- 1. Pilates Reformer -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/pilates-reformer.png" alt="Pilates Reformer">
+            </div>
+            <div class="content">
+              <h5>Pilates Reformer</h5>
+              <p class="text-muted">Smooth carriage and precise spring mapping for versatile studio & group work.</p>
+              <div class="meta">
+                <span class="tag">Low-noise rail</span>
+                <span class="tag">5 springs</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 2. Foldable Reformer -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/foldable-reformer.png" alt="Foldable Reformer">
+            </div>
+            <div class="content">
+              <h5>Foldable Reformer</h5>
+              <p class="text-muted">Space-saving design with quick fold & wheel system—home or boutique friendly.</p>
+              <div class="meta">
+                <span class="tag">Compact</span>
+                <span class="tag">Portable</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3. Reformer with Tower -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/pilates-reformer-tower.png" alt="Reformer with Tower">
+            </div>
+            <div class="content">
+              <h5>Reformer with Tower</h5>
+              <p class="text-muted">Add vertical spring work for mobilization, stability and full-body integration.</p>
+              <div class="meta">
+                <span class="tag">Roll-down bar</span>
+                <span class="tag">Push-through</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4. Cadillac / Trapeze Table -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/cadillac.png" alt="Cadillac / Trapeze Table">
+            </div>
+            <div class="content">
+              <h5>Cadillac / Trapeze Table</h5>
+              <p class="text-muted">Stable full frame with adjustable bars for rehab-friendly progressions.</p>
+              <div class="meta">
+                <span class="tag">Fuzzies</span>
+                <span class="tag">Adjustable PTB</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 5. Caformer (3-in-1 Cadillac + Reformer + Tower) -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/caformer.png" alt="Caformer 3-in-1">
+            </div>
+            <div class="content">
+              <h5>Pilates Caformer (3-in-1)</h5>
+              <p class="text-muted">Cadillac + Reformer + Tower in one robust footprint—maximum versatility.</p>
+              <div class="meta">
+                <span class="tag">All-in-one</span>
+                <span class="tag">Studio-grade</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 6. Spine Corrector / Arc Barrel -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/spine-corrector.png" alt="Spine Corrector">
+            </div>
+            <div class="content">
+              <h5>Spine Corrector / Arc Barrel</h5>
+              <p class="text-muted">Guide thoracic extension, open hips, and refine shoulder mechanics.</p>
+              <div class="meta">
+                <span class="tag">High-density foam</span>
+                <span class="tag">Carry handles</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 7. Wunda Chair -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/wunda-chair.png" alt="Wunda Chair">
+            </div>
+            <div class="content">
+              <h5>Wunda Chair</h5>
+              <p class="text-muted">Compact powerhouse for lower-limb loading and shoulder stability.</p>
+              <div class="meta">
+                <span class="tag">Dual-spring pedal</span>
+                <span class="tag">Multi hooks</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 8. Ladder Barrel -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/ladder-barrel.png" alt="Ladder Barrel">
+            </div>
+            <div class="content">
+              <h5>Ladder Barrel</h5>
+              <p class="text-muted">Spinal articulation and hamstring length with adjustable barrel distance.</p>
+              <div class="meta">
+                <span class="tag">Non-slip rungs</span>
+                <span class="tag">Precision arc</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 9. Figure Board (Reformer Accessory) -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/figure-board.png" alt="Figure Board">
+            </div>
+            <div class="content">
+              <h5>Figure Board</h5>
+              <p class="text-muted">Multi-angle board for targeted footwork and hip-knee-ankle alignment.</p>
+              <div class="meta">
+                <span class="tag">Secure mount</span>
+                <span class="tag">Textured surface</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 10. Squat Board (Reformer Accessory) -->
+        <div class="col-sm-12 col-md-6 mb-4 reveal">
+          <article class="product h-100">
+            <div class="media">
+              <img src="/img/store/squat-board.png" alt="Squat Board">
+            </div>
+            <div class="content">
+              <h5>Squat Board</h5>
+              <p class="text-muted">Wide foot platform for loaded squats, lunges and posterior-chain focus.</p>
+              <div class="meta">
+                <span class="tag">Wide stance</span>
+                <span class="tag">Non-marking</span>
+              </div>
+              <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
-
-    <div class="row mt-4">
-      <!-- 1. Pilates Reformer -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/pilates-reformer.png" alt="Pilates Reformer">
-          </div>
-          <div class="content">
-            <h5>Pilates Reformer</h5>
-            <p class="text-muted">Smooth carriage and precise spring mapping for versatile studio & group work.</p>
-            <div class="meta">
-              <span class="tag">Low-noise rail</span>
-              <span class="tag">5 springs</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 2. Foldable Reformer -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/foldable-reformer.png" alt="Foldable Reformer">
-          </div>
-          <div class="content">
-            <h5>Foldable Reformer</h5>
-            <p class="text-muted">Space-saving design with quick fold & wheel system—home or boutique friendly.</p>
-            <div class="meta">
-              <span class="tag">Compact</span>
-              <span class="tag">Portable</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 3. Reformer with Tower -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/pilates-reformer-tower.png" alt="Reformer with Tower">
-          </div>
-          <div class="content">
-            <h5>Reformer with Tower</h5>
-            <p class="text-muted">Add vertical spring work for mobilization, stability and full-body integration.</p>
-            <div class="meta">
-              <span class="tag">Roll-down bar</span>
-              <span class="tag">Push-through</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 4. Cadillac / Trapeze Table -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/cadillac.png" alt="Cadillac / Trapeze Table">
-          </div>
-          <div class="content">
-            <h5>Cadillac / Trapeze Table</h5>
-            <p class="text-muted">Stable full frame with adjustable bars for rehab-friendly progressions.</p>
-            <div class="meta">
-              <span class="tag">Fuzzies</span>
-              <span class="tag">Adjustable PTB</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 5. Caformer (3-in-1 Cadillac + Reformer + Tower) -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/caformer.png" alt="Caformer 3-in-1">
-          </div>
-          <div class="content">
-            <h5>Pilates Caformer (3-in-1)</h5>
-            <p class="text-muted">Cadillac + Reformer + Tower in one robust footprint—maximum versatility.</p>
-            <div class="meta">
-              <span class="tag">All-in-one</span>
-              <span class="tag">Studio-grade</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 6. Spine Corrector / Arc Barrel -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/spine-corrector.png" alt="Spine Corrector">
-          </div>
-          <div class="content">
-            <h5>Spine Corrector / Arc Barrel</h5>
-            <p class="text-muted">Guide thoracic extension, open hips, and refine shoulder mechanics.</p>
-            <div class="meta">
-              <span class="tag">High-density foam</span>
-              <span class="tag">Carry handles</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 7. Wunda Chair -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/wunda-chair.png" alt="Wunda Chair">
-          </div>
-          <div class="content">
-            <h5>Wunda Chair</h5>
-            <p class="text-muted">Compact powerhouse for lower-limb loading and shoulder stability.</p>
-            <div class="meta">
-              <span class="tag">Dual-spring pedal</span>
-              <span class="tag">Multi hooks</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 8. Ladder Barrel -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/ladder-barrel.png" alt="Ladder Barrel">
-          </div>
-          <div class="content">
-            <h5>Ladder Barrel</h5>
-            <p class="text-muted">Spinal articulation and hamstring length with adjustable barrel distance.</p>
-            <div class="meta">
-              <span class="tag">Non-slip rungs</span>
-              <span class="tag">Precision arc</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 9. Figure Board (Reformer Accessory) -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/figure-board.png" alt="Figure Board">
-          </div>
-          <div class="content">
-            <h5>Figure Board</h5>
-            <p class="text-muted">Multi-angle board for targeted footwork and hip-knee-ankle alignment.</p>
-            <div class="meta">
-              <span class="tag">Secure mount</span>
-              <span class="tag">Textured surface</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- 10. Squat Board (Reformer Accessory) -->
-      <div class="col-sm-12 col-md-6 mb-4 reveal">
-        <article class="product h-100">
-          <div class="media">
-            <img src="/img/store/squat-board.png" alt="Squat Board">
-          </div>
-          <div class="content">
-            <h5>Squat Board</h5>
-            <p class="text-muted">Wide foot platform for loaded squats, lunges and posterior-chain focus.</p>
-            <div class="meta">
-              <span class="tag">Wide stance</span>
-              <span class="tag">Non-marking</span>
-            </div>
-            <a href="#cta" class="btn btn-sm btn-pill mt-2">Enquire</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- ===================== STUDIO PACKAGES ===================== -->
   <section id="studio-packages" class="section-pad alt">
@@ -685,64 +684,19 @@
     </div>
   </section>
 
-  <!-- ===================== WHY EVEREST ===================== -->
-  <!-- <section id="why-everest" class="section-pad">
-    <div class="container">
-      <div class="section-head text-center reveal">
-        <span class="badge-soft">Trusted by Practitioners</span>
-        <h2>Why Buy from Everest</h2>
-        <p class="text-muted mb-0">Training-led curation, honest guidance, and after-sales support.</p>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-md-6 col-lg-3 mb-3 reveal">
-          <div class="why card-why">
-            <i class="fa-solid fa-clipboard-check"></i>
-            <h6>Instructor-Approved</h6>
-            <p class="text-muted">Products vetted by our Yoga & Pilates faculty for safety and function.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-3 reveal">
-          <div class="why card-why">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h6>Setup & Guidance</h6>
-            <p class="text-muted">Help with layout, spring settings, and basic maintenance.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-3 reveal">
-          <div class="why card-why">
-            <i class="fa-solid fa-shield-heart"></i>
-            <h6>Warranty Support</h6>
-            <p class="text-muted">Transparent warranty and responsive replacement assistance.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-3 reveal">
-          <div class="why card-why">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h6>Pan-India Delivery</h6>
-            <p class="text-muted">Secure packaging and logistics partners for safe arrival.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- ===================== CTA ===================== -->
   <section id="cta" class="cta-strip">
     <div class="container text-center">
       <h3>Ready to set up your practice space?</h3>
       <p class="mb-3 text-white-75">Talk to our team for sizing, pricing, and delivery timelines.</p>
       <a href="/contact-us.html" class="btn btn-dark btn-pill mr-2">Contact Us</a>
-      <a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="btn btn-outline-light btn-pill">WhatsApp</a>
+      <a href="https://wa.me/919999999999" target="_blank" rel="noopener"
+        class="btn btn-outline-light btn-pill">WhatsApp</a>
     </div>
   </section>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/store-effects.js"></script>
-</body>
-</html>
+  <!-- NOTE: removed an incorrect/missing script reference and premature closing tags so the
+       footer and global scripts appear only once (see bottom of file). -->
 
   <!-- FOOTER (global styles) -->
   <footer class="footer-evy">
@@ -821,6 +775,8 @@
   <!-- Page-specific JS -->
   <script src="index.js"></script>
   <script src="../js/effect.js"></script>
+  <script src="../js/home.js"></script>
+
 </body>
 
 </html>

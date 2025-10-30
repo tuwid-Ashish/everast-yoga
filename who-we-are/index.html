@@ -53,7 +53,7 @@
       color: var(--saffron)
     }
 
-    /* ========== NAVBAR (glassy, sticky) ========== */
+    /* ========== NAVBAR (glassy, sticky) ==========
     .navbar-evy {
       position: sticky;
       top: 0;
@@ -105,7 +105,7 @@
       border-radius: 12px;
       border: 1px solid rgba(10, 44, 79, .08);
       box-shadow: var(--shadow);
-    }
+    } */
 
     /* .btn-pill {
       border-radius: 999px;
@@ -663,7 +663,7 @@
 
 <body>
 
-  <!-- ========== NAVBAR (reuse on every page) ========== -->
+ <!-- NAVBAR (copied from founder/index.html) -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
     <div class="container">
       <!-- Brand with logo -->
@@ -685,14 +685,16 @@
 
           <!-- About Us (dropdown) -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-              style="outline: none !important; border: none !important; box-shadow: none !important;"
-              onclick="window.location.href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
-              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
+            <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
+                 The actual "About Us" overview page is provided as a menu item below. -->
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <!-- Extra explicit menu item linking to the standalone About page -->
+              <a class="dropdown-item" href="/about-us/">About Overview</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
               <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
               <a class="dropdown-item" href="/facilitators/">Facilitators</a>
@@ -710,9 +712,8 @@
               Yoga
             </a>
             <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-              <!-- Submenu parent -->
               <div class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#" id="fusionDropdown" role="button" aria-haspopup="true"
+                <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">
                   Fusion Yoga Teacher Training
                 </a>
@@ -740,7 +741,6 @@
             <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
               <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
               <div class="dropdown-divider"></div>
-              <!-- Submenu parent -->
               <div class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
                   aria-haspopup="true" aria-expanded="false">
@@ -753,6 +753,7 @@
               </div>
             </div>
           </li>
+
 
           <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
           <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
@@ -1322,6 +1323,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Page Effects (no extra lib) -->
+   <script src="../js/home.js"></script>
   <script src="../js/effect.js"></script>
   <script>
     // Add subtle shadow to navbar on scroll

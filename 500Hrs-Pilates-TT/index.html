@@ -24,37 +24,39 @@ Institute</title>
 
 <body>
 
-  <!-- ========== NAVBAR (reuse on every page) ========== -->
+
+<!-- NAVBAR (copied from founder/index.html) -->
 <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
-  <div class="container">
+<div class="container">
     <!-- Brand with logo -->
-     <a class="navbar-brand d-flex" href="/">
-      <img src="/img/Everest-Yoga-logo.png"
-        alt="Everest Yoga Logo" class="navbar-logo">
-      <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
+    <a class="navbar-brand d-flex" href="/">
+    <img src="/img/Everest-Yoga-logo.png" alt="Everest Yoga Logo" class="navbar-logo">
+    <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
     </a>
 
     <!-- Hamburger button for mobile -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" 
-            aria-controls="evyNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" aria-controls="evyNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="evyNav">
-      <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto">
         <!-- Home -->
         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        
+
         <!-- About Us (dropdown) -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/about-us/" id="aboutDropdown" role="button"
-              style="outline: none !important; border: none !important; box-shadow: none !important;"
-              onclick="window.location.href='/about-us/'; return false;" onmouseover="$(this).dropdown('show')"
-              onmouseout="setTimeout(() => { if (!$('.dropdown-menu').is(':hover')) $(this).dropdown('hide'); }, 100)"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Us
-          </a>
-          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+        <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
+                The actual "About Us" overview page is provided as a menu item below. -->
+        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <!-- Extra explicit menu item linking to the standalone About page -->
+            <a class="dropdown-item" href="/about-us/">About Overview</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
             <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
             <a class="dropdown-item" href="/facilitators/">Facilitators</a>
@@ -62,65 +64,64 @@ Institute</title>
             <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
             <a class="dropdown-item" href="/our-studios/">Our Studio</a>
             <a class="dropdown-item" href="/testimonials/">Testimonial</a>
-          </div>
+        </div>
         </li>
 
         <!-- Yoga (with submenu) -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Yoga
-          </a>
-          <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-            <!-- Submenu parent -->
+        </a>
+        <div class="dropdown-menu" aria-labelledby="yogaDropdown">
             <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="fusionDropdown" role="button"
-                aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
                 Fusion Yoga Teacher Training
-              </a>
-              <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="fusionDropdown">
                 <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
                 <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
                 <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
                 <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
-              </div>
+            </div>
             </div>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
             <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
             <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
             <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
-          </div>
+        </div>
         </li>
 
         <!-- Pilates (with submenu) -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Pilates
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
             <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
             <div class="dropdown-divider"></div>
-            <!-- Submenu parent -->
             <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
+            <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
                 aria-haspopup="true" aria-expanded="false">
                 Pilates Teacher Training
-              </a>
-              <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
                 <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
                 <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
-              </div>
             </div>
-          </div>
+            </div>
+        </div>
         </li>
-        
+
+
         <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
         <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
-      </ul>
+    </ul>
     </div>
-  </div>
+</div>
 </nav>
 
 
@@ -663,15 +664,10 @@ Institute</title>
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/effect.js"></script>
+  <script src="/js/home.js"></script>
   <script>
-  // Navbar shadow (keep)
-  (function () {
-    const n = document.querySelector('.navbar-evy');
-    function s() { if (!n) return; window.scrollY > 6 ? n.classList.add('nav-shadow') : n.classList.remove('nav-shadow'); }
-    s(); window.addEventListener('scroll', s, { passive: true });
-  })();
-
-  // Reveal on view + progress bars
+    // Reveal on view + progress bars
   (function () {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
@@ -699,24 +695,8 @@ Institute</title>
     window.addEventListener('load', bootProgress, { once: true });
   })();
 
-  // Smooth scroll for anchors (optional)
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
 </script>
 
-  <script>
-    // navbar shadow
-    (function () { const n = document.querySelector('.navbar-evy'); function s() { if (!n) return; window.scrollY > 6 ? n.classList.add('nav-shadow') : n.classList.remove('nav-shadow') } s(); window.addEventListener('scroll', s, { passive: true }); })();
-    // reveal on view
-    const ob = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ob.unobserve(e.target); } }) }, { threshold: .1 });
-    document.querySelectorAll('.reveal').forEach(el => ob.observe(el));
-  </script>
 </body>
 
 </html>
