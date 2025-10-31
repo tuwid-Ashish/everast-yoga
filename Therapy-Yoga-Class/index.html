@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Therapy-Based Yoga Classes • 
-Institute</title>
+  <title>Therapy-Based Yoga Classes •
+    Institute</title>
 
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -15,7 +15,7 @@ Institute</title>
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
-    <!-- Icons -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="/css/global.css">
 
@@ -80,6 +80,255 @@ Institute</title>
       transform: none;
       transition: opacity .6s ease, transform .6s ease
     }
+    
+    /* Mobile-First Responsive Design */
+    
+    /* Hero Section Responsive */
+    @media (max-width: 992px) {
+      .hero {
+        min-height: 60vh;
+        padding: 40px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 50vh;
+        padding: 30px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero {
+        min-height: 45vh;
+        padding: 20px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 1.8rem;
+      }
+    }
+    
+    /* About Section Responsive */
+    @media (max-width: 992px) {
+      .about-image-container {
+        margin-bottom: 30px;
+      }
+      
+      .about-section {
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .about-section h2 {
+        font-size: 1.8rem;
+      }
+      
+      .about-image-container img {
+        height: 250px !important;
+      }
+    }
+    
+    /* Stats Section Responsive */
+    @media (max-width: 992px) {
+      .stats-card {
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .stats-card {
+        margin-bottom: 15px;
+      }
+      
+      .stat-number {
+        font-size: 1.8rem;
+      }
+      
+      .stat-label {
+        font-size: 0.8rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .stats-card {
+        margin-bottom: 15px;
+        padding: 1.5rem;
+        min-height: 140px;
+      }
+      
+      .stat-number {
+        font-size: 1.6rem;
+      }
+      
+      .stat-label {
+        font-size: 0.75rem;
+      }
+    }
+    
+    /* Conditions Grid Responsive */
+    @media (max-width: 992px) {
+      .conditions-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .conditions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+      }
+      
+      .condition-card {
+        padding: 1.5rem;
+      }
+      
+      .condition-card img {
+        height: 60px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .condition-card {
+        padding: 1.2rem;
+      }
+      
+      .condition-card h6 {
+        font-size: 1rem;
+      }
+    }
+    
+    /* Objectives and Outcomes Responsive */
+    @media (max-width: 992px) {
+      .objective-card, .outcome-card {
+        margin-bottom: 20px;
+      }
+      
+      .objective-card img, .outcome-card img {
+        height: 100px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .objective-card img, .outcome-card img {
+        height: 80px !important;
+      }
+      
+      .objective-card h5, .outcome-card h5 {
+        font-size: 1.1rem;
+      }
+    }
+    
+    /* Approach Grid Responsive */
+    @media (max-width: 992px) {
+      .approach-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .approach-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+      }
+      
+      .approach-card {
+        padding: 1.5rem;
+      }
+      
+      .approach-card img {
+        height: 80px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .approach-card {
+        padding: 1.2rem;
+      }
+      
+      .approach-card h6 {
+        font-size: 1rem;
+      }
+    }
+    
+    /* Benefits Grid Responsive */
+    @media (max-width: 992px) {
+      .benefit-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .benefit-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+      }
+      
+      .benefit-item {
+        padding: 0.8rem;
+      }
+      
+      .benefit-emoji {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* General Section Spacing */
+    @media (max-width: 768px) {
+      .section {
+        padding: 40px 0;
+      }
+      
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section {
+        padding: 30px 0;
+      }
+      
+      .section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    
+    /* Button Responsive */
+    @media (max-width: 576px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
   <!-- END: THEME OVERRIDES -->
 
@@ -109,7 +358,7 @@ Institute</title>
       color: var(--saffron)
     }
 
- 
+
     /* ========== FOOTER ========== */
     .footer-evy {
       background: var(--bg);
@@ -381,7 +630,8 @@ Institute</title>
     }
 
     /* Objectives & Outcomes Cards */
-    .objective-card, .outcome-card {
+    .objective-card,
+    .outcome-card {
       background: var(--card);
       border-radius: var(--radius);
       border: 1px solid rgba(10, 44, 79, .08);
@@ -422,23 +672,27 @@ Institute</title>
       transition: transform .3s ease;
     }
 
-    .objective-card:hover, .outcome-card:hover {
+    .objective-card:hover,
+    .outcome-card:hover {
       transform: translateY(-6px) scale(1.01);
       box-shadow: 0 20px 40px rgba(10, 44, 79, .15);
     }
 
-    .objective-card:hover::before, .outcome-card:hover::before {
+    .objective-card:hover::before,
+    .outcome-card:hover::before {
       transform: scaleX(1);
     }
 
-    .objective-header, .outcome-header {
+    .objective-header,
+    .outcome-header {
       display: flex;
       align-items: flex-start;
       margin-bottom: 1.5rem;
       flex-shrink: 0;
     }
 
-    .objective-icon, .outcome-icon {
+    .objective-icon,
+    .outcome-icon {
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -453,7 +707,8 @@ Institute</title>
       position: relative;
     }
 
-    .objective-icon::after, .outcome-icon::after {
+    .objective-icon::after,
+    .outcome-icon::after {
       content: "";
       position: absolute;
       inset: -4px;
@@ -464,12 +719,13 @@ Institute</title>
       transition: transform .3s ease;
     }
 
-    .objective-card:hover .objective-icon::after, 
+    .objective-card:hover .objective-icon::after,
     .outcome-card:hover .outcome-icon::after {
       transform: scale(1);
     }
 
-    .objective-title, .outcome-title {
+    .objective-title,
+    .outcome-title {
       font-family: "Playfair Display", serif;
       font-weight: 700;
       color: var(--ink);
@@ -478,26 +734,30 @@ Institute</title>
       flex: 1;
     }
 
-    .objective-content, .outcome-content {
+    .objective-content,
+    .outcome-content {
       color: var(--muted);
       line-height: 1.6;
       flex: 1;
     }
 
-    .objective-list, .outcome-list {
+    .objective-list,
+    .outcome-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    .objective-list li, .outcome-list li {
+    .objective-list li,
+    .outcome-list li {
       display: flex;
       align-items: flex-start;
       margin-bottom: 1rem;
       padding-left: 0;
     }
 
-    .objective-list li::before, .outcome-list li::before {
+    .objective-list li::before,
+    .outcome-list li::before {
       content: "🌿";
       margin-right: 0.75rem;
       margin-top: 0.1rem;
@@ -668,8 +928,15 @@ Institute</title>
 
     /* Floating elements animation */
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     .floating {
@@ -778,8 +1045,8 @@ Institute</title>
 </head>
 
 <body>
-  
-<!-- NAVBAR (copied from founder/index.html) -->
+
+  <!-- NAVBAR (copied from founder/index.html) -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
     <div class="container">
       <!-- Brand with logo -->
@@ -803,8 +1070,8 @@ Institute</title>
           <li class="nav-item dropdown">
             <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
                  The actual "About Us" overview page is provided as a menu item below. -->
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -884,7 +1151,9 @@ Institute</title>
     <div class="container wrap text-center">
       <span class="eyebrow">Healing • Recovery • Holistic Health</span>
       <h1 class="text-white">Therapy-Based Yoga Classes</h1>
-      <p class="lead mx-auto">Experience the gentle power of our therapy-based yoga classes designed specially to support pain relief, recovery, and holistic health. Personalized practices under expert guidance for your wellness journey.</p>
+      <p class="lead mx-auto">Experience the gentle power of our therapy-based yoga classes designed specially to
+        support pain relief, recovery, and holistic health. Personalized practices under expert guidance for your
+        wellness journey.</p>
       <div class="mt-4">
         <a href="#schedule" class="btn btn-pill btn-lg mr-3">View Schedule</a>
         <a href="#conditions" class="btn btn-outline-light">Health Conditions</a>
@@ -930,43 +1199,67 @@ Institute</title>
   <!-- ABOUT SECTION -->
   <section class="py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 reveal">
+      <div class="row align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="about-image-container mb-4 mb-lg-0">
+            <img
+              src="https://images.pexels.com/photos/3822621/pexels-photo-3822621.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Therapeutic yoga session with gentle guidance and healing poses" class="img-fluid rounded shadow-lg"
+              style="border-radius: var(--radius); object-fit: cover; height: 400px; width: 100%;">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
           <div class="about-section">
-            <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Gentle Healing Through Yoga</h2>
-            <p class="lead text-muted mb-4">Our therapy-based yoga program combines ancient wisdom with modern understanding to address specific health concerns. Each session is carefully designed to support healing, reduce pain, and improve overall quality of life through safe, therapeutic yoga practices.</p>
-            
+            <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Gentle Healing Through
+              Yoga</h2>
+            <p class="lead text-muted mb-4">Our therapy-based yoga program combines ancient wisdom with modern
+              understanding to address specific health concerns. Each session is carefully designed to support healing,
+              reduce pain, and improve overall quality of life through safe, therapeutic yoga practices.</p>
+
             <div class="therapy-fact">
               <h6>🌿 Evidence-Based Approach</h6>
-              <p>Research shows that therapeutic yoga can significantly reduce chronic pain, improve mental health, and enhance quality of life for individuals with various health conditions including arthritis, back pain, diabetes, and stress-related disorders.</p>
+              <p>Research shows that therapeutic yoga can significantly reduce chronic pain, improve mental health, and
+                enhance quality of life for individuals with various health conditions including arthritis, back pain,
+                diabetes, and stress-related disorders.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="row text-center mt-4">
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">60</span>
-                  <span class="stat-label">Minutes of Healing</span>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">6</span>
-                  <span class="stat-label">Days a Week</span>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">1:1</span>
-                  <span class="stat-label">Personalized Care</span>
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">Safe</span>
-                  <span class="stat-label">Gentle Practice</span>
-                </div>
-              </div>
-            </div>
+  <!-- STATS SECTION -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Impact</h2>
+        <p class="text-muted">Therapeutic yoga by the numbers</p>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">60</span>
+            <span class="stat-label">Minutes of Healing</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Days a Week</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">1:1</span>
+            <span class="stat-label">Personalized Care</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">Safe</span>
+            <span class="stat-label">Gentle Practice</span>
           </div>
         </div>
       </div>
@@ -979,51 +1272,95 @@ Institute</title>
       <div class="text-center mb-5 reveal">
         <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Conditions We Address</h2>
         <p class="text-muted">Specialized yoga therapy for various health concerns</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="conditions-grid">
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/3822623/pexels-photo-3822623.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Gentle back pain relief yoga therapy" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-spine"></i>
           </div>
           <h6>Back Pain & Spine Issues</h6>
-          <p class="small text-muted">Gentle stretches and strengthening poses to alleviate chronic back pain, improve posture, and support spinal health.</p>
+          <p class="small text-muted">Gentle stretches and strengthening poses to alleviate chronic back pain, improve
+            posture, and support spinal health.</p>
         </div>
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Women's health and PCOD yoga therapy" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-female"></i>
           </div>
           <h6>PCOD/PCOS</h6>
-          <p class="small text-muted">Hormonal balance through specific asanas, breathing techniques, and stress reduction practices for women's reproductive health.</p>
+          <p class="small text-muted">Hormonal balance through specific asanas, breathing techniques, and stress
+            reduction practices for women's reproductive health.</p>
         </div>
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/3822672/pexels-photo-3822672.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Diabetes management through therapeutic yoga" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-tint"></i>
           </div>
           <h6>Diabetes Management</h6>
-          <p class="small text-muted">Therapeutic poses and meditation to help regulate blood sugar levels and improve insulin sensitivity naturally.</p>
+          <p class="small text-muted">Therapeutic poses and meditation to help regulate blood sugar levels and improve
+            insulin sensitivity naturally.</p>
         </div>
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Hypertension relief through relaxation yoga" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-heart"></i>
           </div>
           <h6>Hypertension</h6>
-          <p class="small text-muted">Relaxation techniques, gentle movements, and breathing exercises to naturally reduce blood pressure and stress.</p>
+          <p class="small text-muted">Relaxation techniques, gentle movements, and breathing exercises to naturally
+            reduce blood pressure and stress.</p>
         </div>
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/3822668/pexels-photo-3822668.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Stress and anxiety relief through mindful yoga" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-brain"></i>
           </div>
           <h6>Stress & Anxiety</h6>
-          <p class="small text-muted">Mindfulness practices, meditation, and calming poses to manage stress, anxiety, and improve mental well-being.</p>
+          <p class="small text-muted">Mindfulness practices, meditation, and calming poses to manage stress, anxiety,
+            and improve mental well-being.</p>
         </div>
         <div class="condition-card reveal">
+          <div class="mb-3">
+            <img
+              src="https://images.pexels.com/photos/3822621/pexels-photo-3822621.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="Arthritis and joint pain relief yoga therapy" class="img-fluid rounded"
+              style="height: 80px; width: 100%; object-fit: cover;">
+          </div>
           <div class="condition-icon">
             <i class="fas fa-bone"></i>
           </div>
           <h6>Arthritis & Joint Pain</h6>
-          <p class="small text-muted">Gentle joint mobility exercises and therapeutic movements to reduce stiffness and improve flexibility safely.</p>
+          <p class="small text-muted">Gentle joint mobility exercises and therapeutic movements to reduce stiffness and
+            improve flexibility safely.</p>
         </div>
       </div>
     </div>
@@ -1033,15 +1370,24 @@ Institute</title>
   <section id="objectives" class="py-5">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Therapeutic Approach</h2>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Therapeutic Approach
+        </h2>
         <p class="text-muted">Personalized healing through evidence-based yoga therapy</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="row">
         <!-- Objectives -->
         <div class="col-lg-6 mb-4 reveal">
           <div class="objective-card">
+            <div class="mb-3">
+              <img
+                src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Therapeutic yoga objectives and personalized healing practice" class="img-fluid rounded"
+                style="height: 120px; width: 100%; object-fit: cover;">
+            </div>
             <div class="objective-header">
               <div class="objective-icon">
                 <i class="fas fa-target"></i>
@@ -1063,6 +1409,12 @@ Institute</title>
         <!-- Outcomes -->
         <div class="col-lg-6 mb-4 reveal">
           <div class="outcome-card">
+            <div class="mb-3">
+              <img
+                src="https://images.pexels.com/photos/3822668/pexels-photo-3822668.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Healing outcomes and improved well-being through therapeutic yoga" class="img-fluid rounded"
+                style="height: 120px; width: 100%; object-fit: cover;">
+            </div>
             <div class="outcome-header">
               <div class="outcome-icon">
                 <i class="fas fa-heart"></i>
@@ -1088,28 +1440,57 @@ Institute</title>
   <section class="py-5" style="background: var(--bg);">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Treatment Methodologies</h2>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Our Treatment
+          Methodologies</h2>
         <p class="text-muted">Comprehensive therapeutic approaches for holistic healing</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="approach-grid">
         <div class="approach-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822584/pexels-photo-3822584.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Therapeutic yoga poses for healing" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="approach-badge">Asana Therapy</div>
           <h6>Therapeutic Poses</h6>
-          <p class="small text-muted">Carefully selected yoga poses modified for individual conditions and limitations.</p>
+          <p class="small text-muted">Carefully selected yoga poses modified for individual conditions and limitations.
+          </p>
         </div>
         <div class="approach-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Breathing techniques for therapeutic healing" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="approach-badge">Pranayama</div>
           <h6>Breathing Techniques</h6>
-          <p class="small text-muted">Specific breathing practices to regulate nervous system and improve circulation.</p>
+          <p class="small text-muted">Specific breathing practices to regulate nervous system and improve circulation.
+          </p>
         </div>
         <div class="approach-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Mindfulness meditation for therapeutic healing" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="approach-badge">Meditation</div>
           <h6>Mindfulness Practice</h6>
           <p class="small text-muted">Guided meditation techniques for stress reduction and mental clarity.</p>
         </div>
         <div class="approach-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822621/pexels-photo-3822621.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Restorative yoga for gentle recovery" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="approach-badge">Restorative</div>
           <h6>Gentle Recovery</h6>
           <p class="small text-muted">Restorative poses using props for deep relaxation and healing.</p>
@@ -1136,7 +1517,9 @@ Institute</title>
       <div class="text-center mb-5 reveal">
         <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Therapeutic Benefits</h2>
         <p class="text-muted">How therapy-based yoga supports your healing journey</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="benefit-grid">
@@ -1186,7 +1569,8 @@ Institute</title>
 
       <div class="timing-notice reveal">
         <i class="fas fa-info-circle"></i>
-        <strong>Note:</strong> Timings are subject to change in winters & summers to ensure optimal comfort for therapeutic practice.
+        <strong>Note:</strong> Timings are subject to change in winters & summers to ensure optimal comfort for
+        therapeutic practice.
       </div>
     </div>
   </section>
@@ -1198,12 +1582,14 @@ Institute</title>
         <div class="col-lg-8 reveal">
           <div class="cta-section">
             <h2>Begin Your Healing Journey Today</h2>
-            <p class="mb-4">Take the first step towards natural healing and improved well-being. Our expert instructors will create a personalized therapeutic yoga program tailored to your specific health needs and goals.</p>
+            <p class="mb-4">Take the first step towards natural healing and improved well-being. Our expert instructors
+              will create a personalized therapeutic yoga program tailored to your specific health needs and goals.</p>
             <div class="d-flex flex-wrap justify-content-center">
-              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style=" color: var(--royal);">Book Consultation</a>
-              <a href="#" class="btn btn-outline-light btn-lg mb-2">Learn More</a>
+              <!-- <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style=" color: var(--royal);"></a> -->
+              <a href="#" class="btn btn-outline-light btn-lg mb-2">Book Consultation</a>
             </div>
-            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Free initial consultation • Personalized treatment plan • Expert supervision</small></p>
+            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Free initial consultation • Personalized
+                treatment plan • Expert supervision</small></p>
           </div>
         </div>
       </div>
@@ -1241,10 +1627,10 @@ Institute</title>
           <ul class="list-unstyled">
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us/">Contact</a></li>
-            <li><a href="/yoga.html">Yoga</a></li>
-            <li><a href="/who-we-are.html">Who We Are</a></li>
-            <li><a href="/centre-heads.html">Centre Heads</a></li>
-            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
@@ -1265,11 +1651,12 @@ Institute</title>
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
-          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+         <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391" >+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
 
-           
+
         </div>
       </div>
 
@@ -1280,7 +1667,7 @@ Institute</title>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+  <a class="whatsapp-fab" href="https://wa.me/919501934391" target="_blank" rel="noopener"
     aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
   </a>
@@ -1290,6 +1677,49 @@ Institute</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/effect.js"></script>
   <script src="../js/home.js"></script>
+
+  <!-- Submenu functionality -->
+  <script>
+    $(document).ready(function() {
+      // Handle navbar dropdown behavior
+      $('.dropdown-toggle').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const $dropdownMenu = $(this).next('.dropdown-menu');
+        const $currentDropdown = $(this).parent();
+        
+        // Close other dropdowns
+        $('.dropdown-menu').not($dropdownMenu).removeClass('show');
+        $('.dropdown').not($currentDropdown).removeClass('show');
+        
+        // Toggle current dropdown
+        $dropdownMenu.toggleClass('show');
+        $currentDropdown.toggleClass('show');
+        
+        // Position submenu to prevent viewport overflow
+        const rect = $dropdownMenu[0].getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        
+        if (rect.right > viewportWidth) {
+          $dropdownMenu.addClass('dropdown-menu-right');
+        }
+      });
+      
+      // Close dropdowns when clicking outside
+      $(document).on('click', function(e) {
+        if (!$(e.target).closest('.dropdown').length) {
+          $('.dropdown-menu').removeClass('show');
+          $('.dropdown').removeClass('show');
+        }
+      });
+      
+      // Prevent dropdown from closing when clicking inside it
+      $('.dropdown-menu').on('click', function(e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
 </body>
 
 </html>

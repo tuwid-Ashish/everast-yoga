@@ -41,8 +41,8 @@
           <li class="nav-item dropdown">
             <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
                  The actual "About Us" overview page is provided as a menu item below. -->
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -284,11 +284,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7">
-            <h2>Pilates Teacher Training</h2>
+            <h2>Yoga Teacher Training</h2>
             <p>Become a certified instructor with our hands-on teacher training courses.</p>
             <p>
-              <a href="/200Hrs-Pilates-TT/" class="btn btn-pill mr-2">200 Hrs</a>
-              <a href="/500Hrs-Pilates-TT/" class="btn btn-pill btn-secondary">500 Hrs</a>
+              <a href="/200Hrs-Foundational-YTTC/" class="btn btn-pill mr-2">200 Hrs</a>
+              <a href="/500Hrs-Foundational-YTTC/" class="btn btn-pill btn-secondary">500 Hrs</a>
             </p>
           </div>
           <div class="col-lg-5 d-none d-lg-block">
@@ -584,7 +584,7 @@
       <div class="container text-center">
         <h2 id="cta-final-heading">Start Your Journey Today</h2>
         <p class="mb-4">Talk to admissions or apply now to secure your spot.</p>
-        <a href="https://wa.me/919999999999" class="btn btn-pill mr-2" aria-label="Talk to admissions on WhatsApp"
+        <a href="https://wa.me/919501934391" class="btn btn-pill mr-2" aria-label="Talk to admissions on WhatsApp"
           target="_blank" rel="noopener">Talk to Admissions (WhatsApp)</a>
         <a href="/contact-us/" class="btn btn-outline-light" aria-label="Contact us or apply now">Apply Now</a>
       </div>
@@ -624,10 +624,10 @@
           <ul class="list-unstyled">
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us/">Contact</a></li>
-            <li><a href="/yoga.html">Yoga</a></li>
-            <li><a href="/who-we-are.html">Who We Are</a></li>
-            <li><a href="/centre-heads.html">Centre Heads</a></li>
-            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
@@ -647,9 +647,10 @@
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
-          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391">+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
 
 
         </div>
@@ -667,11 +668,11 @@
   <script src="/js/effect.js"></script>
   <script src="/js/home.js"></script>
   <script>
-    (function($){
+    (function ($) {
       // Ensure this runs after Bootstrap and jQuery are loaded
-      $(function(){
+      $(function () {
         // Prevent parent toggle anchors with href="#" from navigating
-        $('.navbar-evy .dropdown-toggle').on('click', function(e){
+        $('.navbar-evy .dropdown-toggle').on('click', function (e) {
           var href = $(this).attr('href');
           if (href === '#' || href === '') {
             // allow bootstrap to toggle the menu — don't navigate
@@ -680,7 +681,7 @@
         });
 
         // Handle nested submenu toggle on click (Bootstrap 4 doesn't natively handle nested)
-        $('.dropdown-submenu > .dropdown-toggle').on('click', function(e){
+        $('.dropdown-submenu > .dropdown-toggle').on('click', function (e) {
           e.preventDefault();
           e.stopPropagation();
           var $toggle = $(this);
@@ -688,8 +689,8 @@
           var $submenu = $parent.find('> .dropdown-menu');
 
           // Close sibling submenus
-          $parent.siblings('.dropdown-submenu').each(function(){
-            $(this).removeClass('show').find('> .dropdown-menu').removeClass('show').css({left:'', right:''});
+          $parent.siblings('.dropdown-submenu').each(function () {
+            $(this).removeClass('show').find('> .dropdown-menu').removeClass('show').css({ left: '', right: '' });
           });
 
           // Toggle this submenu
@@ -701,15 +702,15 @@
           var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
           if (rect.right > vw - 8) {
             // flip to left
-            $submenu.css({left: 'auto', right: '100%'});
+            $submenu.css({ left: 'auto', right: '100%' });
           } else {
-            $submenu.css({left: '100%', right: 'auto'});
+            $submenu.css({ left: '100%', right: 'auto' });
           }
         });
 
         // When a top-level dropdown is closed, ensure nested submenus are reset
-        $('.navbar-evy .dropdown').on('hide.bs.dropdown', function(){
-          $(this).find('.dropdown-menu.show').removeClass('show').css({left:'', right:''});
+        $('.navbar-evy .dropdown').on('hide.bs.dropdown', function () {
+          $(this).find('.dropdown-menu.show').removeClass('show').css({ left: '', right: '' });
           $(this).find('.dropdown-submenu').removeClass('show');
         });
 

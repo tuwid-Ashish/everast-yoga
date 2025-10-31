@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Group Yoga Classes for Adults • 
-Institute</title>
+  <title>Group Yoga Classes for Adults •
+    Institute</title>
 
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -47,6 +47,216 @@ Institute</title>
 
     .navbar-evy .brand-mark {
       background: var(--royal) !important
+    }
+    
+    /* Mobile-First Responsive Design */
+    
+    /* Hero Section Responsive */
+    @media (max-width: 992px) {
+      .hero {
+        min-height: 60vh;
+        padding: 40px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 50vh;
+        padding: 30px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero {
+        min-height: 45vh;
+        padding: 20px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 1.8rem;
+      }
+    }
+    
+    /* About Section Responsive */
+    @media (max-width: 992px) {
+      .about-image-container {
+        margin-bottom: 30px;
+      }
+      
+      .about-text-content {
+        text-align: center;
+      }
+      
+      .feature-item {
+        justify-content: center;
+        text-align: left;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .about-text-content h2 {
+        font-size: 1.8rem;
+      }
+      
+      .about-image-container img {
+        height: 250px !important;
+      }
+      
+      .feature-item {
+        margin-bottom: 1.2rem !important;
+        align-items: flex-start;
+      }
+      
+      .feature-icon {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 12px !important;
+        margin-top: 2px;
+      }
+      
+      .feature-icon i {
+        font-size: 1rem !important;
+      }
+    }
+    
+    /* Stats Section Responsive */
+    @media (max-width: 992px) {
+      .stats-card {
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .stats-card {
+        padding: 1.5rem;
+        min-height: 140px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .stats-card {
+        padding: 1.2rem;
+        min-height: 120px;
+      }
+      
+      .stat-number {
+        font-size: 1.6rem;
+      }
+      
+      .stat-label {
+        font-size: 0.85rem;
+      }
+    }
+    
+    /* Objectives and Outcomes Responsive */
+    @media (max-width: 992px) {
+      .objective-card, .outcome-card {
+        margin-bottom: 20px;
+      }
+      
+      .objective-card img, .outcome-card img {
+        height: 120px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .objective-card img, .outcome-card img {
+        height: 100px !important;
+      }
+      
+      .objective-card h5, .outcome-card h5 {
+        font-size: 1.1rem;
+      }
+    }
+    
+    /* Schedule Section Responsive */
+    @media (max-width: 992px) {
+      .schedule-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .schedule-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+      }
+      
+      .schedule-card {
+        padding: 20px;
+      }
+      
+      .schedule-card img {
+        height: 80px !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .schedule-card {
+        padding: 15px;
+      }
+      
+      .schedule-card h4 {
+        font-size: 1.2rem;
+      }
+      
+      .schedule-card h6 {
+        font-size: 1rem;
+      }
+    }
+    
+    /* General Section Spacing */
+    @media (max-width: 768px) {
+      .section {
+        padding: 40px 0;
+      }
+      
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section {
+        padding: 30px 0;
+      }
+      
+      .section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    
+    /* Button Responsive */
+    @media (max-width: 576px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
     }
 
     a {
@@ -140,7 +350,7 @@ Institute</title>
       content: "";
       position: absolute;
       inset: -10% -10% 0 -10%;
-      background: url('https://images.unsplash.com/photo-1506629905607-45dc2936e83c?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      background: url('https://images.pexels.com/photos/1472887/pexels-photo-1472887.jpeg?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
       filter: contrast(1.05) saturate(1.05);
     }
 
@@ -313,8 +523,34 @@ Institute</title>
       border-radius: 50%;
     }
 
+    /* Feature Items */
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(42, 157, 143, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-right: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .feature-icon:hover {
+      background: rgba(42, 157, 143, 0.2);
+      transform: scale(1.05);
+    }
+
     /* Objectives & Outcomes Cards */
-    .objective-card, .outcome-card {
+    .objective-card,
+    .outcome-card {
       background: var(--card);
       border-radius: var(--radius);
       border: 1px solid rgba(10, 44, 79, .08);
@@ -355,23 +591,27 @@ Institute</title>
       transition: transform .3s ease;
     }
 
-    .objective-card:hover, .outcome-card:hover {
+    .objective-card:hover,
+    .outcome-card:hover {
       transform: translateY(-6px) scale(1.01);
       box-shadow: 0 20px 40px rgba(10, 44, 79, .15);
     }
 
-    .objective-card:hover::before, .outcome-card:hover::before {
+    .objective-card:hover::before,
+    .outcome-card:hover::before {
       transform: scaleX(1);
     }
 
-    .objective-header, .outcome-header {
+    .objective-header,
+    .outcome-header {
       display: flex;
       align-items: flex-start;
       margin-bottom: 1.5rem;
       flex-shrink: 0;
     }
 
-    .objective-icon, .outcome-icon {
+    .objective-icon,
+    .outcome-icon {
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -386,7 +626,8 @@ Institute</title>
       position: relative;
     }
 
-    .objective-icon::after, .outcome-icon::after {
+    .objective-icon::after,
+    .outcome-icon::after {
       content: "";
       position: absolute;
       inset: -4px;
@@ -397,12 +638,13 @@ Institute</title>
       transition: transform .3s ease;
     }
 
-    .objective-card:hover .objective-icon::after, 
+    .objective-card:hover .objective-icon::after,
     .outcome-card:hover .outcome-icon::after {
       transform: scale(1);
     }
 
-    .objective-title, .outcome-title {
+    .objective-title,
+    .outcome-title {
       font-family: "Playfair Display", serif;
       font-weight: 700;
       color: var(--ink);
@@ -411,26 +653,30 @@ Institute</title>
       flex: 1;
     }
 
-    .objective-content, .outcome-content {
+    .objective-content,
+    .outcome-content {
       color: var(--muted);
       line-height: 1.6;
       flex: 1;
     }
 
-    .objective-list, .outcome-list {
+    .objective-list,
+    .outcome-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    .objective-list li, .outcome-list li {
+    .objective-list li,
+    .outcome-list li {
       display: flex;
       align-items: flex-start;
       margin-bottom: 1rem;
       padding-left: 0;
     }
 
-    .objective-list li::before, .outcome-list li::before {
+    .objective-list li::before,
+    .outcome-list li::before {
       content: "✓";
       color: var(--leaf);
       font-weight: bold;
@@ -551,8 +797,15 @@ Institute</title>
 
     /* Floating elements animation */
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     .floating {
@@ -580,7 +833,7 @@ Institute</title>
 
 <body>
 
-<!-- NAVBAR (copied from founder/index.html) -->
+  <!-- NAVBAR (copied from founder/index.html) -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
     <div class="container">
       <!-- Brand with logo -->
@@ -604,8 +857,8 @@ Institute</title>
           <li class="nav-item dropdown">
             <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
                  The actual "About Us" overview page is provided as a menu item below. -->
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -685,8 +938,9 @@ Institute</title>
     <div class="container wrap text-center">
       <span class="eyebrow">Collective Practice • All Levels Welcome</span>
       <h1 class="text-white">Group Yoga Classes for Adults</h1>
-      <p class="lead mx-auto">Elevate your fitness through focused, collective practice. At 
-& Pilates Institute, we believe yoga is not just exercise but a way of life. Our yoga classes are thoughtfully designed to suit different age groups, health needs, and personal goals.</p>
+      <p class="lead mx-auto">Elevate your fitness through focused, collective practice. At
+        & Pilates Institute, we believe yoga is not just exercise but a way of life. Our yoga classes are thoughtfully
+        designed to suit different age groups, health needs, and personal goals.</p>
       <div class="mt-4">
         <a href="#schedule" class="btn btn-pill btn-lg mr-3">View Schedule</a>
         <a href="#objectives" class="btn btn-outline-light">Learn More</a>
@@ -732,39 +986,85 @@ Institute</title>
   <!-- ABOUT SECTION -->
   <section class="py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 reveal">
-          <div class="about-section">
-            <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">A Way of Life, Not Just Exercise</h2>
-            <p class="lead text-muted mb-4">At 
-& Pilates Institute, we believe yoga is not just exercise but a way of life. Our yoga classes are thoughtfully designed to suit different age groups, health needs, and personal goals. Experience the transformative power of yoga in a supportive group environment where every practitioner is welcomed and encouraged.</p>
-            
-            <div class="row text-center mt-5">
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">60</span>
-                  <span class="stat-label">Minutes per Class</span>
+      <div class="row align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="about-image-container mb-4 mb-lg-0">
+            <img src="https://images.pexels.com/photos/8436685/pexels-photo-8436685.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                 alt="Group of people practicing yoga together in a studio" 
+                 class="img-fluid rounded shadow-lg"
+                 style="border-radius: var(--radius); object-fit: cover; height: 400px; width: 100%;">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="about-text-content">
+            <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">A Way of Life, Not
+              Just Exercise</h2>
+            <p class="lead text-muted mb-4">At Everest Yoga & Pilates Institute, we believe yoga is not just exercise but a way of life. Our yoga classes are
+              thoughtfully designed to suit different age groups, health needs, and personal goals. Experience the
+              transformative power of yoga in a supportive group environment where every practitioner is welcomed and
+              encouraged.</p>
+            <div class="about-features mt-4">
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon mr-3">
+                  <i class="fas fa-users" style="color: var(--leaf); font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                  <strong>Group Environment:</strong> Supportive community practice with experienced instructors
                 </div>
               </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">6</span>
-                  <span class="stat-label">Days a Week</span>
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon mr-3">
+                  <i class="fas fa-heart" style="color: var(--leaf); font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                  <strong>Holistic Approach:</strong> Mind, body, and spirit wellness through yoga principles
                 </div>
               </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">14</span>
-                  <span class="stat-label">Hours Available</span>
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon mr-3">
+                  <i class="fas fa-clock" style="color: var(--leaf); font-size: 1.2rem;"></i>
                 </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">All</span>
-                  <span class="stat-label">Levels Welcome</span>
+                <div>
+                  <strong>Flexible Timing:</strong> Multiple sessions throughout the day to fit your schedule
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <h3 style="font-family:'Playfair Display',serif; font-weight:600; color: var(--ink);">Class Details at a Glance</h3>
+        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4 reveal">
+          <div class="stats-card">
+            <span class="stat-number">60</span>
+            <span class="stat-label">Minutes per Class</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 reveal">
+          <div class="stats-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Days a Week</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 reveal">
+          <div class="stats-card">
+            <span class="stat-number">14</span>
+            <span class="stat-label">Hours Available</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 reveal">
+          <div class="stats-card">
+            <span class="stat-number">All</span>
+            <span class="stat-label">Levels Welcome</span>
           </div>
         </div>
       </div>
@@ -775,15 +1075,24 @@ Institute</title>
   <section id="objectives" class="py-5" style="background: var(--bg);">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Class Objectives & Expected Outcomes</h2>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Class Objectives &
+          Expected Outcomes</h2>
         <p class="text-muted">Comprehensive wellness through structured group practice</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="row">
         <!-- Objectives -->
         <div class="col-lg-6 mb-4 reveal">
           <div class="objective-card">
+            <div class="mb-3">
+              <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="People focusing on yoga practice goals" 
+                   class="img-fluid rounded"
+                   style="height: 120px; width: 100%; object-fit: cover;">
+            </div>
             <div class="objective-header">
               <div class="objective-icon">
                 <i class="fas fa-target"></i>
@@ -805,6 +1114,12 @@ Institute</title>
         <!-- Outcomes -->
         <div class="col-lg-6 mb-4 reveal">
           <div class="outcome-card">
+            <div class="mb-3">
+              <img src="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Person achieving yoga wellness and balance" 
+                   class="img-fluid rounded"
+                   style="height: 120px; width: 100%; object-fit: cover;">
+            </div>
             <div class="outcome-header">
               <div class="outcome-icon">
                 <i class="fas fa-trophy"></i>
@@ -830,41 +1145,66 @@ Institute</title>
   <section id="schedule" class="py-5">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Class Schedule & Timing</h2>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Class Schedule & Timing
+        </h2>
         <p class="text-muted">Flexible timing options to fit your lifestyle</p>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--leaf), var(--saffron)); margin: 1rem auto;">
+        </div>
       </div>
 
       <div class="schedule-grid">
         <div class="schedule-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Morning yoga practice with sunrise" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="schedule-icon">
             <i class="fas fa-sun"></i>
           </div>
           <h6>Morning Sessions</h6>
           <h4 style="color: var(--leaf); font-weight: 700;">6:00 AM - 10:00 AM</h4>
-          <p class="small text-muted">Start your day with energizing practice. Perfect for building consistency and setting a positive tone.</p>
+          <p class="small text-muted">Start your day with energizing practice. Perfect for building consistency and
+            setting a positive tone.</p>
         </div>
         <div class="schedule-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/3822621/pexels-photo-3822621.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                 alt="Afternoon yoga session in natural light" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="schedule-icon">
             <i class="fas fa-cloud-sun"></i>
           </div>
           <h6>Afternoon Sessions</h6>
           <h4 style="color: var(--leaf); font-weight: 700;">12:00 PM - 4:00 PM</h4>
-          <p class="small text-muted">Midday rejuvenation sessions. Great for stress relief and energy restoration during busy days.</p>
+          <p class="small text-muted">Midday rejuvenation sessions. Great for stress relief and energy restoration
+            during busy days.</p>
         </div>
         <div class="schedule-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/13870012/pexels-photo-13870012.jpeg" 
+                 alt="Evening yoga practice for relaxation" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="schedule-icon">
             <i class="fas fa-moon"></i>
           </div>
           <h6>Evening Sessions</h6>
           <h4 style="color: var(--leaf); font-weight: 700;">5:00 PM - 8:00 PM</h4>
-          <p class="small text-muted">Wind down and release the day's tension. Perfect for relaxation and better sleep preparation.</p>
+          <p class="small text-muted">Wind down and release the day's tension. Perfect for relaxation and better sleep
+            preparation.</p>
         </div>
       </div>
 
       <div class="timing-notice reveal">
         <i class="fas fa-info-circle"></i>
-        <strong>Note:</strong> Timings are subject to change in winters & summers for optimal comfort and practice conditions.
+        <strong>Note:</strong> Timings are subject to change in winters & summers for optimal comfort and practice
+        conditions.
       </div>
     </div>
   </section>
@@ -876,12 +1216,15 @@ Institute</title>
         <div class="col-lg-8 reveal">
           <div class="cta-section">
             <h2>Ready to Begin Your Yoga Journey?</h2>
-            <p class="mb-4">Join our welcoming community of practitioners and discover how yoga can transform your life. Whether you're a complete beginner or experienced yogi, our group classes offer the perfect environment for growth and wellness.</p>
+            <p class="mb-4">Join our welcoming community of practitioners and discover how yoga can transform your life.
+              Whether you're a complete beginner or experienced yogi, our group classes offer the perfect environment
+              for growth and wellness.</p>
             <div class="d-flex flex-wrap justify-content-center">
               <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style="color: var(--royal);">Join Today</a>
               <a href="#" class="btn btn-outline-light btn-lg mb-2">View Class Types</a>
             </div>
-            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Flexible membership options • Trial classes available • All levels welcome</small></p>
+            <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Flexible membership options • Trial
+                classes available • All levels welcome</small></p>
           </div>
         </div>
       </div>
@@ -919,10 +1262,10 @@ Institute</title>
           <ul class="list-unstyled">
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us/">Contact</a></li>
-            <li><a href="/yoga.html">Yoga</a></li>
-            <li><a href="/who-we-are.html">Who We Are</a></li>
-            <li><a href="/centre-heads.html">Centre Heads</a></li>
-            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
@@ -942,11 +1285,12 @@ Institute</title>
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
-          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+         <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391" >+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
 
-           
+
         </div>
       </div>
 
@@ -957,7 +1301,7 @@ Institute</title>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+  <a class="whatsapp-fab" href="https://wa.me/919501934391" target="_blank" rel="noopener"
     aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
   </a>
@@ -965,8 +1309,51 @@ Institute</title>
   <!-- ========== GLOBAL SCRIPTS (keep once site-wide) ========== -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/js/effect.js"></script>
-<script src="/js/home.js"></script>
+  <script src="/js/effect.js"></script>
+  <script src="/js/home.js"></script>
+
+  <!-- Submenu functionality -->
+  <script>
+    $(document).ready(function() {
+      // Handle navbar dropdown behavior
+      $('.dropdown-toggle').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const $dropdownMenu = $(this).next('.dropdown-menu');
+        const $currentDropdown = $(this).parent();
+        
+        // Close other dropdowns
+        $('.dropdown-menu').not($dropdownMenu).removeClass('show');
+        $('.dropdown').not($currentDropdown).removeClass('show');
+        
+        // Toggle current dropdown
+        $dropdownMenu.toggleClass('show');
+        $currentDropdown.toggleClass('show');
+        
+        // Position submenu to prevent viewport overflow
+        const rect = $dropdownMenu[0].getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        
+        if (rect.right > viewportWidth) {
+          $dropdownMenu.addClass('dropdown-menu-right');
+        }
+      });
+      
+      // Close dropdowns when clicking outside
+      $(document).on('click', function(e) {
+        if (!$(e.target).closest('.dropdown').length) {
+          $('.dropdown-menu').removeClass('show');
+          $('.dropdown').removeClass('show');
+        }
+      });
+      
+      // Prevent dropdown from closing when clicking inside it
+      $('.dropdown-menu').on('click', function(e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
 </body>
 
 </html>

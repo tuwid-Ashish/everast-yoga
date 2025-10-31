@@ -748,6 +748,199 @@ Institute</title>
       color: var(--muted);
       font-size: 0.9rem;
     }
+
+    /* =============== RESPONSIVE DESIGN =============== */
+    
+    /* Tablet styles */
+    @media (max-width: 991.98px) {
+      .hero {
+        min-height: 50vh;
+        padding: 2rem 0;
+      }
+      
+      .hero h1 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+      }
+      
+      .schedule-overview {
+        margin-top: -30px;
+      }
+      
+      .overview-card {
+        min-height: 200px;
+        padding: 1.5rem;
+      }
+      
+      .activities-grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .benefit-grid {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      
+      .age-groups {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 767.98px) {
+      .hero {
+        min-height: 40vh;
+        padding: 1.5rem 0;
+      }
+      
+      .hero h1 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin-bottom: 0.5rem;
+      }
+      
+      .hero .lead {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+      }
+      
+      .schedule-overview {
+        margin-top: 0;
+      }
+      
+      .overview-card {
+        min-height: 160px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .overview-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+      }
+      
+      .activities-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .activity-card {
+        padding: 1.5rem;
+      }
+      
+      .activity-card img {
+        height: 80px;
+      }
+      
+      .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+      
+      .benefit-item {
+        padding: 0.75rem;
+      }
+      
+      .benefit-emoji {
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+      }
+      
+      .age-groups {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .age-group-card {
+        padding: 1rem;
+      }
+      
+      .age-group-card img {
+        height: 100px;
+      }
+      
+      .objective-card, .outcome-card {
+        padding: 1.5rem;
+        min-height: auto;
+      }
+      
+      .objective-icon, .outcome-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+      
+      .about-section {
+        padding: 2rem 1rem;
+      }
+      
+      .cta-section {
+        padding: 2rem 1rem;
+      }
+      
+      .stats-card {
+        min-height: 120px;
+        padding: 1rem;
+      }
+      
+      .stat-number {
+        font-size: 1.5rem;
+      }
+      
+      .fun-fact {
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    }
+    
+    /* Extra small mobile */
+    @media (max-width: 575.98px) {
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      .btn-pill {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .eyebrow {
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+      
+      .overview-card {
+        min-height: 140px;
+        padding: 0.75rem;
+      }
+      
+      .overview-title {
+        font-size: 1rem;
+      }
+      
+      .overview-value {
+        font-size: 0.85rem;
+      }
+      
+      .activity-card {
+        padding: 1rem;
+      }
+      
+      .activity-card h6 {
+        font-size: 1rem;
+      }
+      
+      .age-badge {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.8rem;
+      }
+      
+      section {
+        padding: 2rem 0 !important;
+      }
+    }
   </style>
   <link rel="stylesheet" href="/css/global.css">
 </head>
@@ -859,7 +1052,7 @@ Institute</title>
     <div class="container wrap text-center">
       <span class="eyebrow">Ages 4-12 • Fun Movement & Mindfulness</span>
       <h1 class="text-white">Kids Yoga Classes</h1>
-      <p class="lead mx-auto">A happy blend of movement, mindfulness, and fun for young yogis aged 4–12. Where children discover the joy of yoga through playful poses, breathing games, and mindful activities that nurture both body and mind.</p>
+      <p class="lead mx-auto">A happy blend of movement, mindfulness, and fun for young yogis aged 4-12. Where children discover the joy of yoga through playful poses, breathing games, and mindful activities that nurture both body and mind.</p>
       <div class="mt-4">
         <a href="#schedule" class="btn btn-pill btn-lg mr-3">View Schedule</a>
         <a href="#activities" class="btn btn-outline-light">Fun Activities</a>
@@ -905,8 +1098,16 @@ Institute</title>
   <!-- ABOUT SECTION -->
   <section class="py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 reveal">
+      <div class="row align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="about-image-container">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop" 
+                 alt="Children practicing yoga in a colorful studio" 
+                 class="img-fluid rounded shadow-lg"
+                 style="border-radius: var(--radius); object-fit: cover; height: 400px; width: 100%;">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
           <div class="about-section">
             <h2 style="font-family:'Playfair Display',serif; font-weight:700; color: var(--ink);">Where Fun Meets Mindfulness</h2>
             <p class="lead text-muted mb-4">Our Kids Yoga program is specially designed to introduce children to the wonderful world of yoga through age-appropriate activities, games, and stories. We focus on developing concentration, coordination, and confidence while having lots of fun!</p>
@@ -915,31 +1116,33 @@ Institute</title>
               <h6>🌟 Did You Know?</h6>
               <p>Children who practice yoga show improved focus in studies, better emotional regulation, and enhanced physical coordination. Plus, they learn valuable life skills like patience and self-awareness!</p>
             </div>
-
-            <div class="row text-center mt-4">
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">60</span>
-                  <span class="stat-label">Minutes of Fun</span>
-                </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-12 reveal">
+          <div class="row text-center">
+            <div class="col-6 mb-3">
+              <div class="stats-card reveal">
+                <span class="stat-number">60</span>
+                <span class="stat-label">Minutes of Fun</span>
               </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">6</span>
-                  <span class="stat-label">Days a Week</span>
-                </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="stats-card reveal">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Days a Week</span>
               </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">8</span>
-                  <span class="stat-label">Years Age Range</span>
-                </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="stats-card reveal">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Years Age Range</span>
               </div>
-              <div class="col-md-3 mb-3">
-                <div class="stats-card reveal">
-                  <span class="stat-number">100%</span>
-                  <span class="stat-label">Fun Guaranteed</span>
-                </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="stats-card reveal">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Fun Guaranteed</span>
               </div>
             </div>
           </div>
@@ -959,6 +1162,12 @@ Institute</title>
 
       <div class="age-groups">
         <div class="age-group-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/7353051/pexels-photo-7353051.jpeg" 
+                 alt="Little yogis aged 4-6 doing simple poses" 
+                 class="img-fluid rounded"
+                 style="height: 120px; width: 100%; object-fit: cover;">
+          </div>
           <div class="age-badge">4-6 Years</div>
           <h6>Little Yogis</h6>
           <p class="small text-muted">Simple poses, animal movements, breathing games, and short mindfulness activities. Focus on fun and basic body awareness.</p>
@@ -967,6 +1176,12 @@ Institute</title>
           </div>
         </div>
         <div class="age-group-card reveal">
+          <div class="mb-3">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=400&auto=format&fit=crop" 
+                 alt="Young warriors aged 7-9 practicing yoga" 
+                 class="img-fluid rounded"
+                 style="height: 120px; width: 100%; object-fit: cover;">
+          </div>
           <div class="age-badge">7-9 Years</div>
           <h6>Young Warriors</h6>
           <p class="small text-muted">Introduction to traditional poses, partner poses, concentration games, and basic meditation techniques.</p>
@@ -975,6 +1190,12 @@ Institute</title>
           </div>
         </div>
         <div class="age-group-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/5063290/pexels-photo-5063290.jpeg" 
+                 alt="Mindful movers aged 10-12 in meditation" 
+                 class="img-fluid rounded"
+                 style="height: 120px; width: 100%; object-fit: cover;">
+          </div>
           <div class="age-badge">10-12 Years</div>
           <h6>Mindful Movers</h6>
           <p class="small text-muted">More complex sequences, emotional awareness, stress management techniques, and preparation for yoga as a sport.</p>
@@ -1055,6 +1276,12 @@ Institute</title>
 
       <div class="activities-grid">
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=300&auto=format&fit=crop" 
+                 alt="Children doing animal yoga poses" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-paw"></i>
           </div>
@@ -1062,6 +1289,12 @@ Institute</title>
           <p class="small text-muted">Learn yoga through fun animal movements like cat, dog, cobra, and butterfly poses. Kids love pretending to be their favorite animals!</p>
         </div>
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?q=80&w=300&auto=format&fit=crop" 
+                 alt="Children practicing breathing exercises" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-wind"></i>
           </div>
@@ -1069,6 +1302,12 @@ Institute</title>
           <p class="small text-muted">Fun breathing exercises like balloon breathing, flower smelling, and bunny breath to help children learn self-regulation.</p>
         </div>
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=300&auto=format&fit=crop" 
+                 alt="Children listening to yoga stories" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-book-open"></i>
           </div>
@@ -1076,6 +1315,12 @@ Institute</title>
           <p class="small text-muted">Interactive storytelling where children act out poses and movements as we journey through magical yoga adventures.</p>
         </div>
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=300&auto=format&fit=crop" 
+                 alt="Children doing partner yoga poses" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-users"></i>
           </div>
@@ -1083,6 +1328,12 @@ Institute</title>
           <p class="small text-muted">Team-building activities and partner poses that teach cooperation, trust, and communication skills.</p>
         </div>
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/8422207/pexels-photo-8422207.jpeg" 
+                 alt="Children doing creative yoga expressions" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-palette"></i>
           </div>
@@ -1090,6 +1341,12 @@ Institute</title>
           <p class="small text-muted">Art activities, yoga drawing, and creative movement to express feelings and emotions in healthy ways.</p>
         </div>
         <div class="activity-card reveal">
+          <div class="mb-3">
+            <img src="https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg" 
+                 alt="Children participating in yoga competitions" 
+                 class="img-fluid rounded"
+                 style="height: 100px; width: 100%; object-fit: cover;">
+          </div>
           <div class="activity-icon">
             <i class="fas fa-trophy"></i>
           </div>
@@ -1170,8 +1427,8 @@ Institute</title>
             <h2>Ready to Start Your Child's Yoga Journey?</h2>
             <p class="mb-4">Give your child the gift of mindfulness, movement, and fun! Our experienced instructors create a safe, nurturing environment where every child can explore, learn, and grow through the wonderful practice of yoga.</p>
             <div class="d-flex flex-wrap justify-content-center">
-              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style="color: var(--royal);">Book Trial Class</a>
-              <a href="#" class="btn btn-outline-light btn-lg mb-2">Contact Us</a>
+              <!-- <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style="color: var(--royal);"></a> -->
+              <a href="#" class="btn btn-outline-light btn-lg mb-2">Book Trial Class</a>
             </div>
             <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Free trial class available • Small batch sizes • Expert child instructors</small></p>
           </div>
@@ -1211,10 +1468,10 @@ Institute</title>
           <ul class="list-unstyled">
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us/">Contact</a></li>
-            <li><a href="/yoga.html">Yoga</a></li>
-            <li><a href="/who-we-are.html">Who We Are</a></li>
-            <li><a href="/centre-heads.html">Centre Heads</a></li>
-            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
@@ -1234,9 +1491,10 @@ Institute</title>
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
-          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+         <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391" >+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
 
            
         </div>
@@ -1249,7 +1507,7 @@ Institute</title>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+  <a class="whatsapp-fab" href="https://wa.me/919501934391" target="_blank" rel="noopener"
     aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
   </a>
@@ -1299,6 +1557,51 @@ Institute</title>
     document.querySelectorAll('.reveal').forEach(el => {
       revealObserver.observe(el);
     });
+
+    // Dropdown submenu handling (jQuery-based)
+    (function($){
+      $(function(){
+        // Prevent parent toggle anchors with href="#" from navigating
+        $('.navbar-evy .dropdown-toggle').on('click', function(e){
+          var href = $(this).attr('href');
+          if (href === '#' || href === '') {
+            e.preventDefault();
+          }
+        });
+
+        // Nested submenu toggle for Bootstrap 4
+        $('.dropdown-submenu > .dropdown-toggle').on('click', function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          var $toggle = $(this);
+          var $parent = $toggle.parent();
+          var $submenu = $parent.find('> .dropdown-menu');
+
+          // Close sibling submenus
+          $parent.siblings('.dropdown-submenu').each(function(){
+            $(this).removeClass('show').find('> .dropdown-menu').removeClass('show').css({left:'', right:''});
+          });
+
+          $submenu.toggleClass('show');
+          $parent.toggleClass('show');
+
+          // Flip if overflowing the viewport
+          var rect = $submenu[0].getBoundingClientRect();
+          var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+          if (rect.right > vw - 8) {
+            $submenu.css({left: 'auto', right: '100%'});
+          } else {
+            $submenu.css({left: '100%', right: 'auto'});
+          }
+        });
+
+        // Reset nested submenus when top-level dropdown closes
+        $('.navbar-evy .dropdown').on('hide.bs.dropdown', function(){
+          $(this).find('.dropdown-menu.show').removeClass('show').css({left:'', right:''});
+          $(this).find('.dropdown-submenu').removeClass('show');
+        });
+      });
+    })(jQuery);
   </script>
 </body>
 

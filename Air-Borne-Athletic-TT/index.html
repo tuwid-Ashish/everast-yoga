@@ -80,6 +80,255 @@ Institute</title>
       transform: none;
       transition: opacity .6s ease, transform .6s ease
     }
+    
+    /* Mobile-First Responsive Design */
+    
+    /* Hero Section Responsive */
+    @media (max-width: 992px) {
+      .hero {
+        min-height: 60vh;
+        padding: 40px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 50vh;
+        padding: 30px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 2rem;
+      }
+      
+      .hero .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero {
+        min-height: 45vh;
+        padding: 20px 0;
+      }
+      
+      .hero .hero-content h1 {
+        font-size: 1.8rem;
+      }
+    }
+    
+    /* About Section Responsive */
+    @media (max-width: 992px) {
+      .about-image-container {
+        margin-bottom: 30px;
+      }
+      
+      .text-lg-left {
+        text-align: center !important;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .about-image-container img {
+        height: 250px !important;
+      }
+    }
+    
+    /* Stats Section Responsive */
+    @media (max-width: 992px) {
+      .stats-card {
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .stats-card {
+        margin-bottom: 15px;
+      }
+      
+      .stat-number {
+        font-size: 1.8rem;
+      }
+      
+      .stat-label {
+        font-size: 0.8rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .stats-card {
+        margin-bottom: 15px;
+        padding: 1.5rem;
+        min-height: 140px;
+      }
+      
+      .stat-number {
+        font-size: 1.6rem;
+      }
+      
+      .stat-label {
+        font-size: 0.75rem;
+      }
+    }
+    
+    /* Training Overview Cards Responsive */
+    @media (max-width: 992px) {
+      .overview-card {
+        margin-bottom: 20px;
+        min-height: 220px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .overview-card {
+        margin-bottom: 15px;
+        min-height: 200px;
+        padding: 1.5rem;
+      }
+      
+      .overview-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .overview-card {
+        margin-bottom: 15px;
+        min-height: 180px;
+        padding: 1.2rem;
+      }
+      
+      .overview-title {
+        font-size: 1.1rem;
+      }
+      
+      .overview-value {
+        font-size: 0.9rem;
+      }
+    }
+    
+    /* Program Cards Responsive */
+    @media (max-width: 992px) {
+      .program-card {
+        margin-bottom: 30px;
+      }
+      
+      .program-image {
+        height: 180px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .program-image {
+        height: 160px;
+      }
+      
+      .program-content {
+        padding: 1.5rem;
+      }
+      
+      .program-title {
+        font-size: 1.2rem;
+      }
+      
+      .program-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .program-image {
+        height: 140px;
+      }
+      
+      .program-content {
+        padding: 1.2rem;
+      }
+      
+      .program-title {
+        font-size: 1.1rem;
+      }
+      
+      .program-description {
+        font-size: 0.9rem;
+      }
+      
+      .feature-item {
+        font-size: 0.85rem;
+      }
+    }
+    
+    /* Benefits Section Responsive */
+    @media (max-width: 992px) {
+      .benefit-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .benefit-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+      }
+      
+      .benefit-item {
+        padding: 0.8rem;
+      }
+      
+      .benefit-emoji {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* General Section Spacing */
+    @media (max-width: 768px) {
+      .section {
+        padding: 40px 0;
+      }
+      
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .section {
+        padding: 30px 0;
+      }
+      
+      .section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    
+    /* Button Responsive */
+    @media (max-width: 576px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
   <!-- END: THEME OVERRIDES -->
 
@@ -326,13 +575,23 @@ Institute</title>
       background: var(--airborne-gradient);
       position: relative;
       overflow: hidden;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .program-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 35, 126, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .program-image::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(26, 35, 126, 0.3);
+      background: rgba(26, 35, 126, 0.2);
     }
 
     .program-icon {
@@ -788,44 +1047,59 @@ Institute</title>
   <!-- SUSPENSION CONCEPT -->
   <section class="py-5">
     <div class="container">
-      <div class="text-center mb-5 reveal">
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Unique Suspension-Based Training Concept</h2>
-        <div style="height: 3px; width: 80px; background: var(--airborne-gradient); margin: 1rem auto;"></div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 reveal">
+          <div class="about-image-container mb-4 mb-lg-0">
+            <img
+              src="https://images.pexels.com/photos/3823063/pexels-photo-3823063.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Air-borne athletic suspension training with innovative equipment" class="img-fluid rounded shadow-lg"
+              style="border-radius: var(--radius); object-fit: cover; height: 400px; width: 100%;">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="text-center text-lg-left">
+            <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Unique Suspension-Based Training Concept</h2>
+            <div style="height: 3px; width: 80px; background: var(--airborne-gradient); margin: 1rem auto 2rem; margin-left: 0;"></div>
+            <h3 style="font-family:'Playfair Display',serif; font-weight:600; color: var(--airborne-primary);">Revolutionary Movement Training</h3>
+            <p class="lead text-muted mb-4">Our Air Borne Athletic program introduces a revolutionary approach to fitness and wellness through suspension-based training. This unique concept combines traditional movement principles with innovative aerial techniques, creating a comprehensive system that challenges both body and mind while providing therapeutic benefits.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Training Excellence</h2>
+        <p class="text-muted">Revolutionary suspension training by the numbers</p>
+        <div style="height: 3px; width: 60px; background: var(--airborne-gradient); margin: 1rem auto;"></div>
+      </div>
+      
       <div class="row justify-content-center">
-        <div class="col-lg-10 reveal">
-          <div class="suspension-concept">
-            <div class="text-center">
-              <h3 style="font-family:'Playfair Display',serif; font-weight:600; color: var(--airborne-primary);">Revolutionary Movement Training</h3>
-              <p class="lead text-muted mb-4">Our Air Borne Athletic program introduces a revolutionary approach to fitness and wellness through suspension-based training. This unique concept combines traditional movement principles with innovative aerial techniques, creating a comprehensive system that challenges both body and mind while providing therapeutic benefits.</p>
-              
-              <div class="row text-center mt-5">
-                <div class="col-md-3 mb-3">
-                  <div class="stats-card reveal">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Specialized Programs</span>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <div class="stats-card reveal">
-                    <span class="stat-number">360°</span>
-                    <span class="stat-label">Movement Training</span>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <div class="stats-card reveal">
-                    <span class="stat-number">Zero</span>
-                    <span class="stat-label">Joint Impact</span>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <div class="stats-card reveal">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Core Engagement</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Specialized Programs</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">360°</span>
+            <span class="stat-label">Movement Training</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">Zero</span>
+            <span class="stat-label">Joint Impact</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3 reveal">
+          <div class="stats-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Core Engagement</span>
           </div>
         </div>
       </div>
@@ -833,7 +1107,7 @@ Institute</title>
   </section>
 
   <!-- TRAINING PROGRAMS -->
-  <section id="programs" class="py-5" style="background: var(--bg);">
+  <section id="programs" class="py-5">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Comprehensive Training Programs</h2>
@@ -845,9 +1119,11 @@ Institute</title>
         <!-- Aerial Yoga Training -->
         <div class="col-lg-4 mb-4 reveal">
           <div class="program-card">
-            <div class="program-image">
-              <div class="program-icon">
-                <i class="fas fa-cloud"></i>
+            <div class="program-image" style="background-image: url('https://images.pexels.com/photos/5012071/pexels-photo-5012071.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+              <div class="program-overlay">
+                <div class="program-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
               </div>
             </div>
             <div class="program-content">
@@ -882,9 +1158,11 @@ Institute</title>
         <!-- Bungee Yoga Training -->
         <div class="col-lg-4 mb-4 reveal">
           <div class="program-card">
-            <div class="program-image">
-              <div class="program-icon">
-                <i class="fas fa-rocket"></i>
+            <div class="program-image" style="background-image: url('https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+              <div class="program-overlay">
+                <div class="program-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
               </div>
             </div>
             <div class="program-content">
@@ -919,9 +1197,11 @@ Institute</title>
         <!-- TRX Training -->
         <div class="col-lg-4 mb-4 reveal">
           <div class="program-card">
-            <div class="program-image">
-              <div class="program-icon">
-                <i class="fas fa-dumbbell"></i>
+            <div class="program-image" style="background-image: url('https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center;">
+              <div class="program-overlay">
+                <div class="program-icon">
+                  <i class="fas fa-dumbbell"></i>
+                </div>
               </div>
             </div>
             <div class="program-content">
@@ -957,7 +1237,7 @@ Institute</title>
   </section>
 
   <!-- BENEFITS SECTION -->
-  <section class="py-5">
+  <section class="py-5" style="background: var(--bg);">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <h2 style="font-family:'Playfair Display',serif; font-weight:700;" class="gradient-text">Benefits of Suspension Training</h2>
@@ -1021,7 +1301,7 @@ Institute</title>
             <h2>Ready to Defy Gravity?</h2>
             <p class="mb-4">Join the revolution in movement training and become a certified instructor in the fastest-growing fitness disciplines. Our comprehensive Air Borne Athletic Training will elevate your teaching skills and open new opportunities in the dynamic world of suspension-based fitness.</p>
             <div class="d-flex flex-wrap justify-content-center">
-              <a href="#" class="btn btn-pill btn-lg mr-3 mb-2" style="background: whit; color: var(--airborne-primary);">Enroll Today</a>
+              <a href="/contact-us/#form" class="btn btn-pill btn-lg mr-3 mb-2" style="background: whit; color: var(--airborne-primary);">Enroll Today</a>
               <a href="#" class="btn btn-outline-light btn-lg mb-2">View Schedule</a>
             </div>
             <p class="mt-3 mb-0"><small style="color: rgba(255,255,255,0.8);">Early registration discounts • Equipment included • Certification upon completion</small></p>
@@ -1062,10 +1342,10 @@ Institute</title>
           <ul class="list-unstyled">
             <li><a href="/">Home</a></li>
             <li><a href="/contact-us/">Contact</a></li>
-            <li><a href="/yoga.html">Yoga</a></li>
-            <li><a href="/who-we-are.html">Who We Are</a></li>
-            <li><a href="/centre-heads.html">Centre Heads</a></li>
-            <li><a href="/guest-faculty.html">Guest Faculty</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
           </ul>
         </div>
 
@@ -1085,9 +1365,10 @@ Institute</title>
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919999999999">+91 99XX-XX-XXXX</a></p>
-          <p class="mb-3"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:info@everestyogainstitute.in">info@everestyogainstitute.in</a></p>
+         <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391" >+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
 
            
         </div>
@@ -1100,7 +1381,7 @@ Institute</title>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a class="whatsapp-fab" href="https://wa.me/919999999999" target="_blank" rel="noopener"
+  <a class="whatsapp-fab" href="https://wa.me/919501934391" target="_blank" rel="noopener"
     aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
   </a>
