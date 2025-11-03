@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Testimonials • Everest Yoga & Pilates Institute</title>
+
+  <!-- Bootstrap 4 (global) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Fonts (global) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons (global) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Global site CSS (navbar, footer, colors, etc.) -->
+  <link rel="stylesheet" href="../css/global.css">
+
+  <!-- Page-specific CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR (copied from founder/index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex" href="/">
+        <img src="/img/Everest-Yoga-logo.png" alt="Everest Yoga Logo" class="navbar-logo">
+        <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
+      </a>
+
+      <!-- Hamburger button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" aria-controls="evyNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
+                 The actual "About Us" overview page is provided as a menu item below. -->
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <!-- Extra explicit menu item linking to the standalone About page -->
+              <a class="dropdown-item" href="/about-us/">About Overview</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Studio</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
+            </div>
+          </li>
+
+          <!-- Yoga (with submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
+            </a>
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
+            </div>
+          </li>
+
+          <!-- Pilates (with submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="testimonials-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-wrap text-center">
+      <span class="eyebrow ">Student Success Stories</span>
+      <h1 class="hero-title text-white">What Our Students Say</h1>
+      <p class="hero-description">
+        Discover how our yoga and pilates programs have transformed lives. From teacher training graduates to fitness enthusiasts,
+        hear authentic stories of growth, healing, and professional success from our global community.
+      </p>
+      <div class="hero-stats mt-4">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-6 mb-3">
+            <div class="stat-item">
+              <h3>5000+</h3>
+              <p>Happy Students</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3">
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Countries Reached</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3">
+            <div class="stat-item">
+              <h3>98%</h3>
+              <p>Satisfaction Rate</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-3">
+            <div class="stat-item">
+              <h3>11+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== FEATURED TESTIMONIALS ===================== -->
+  <section class="featured-testimonials section-pad">
+    <div class="container">
+      <div class="section-head text-center">
+        <h2>Featured Success Stories</h2>
+        <p class="text-muted mb-0">Transformative journeys from our most inspiring graduates</p>
+      </div>
+
+      <div class="row mt-5">
+        <!-- Featured Testimonial 1 -->
+        <div class="col-lg-6 mb-4">
+          <div class="featured-testimonial">
+            <div class="testimonial-image">
+              <img src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Priya Sharma" class="img-fluid">
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <blockquote>
+                "Completing the 500-hour YTTC at Everest completely transformed my life. Not only did I gain deep knowledge 
+                of yoga philosophy and anatomy, but I also discovered my true calling as a teacher. The instructors were 
+                incredibly supportive, and the curriculum perfectly balanced traditional wisdom with modern teaching methods."
+              </blockquote>
+              <div class="testimonial-author">
+                <h5>Priya Sharma</h5>
+                <p>500Hr YTTC Graduate, Now Teaching in Mumbai</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Testimonial 2 -->
+        <div class="col-lg-6 mb-4">
+          <div class="featured-testimonial">
+            <div class="testimonial-image">
+              <img src="https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Michael Rodriguez" class="img-fluid">
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <blockquote>
+                "The Pilates Teacher Training program exceeded all my expectations. The hands-on experience with professional 
+                equipment and the comprehensive understanding of anatomy has made me confident in teaching. I now run my own 
+                studio and regularly refer back to the excellent materials provided."
+              </blockquote>
+              <div class="testimonial-author">
+                <h5>Michael Rodriguez</h5>
+                <p>200Hr Pilates TT Graduate, Studio Owner in Canada</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS GRID ===================== -->
+  <section class="testimonials-grid section-pad bg-light">
+    <div class="container">
+      <div class="section-head text-center">
+        <h2>More Student Experiences</h2>
+        <p class="text-muted mb-0">Real stories from our diverse community of yoga and pilates practitioners</p>
+      </div>
+
+      <div class="row mt-5">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Sarah Chen" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Sarah Chen</h6>
+                <p>Prenatal Yoga Graduate</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The Prenatal Yoga training was incredibly comprehensive. I learned how to safely guide expecting mothers 
+              through their practice, and the knowledge has been invaluable in my work at the wellness center."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="David Kumar" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>David Kumar</h6>
+                <p>200Hr YTTC Graduate</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"As a complete beginner, I was nervous about teacher training. The supportive environment and expert 
+              guidance gave me confidence. I'm now teaching at two studios and loving every moment of it!"</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3758151/pexels-photo-3758151.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Emma Wilson" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Emma Wilson</h6>
+                <p>Therapy Yoga Participant</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"After my back injury, I thought I'd never exercise again. The Therapy Yoga classes were exactly what I 
+              needed. The instructors understood my limitations and helped me rebuild my strength safely."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Rajesh Patel" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Rajesh Patel</h6>
+                <p>Air Borne Athletic TT Graduate</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The Air Borne Athletic training pushed my boundaries in the best way. Learning aerial yoga and TRX 
+              techniques has opened up so many opportunities. I now offer unique classes that my students absolutely love."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Lisa Anderson" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Lisa Anderson</h6>
+                <p>Kids Yoga Participant (Parent)</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"My 8-year-old daughter loves her Kids Yoga classes! She's become more focused, confident, and flexible. 
+              The teachers make it so fun with games and stories. It's amazing to see her enthusiasm for yoga."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3799115/pexels-photo-3799115.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Carlos Martinez" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Carlos Martinez</h6>
+                <p>500Hr Pilates TT Graduate</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The advanced Pilates training was incredibly detailed and professional. Working with the equipment like 
+              reformers and cadillacs gave me real-world experience. I feel prepared to teach at any level."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 7 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Aisha Thompson" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Aisha Thompson</h6>
+                <p>Group Yoga Class Member</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"I've been attending group classes for two years now, and it's become the highlight of my week. The 
+              community is so welcoming, and I've made lifelong friends while improving my health and well-being."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 8 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3747468/pexels-photo-3747468.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="James Mitchell" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>James Mitchell</h6>
+                <p>Private Yoga Client</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"The one-on-one sessions were exactly what I needed. My instructor created a personalized program that 
+              addressed my specific needs and goals. The attention to detail and individual care was exceptional."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 9 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="card-header">
+              <img src="https://images.pexels.com/photos/3823495/pexels-photo-3823495.jpeg?auto=compress&cs=tinysrgb&w=300" 
+                   alt="Maria Garcia" class="testimonial-avatar">
+              <div class="author-info">
+                <h6>Maria Garcia</h6>
+                <p>Pilates Fitness Class Member</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="rating mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"Pilates has completely changed my posture and core strength. The classes are challenging but accessible, 
+              and the equipment is top-notch. I feel stronger and more confident than ever before."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIDEO TESTIMONIALS ===================== -->
+  <section class="video-testimonials section-pad">
+    <div class="container">
+      <div class="section-head text-center">
+        <h2>Video Testimonials</h2>
+        <p class="text-muted mb-0">Watch our students share their transformation stories</p>
+      </div>
+
+      <div class="row mt-5 justify-content-center">
+        <!-- Video Testimonial 1 -->
+        <div class="col-lg-6 col-md-8 mb-4">
+          <div class="video-testimonial">
+            <div class="video-placeholder">
+              <img src="https://images.pexels.com/photos/3823495/pexels-photo-3823495.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                   alt="Video Testimonial" class="img-fluid">
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h5>Sarah's 200Hr YTTC Journey</h5>
+              <p class="text-muted">From beginner to confident teacher in 200 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Testimonial 2 -->
+        <div class="col-lg-6 col-md-8 mb-4">
+          <div class="video-testimonial">
+            <div class="video-placeholder">
+              <img src="https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                   alt="Video Testimonial" class="img-fluid">
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h5>Michael's Pilates Success Story</h5>
+              <p class="text-muted">How Pilates training launched his career</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL STATS ===================== -->
+  <section class="testimonial-stats section-pad bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="stat-number" data-target="5000">0</h3>
+            <p class="stat-label">Graduates Worldwide</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="stat-number" data-target="98">0</h3>
+            <p class="stat-label">% Student Satisfaction</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3 class="stat-number" data-target="15">0</h3>
+            <p class="stat-label">Countries Reached</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 class="stat-number" data-target="11">0</h3>
+            <p class="stat-label">Years of Excellence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="testimonial-cta section-pad">
+    <div class="container text-center">
+      <h2>Ready to Start Your Own Success Story?</h2>
+      <p class="lead mb-4">Join thousands of satisfied students who have transformed their lives through our programs</p>
+      <div class="cta-buttons">
+        <a href="/contact-us/" class="btn btn-primary btn-lg mr-3">Start Your Journey</a>
+        <a href="https://wa.me/919501934391" target="_blank" rel="noopener" class="btn btn-outline-primary btn-lg">
+          Talk to Admissions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (global styles) -->
+  <footer class="footer-evy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="logo mb-2">
+            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+          </div>
+          <p class="text-muted mb-3" style="max-width:420px">
+            Authentic yoga education blending traditional wisdom with modern pedagogy—teacher training, therapy, pilates
+            & corporate wellness.
+          </p>
+          <div class="social">
+            <a aria-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://youtube.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://facebook.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact-us/">Contact</a></li>
+            <li><a href="/Group-Yoga-Class/">Yoga</a></li>
+            <li><a href="/who-we-are/">Who We Are</a></li>
+            <li><a href="/centre-heads/">Centre Heads</a></li>
+            <li><a href="/guest-faculty/">Guest Faculty</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6>Programs</h6>
+          <ul class="list-unstyled">
+            <li><a href="/200Hrs-Foundational-YTTC/">YTTC 200</a></li>
+            <li><a href="/500Hrs-Foundational-YTTC/">YTTC 500</a></li>
+            <li><a href="/200Hrs-Pilates-TT/">Pilates Training</a></li>
+            <li><a href="/Air-Borne-Athletic-TT/">Air Borne Athletic TT</a></li>
+            <li><a href="/Prenatal-Yoga-TT/">Prenatal Yoga TT</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6>Contact</h6>
+          <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391">+91 9501-934-391</a></p>
+          <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
+              href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="bottom py-3 mt-2 text-center">
+        <small>© 2025 Everest Yoga & Pilates Institute, LLC. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB (global styles) -->
+  <a class="whatsapp-fab" href="https://wa.me/919501934391" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.4rem"></i>
+  </a>
+
+  <!-- Global scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page-specific JS -->
+  <script src="../js/effect.js"></script>
+  <script src="../js/home.js"></script>
+
+  <script>
+    // Animated counters for stats
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      const duration = 2000; // 2 seconds
+
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+
+        const updateCounter = () => {
+          current += increment;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        updateCounter();
+      });
+    }
+
+    // Trigger animation when stats section is in view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const statsSection = document.querySelector('.testimonial-stats');
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+
+    // Add click handlers for video testimonials
+    document.querySelectorAll('.video-placeholder').forEach(video => {
+      video.addEventListener('click', function() {
+        // In a real implementation, this would open a modal or redirect to video
+        alert('Video testimonial would play here. Integration with YouTube/Vimeo can be added.');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
