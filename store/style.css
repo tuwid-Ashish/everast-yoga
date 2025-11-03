@@ -19,9 +19,9 @@ body {
     font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     color: var(--ink);
 }
-h1,h3,h2{
+/* h1,h3,h2{
     color: #fff;
-}
+} */
 
 /* Buttons (page) */
 .btn-pill {
