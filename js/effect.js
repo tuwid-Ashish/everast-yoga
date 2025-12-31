@@ -226,16 +226,30 @@
   const cards = Array.from(d.querySelectorAll('.teacher'));
   let currentFilter = 'all';
 
+  // Allow multi-role matches (e.g. Yoga & Pilates cards surface in both chips)
+  function resolveRoles(card) {
+    const base = (card.dataset.role || '').toLowerCase();
+    const roles = base.split(/[\s,|]+/).filter(Boolean);
+    const title = (card.dataset.title || '').toLowerCase();
+    if (title.includes('yoga & pilates teacher')) {
+      if (!roles.includes('yoga')) roles.push('yoga');
+      if (!roles.includes('pilates')) roles.push('pilates');
+    }
+    return roles;
+  }
+
   function applyFilter() {
     const q = (d.getElementById('search')?.value || '').trim().toLowerCase();
     cards.forEach((card) => {
-      const role = (card.dataset.role || '').toLowerCase();
+      const roles = resolveRoles(card);
+      const roleText = roles.join(' ');
       const name = (card.dataset.name || '').toLowerCase();
       const title = (card.dataset.title || '').toLowerCase();
-      const byRole = currentFilter === 'all' || role === currentFilter; // strict match for consistency
-      const byText = !q || name.includes(q) || title.includes(q) || role.includes(q);
+      const byRole = currentFilter === 'all' || roles.includes(currentFilter);
+      const byText = !q || name.includes(q) || title.includes(q) || roleText.includes(q);
       card.parentElement.style.display = (byRole && byText) ? '' : 'none';
     });
+
   }
 
   chips.forEach((chip) => {

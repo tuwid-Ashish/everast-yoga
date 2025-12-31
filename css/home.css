@@ -32,6 +32,21 @@
 /* Cards hover */
 .hover-up:hover{transform:translateY(-6px); transition:transform .25s ease}
 
+/* Hover lift for Fusion YTTC cards */
+.hover-lift {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(42, 157, 143, 0.2);
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(42, 157, 143, 0.15);
+  border-color: var(--leaf, #2a9d8f);
+}
+.hover-lift .card-title {
+  color: var(--primary, #0a2c4f);
+  font-weight: 700;
+}
+
 /* Machines grid small cards */
 .machines .card-img-top{height:120px; object-fit:cover}
 
