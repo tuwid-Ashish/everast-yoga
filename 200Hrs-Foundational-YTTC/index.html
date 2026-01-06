@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>200 Hours Foundational YTTC • 
-Institute</title>
+  <title>200 Hours Foundational YTTC •
+    Institute</title>
 
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -15,7 +15,7 @@ Institute</title>
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
-    <!-- Icons -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="/css/global.css">
 
@@ -247,13 +247,39 @@ Institute</title>
       border: 1px solid rgba(10, 44, 79, .06);
       box-shadow: var(--shadow);
       padding: 2rem;
-      margin-bottom: 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       transition: transform .25s ease, box-shadow .25s ease;
     }
 
     .module-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 18px 36px rgba(10, 44, 79, .16);
+    }
+
+    .module-content {
+      flex: 1;
+    }
+
+    #modules .row {
+      align-items: stretch;
+    }
+
+    #modules .module-image-wrapper {
+      height: 100%;
+      min-height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modules .module-image-wrapper img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
 
     .module-header {
@@ -400,109 +426,122 @@ Institute</title>
       color: var(--ink);
       margin-bottom: 1rem;
     }
+
+    /* Responsive adjustments for modules section */
+    @media (max-width: 991.98px) {
+      #modules .module-image-wrapper {
+        min-height: 280px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      #modules .module-image-wrapper {
+        min-height: 250px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR (copied from founder/index.html) -->
-<nav class="navbar navbar-expand-lg navbar-light navbar-evy">
-<div class="container">
-    <!-- Brand with logo -->
-    <a class="navbar-brand d-flex" href="/">
-    <img src="/img/Everest-Yoga-logo.png" alt="Everest Yoga Logo" class="navbar-logo">
-    <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
-    </a>
+  <!-- NAVBAR (copied from founder/index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-evy">
+    <div class="container">
+      <!-- Brand with logo -->
+      <a class="navbar-brand d-flex" href="/">
+        <img src="/img/Everest-Yoga-logo.png" alt="Everest Yoga Logo" class="navbar-logo">
+        <span class="navbar-brand-text">Everest Yoga & Pilates Institute</span>
+      </a>
 
-    <!-- Hamburger button for mobile -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" aria-controls="evyNav"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Hamburger button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#evyNav" aria-controls="evyNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="evyNav">
-    <ul class="navbar-nav ml-auto">
-        <!-- Home -->
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <div class="collapse navbar-collapse" id="evyNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Home -->
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 
-        <!-- About Us (dropdown) -->
-        <li class="nav-item dropdown">
-        <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
+          <!-- About Us (dropdown) -->
+          <li class="nav-item dropdown">
+            <!-- Parent toggle keeps behaviour of opening the menu on click (not navigating).
                 The actual "About Us" overview page is provided as a menu item below. -->
-        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            About Us
-        </a>
-        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <!-- Extra explicit menu item linking to the standalone About page -->
-            <a class="dropdown-item" href="/about-us/">About Overview</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
-            <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
-            <a class="dropdown-item" href="/facilitators/">Facilitators</a>
-            <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
-            <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
-            <a class="dropdown-item" href="/our-studios/">Our Franchise</a>
-            <a class="dropdown-item" href="/testimonials/">Testimonial</a>
-        </div>
-        </li>
-
-        <!-- Yoga (with submenu) -->
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Yoga
-        </a>
-        <div class="dropdown-menu" aria-labelledby="yogaDropdown">
-            <div class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                Fusion Yoga Teacher Training
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              About Us
             </a>
-            <div class="dropdown-menu" aria-labelledby="fusionDropdown">
-                <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
-                <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
-                <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TTC</a>
-                <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TTC</a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <!-- Extra explicit menu item linking to the standalone About page -->
+              <a class="dropdown-item" href="/about-us/">About Overview</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/who-we-are/">Who We Are</a>
+              <a class="dropdown-item" href="/founder/">Founder – Managing Director</a>
+              <a class="dropdown-item" href="/facilitators/">Facilitators</a>
+              <a class="dropdown-item" href="/centre-heads/">Centre Heads</a>
+              <a class="dropdown-item" href="/guest-faculty/">Guest Faculty</a>
+              <a class="dropdown-item" href="/our-studios/">Our Franchise</a>
+              <a class="dropdown-item" href="/testimonials/">Testimonial</a>
             </div>
-            </div>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
-            <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
-            <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
-            <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
-        </div>
-        </li>
+          </li>
 
-        <!-- Pilates (with submenu) -->
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Pilates
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
-            <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
-                aria-haspopup="true" aria-expanded="false">
-                Pilates Teacher Training
+          <!-- Yoga (with submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="yogaDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Yoga
             </a>
-            <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
-                <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
-                <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+            <div class="dropdown-menu" aria-labelledby="yogaDropdown">
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" id="fusionDropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">
+                  Fusion Yoga Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="fusionDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Foundational-YTTC/">200 Hrs Foundational YTTC</a>
+                  <a class="dropdown-item" href="/500Hrs-Foundational-YTTC/">500 Hrs Professional YTTC</a>
+                  <a class="dropdown-item" href="/Air-Borne-Athletic-TT/">Air Borne Athletic TTC</a>
+                  <a class="dropdown-item" href="/Prenatal-Yoga-TT/">Prenatal Yoga TTC</a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/Group-Yoga-Class/">Group Yoga Class</a>
+              <a class="dropdown-item" href="/Kids-Yoga-Class/">Kids Yoga Class</a>
+              <a class="dropdown-item" href="/Therapy-Yoga-Class/">Therapy Yoga Class</a>
+              <a class="dropdown-item" href="/Private-Yoga-Class/">Private Yoga Class</a>
             </div>
+          </li>
+
+          <!-- Pilates (with submenu) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pilatesDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pilates
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pilatesDropdown">
+              <a class="dropdown-item" href="/Pilates-Fitness-Classes/">Pilates Fitness Classes</a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="pilatesTrainingDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">
+                  Pilates Teacher Training
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pilatesTrainingDropdown">
+                  <a class="dropdown-item" href="/200Hrs-Pilates-TT/">200 Hrs Pilates Teacher Training</a>
+                  <a class="dropdown-item" href="/500Hrs-Pilates-TT/">500 Hrs Pilates Teacher Training</a>
+                </div>
+              </div>
             </div>
-        </div>
-        </li>
+          </li>
 
 
-        <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
-        <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
-    </ul>
+          <li class="nav-item"><a class="nav-link" href="/store/">Store</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light ml-lg-2" href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-</div>
-</nav>
+  </nav>
 
 
   <!-- HERO -->
@@ -510,7 +549,9 @@ Institute</title>
     <div class="container wrap text-center">
       <span class="eyebrow">Yoga Alliance USA Certified • Foundational Level</span>
       <h1 class="text-white">200 Hours Foundational Yoga Teacher Training</h1>
-      <p class="lead mx-auto">Transform your practice and share the gift of yoga. Our comprehensive 200-hour program blends traditional wisdom with modern teaching methods, preparing you to guide others on their yogic journey.</p>
+      <p class="lead mx-auto">Transform your practice and share the gift of yoga. Our comprehensive 200-hour program
+        blends traditional wisdom with modern teaching methods, preparing you to guide others on their yogic journey.
+      </p>
       <div class="mt-4">
         <a href="/contact-us/#form" class="btn btn-pill btn-lg mr-3">Enroll Now</a>
         <a href="#modules" class="btn btn-outline-light">View Curriculum</a>
@@ -567,12 +608,16 @@ Institute</title>
     <div class="container">
       <div class="text-center mb-5 reveal">
         <h2 style="font-family:'Playfair Display',serif; font-weight:700;">Program Objective</h2>
-        <div style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--royal), var(--leaf)); margin: 1rem auto;"></div>
+        <div
+          style="height: 3px; width: 60px; background: linear-gradient(135deg, var(--royal), var(--leaf)); margin: 1rem auto;">
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-8 reveal">
           <div class="text-center">
-            <p class="fs-5 text-muted mb-4">The objective of taking our 200 hours Foundational Yoga Teacher Training is multi-dimensional. It <strong class="fw-bold">equips learners with the knowledge, skills, and confidence to both deepen their own practice and share yoga safely and authentically with others</strong>.</p>
+            <p class="fs-5 text-muted mb-4">The objective of taking our 200 hours Foundational Yoga Teacher Training is
+              multi-dimensional. It <strong class="fw-bold">equips learners with the knowledge, skills, and confidence
+                to both deepen their own practice and share yoga safely and authentically with others</strong>.</p>
             <div class="row text-center mt-5">
               <div class="col-md-4 mb-3">
                 <div class="stats-card">
@@ -599,314 +644,334 @@ Institute</title>
     </div>
   </section>
 
-<!-- ========== MODULES SECTION (Alternating content + image) ========== -->
-<section id="modules" class="py-5" style="background: var(--bg);">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <h2 style="font-family:'Playfair Display',serif; font-weight:700;">Training Modules</h2>
-      <p class="text-muted">200 Hour Detailed Syllabus (Yoga Alliance aligned)</p>
-      <div style="height:3px;width:60px;background:linear-gradient(135deg,var(--royal),var(--leaf));margin:1rem auto;"></div>
-    </div>
+  <!-- ========== MODULES SECTION (Alternating content + image) ========== -->
+  <section id="modules" class="py-5" style="background: var(--bg);">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 style="font-family:'Playfair Display',serif; font-weight:700;">Training Modules</h2>
+        <p class="text-muted">200 Hour Detailed Syllabus (Yoga Alliance aligned)</p>
+        <div
+          style="height:3px;width:60px;background:linear-gradient(135deg,var(--royal),var(--leaf));margin:1rem auto;">
+        </div>
+      </div>
 
-    <!-- Module 1 -->
-    <div class="row align-items-center mb-5 reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">1</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 1: ASANAS</h4>
-              <span class="module-duration">Core Practice</span>
+      <!-- Module 1 -->
+      <div class="row mb-5 reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">1</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 1: ASANAS</h4>
+                <span class="module-duration">Core Practice</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>We teach traditional yogasanas (Raj Yoga, Hatha Yoga, Ashtanga) as well as modern forms of yoga which
+                are taught at level 1, 2, & 3. These levels are based on beginner, intermediate & advanced level of
+                practice.</p>
+              <p>Everest's self created series of asanas based on seven spinal movements are absolutely noteworthy. Hot
+                Yoga, Yin Yoga, Restorative Yoga, Athletic Yoga, Rhythmic Yoga, Artistic Yoga and many more forms are
+                taught. Yoga with a variety of props makes our training courses unique.</p>
             </div>
           </div>
-          <div class="module-content">
-            <p>We teach traditional yogasanas (Raj Yoga, Hatha Yoga, Ashtanga) as well as modern forms of yoga which are taught at level 1, 2, 3, 4 & 5. These levels are based on beginner, intermediate & advanced level of practice.</p>
-            <p>Everest's self created series of asanas based on seven spinal movements are absolutely noteworthy. Hot Yoga, Yin Yoga, Restorative Yoga, Athletic Yoga, Rhythmic Yoga, Artistic Yoga and many more forms are taught. Yoga with a variety of props makes our training courses unique.</p>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/736x/58/4f/da/584fda4ced36f2cb2805891348362ea3.jpg?q=80&w=1200&auto=format&fit=crop"
+              alt="Asanas practice">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1540206276207-3af25c08abc4?q=80&w=1200&auto=format&fit=crop" alt="Asanas practice" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 2 -->
-    <div class="row align-items-center mb-5 flex-lg-row-reverse reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">2</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 2: PRANAYAMA</h4>
-              <span class="module-duration">Breathwork</span>
+      <!-- Module 2 -->
+      <div class="row mb-5 flex-lg-row-reverse reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">2</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 2: PRANAYAMA</h4>
+                <span class="module-duration">Breathwork</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>Comprehensive training in the science and practice of pranayama (breath control). Students learn
+                various breathing techniques that form the foundation of advanced yogic practices.</p>
+              <ul>
+                <li>Traditional pranayama techniques</li>
+                <li>Breath awareness and control</li>
+                <li>Integration with asana practice</li>
+                <li>Therapeutic applications</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>Comprehensive training in the science and practice of pranayama (breath control). Students learn various breathing techniques that form the foundation of advanced yogic practices.</p>
-            <ul>
-              <li>Traditional pranayama techniques</li>
-              <li>Breath awareness and control</li>
-              <li>Integration with asana practice</li>
-              <li>Therapeutic applications</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/1200x/46/a7/43/46a743c05798abc9c75d60398f9ff99a.jpg?q=80&w=1200&auto=format&fit=crop"
+              alt="Pranayama">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop" alt="Pranayama" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 3 -->
-    <div class="row align-items-center mb-5 reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">3</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 3: MUDRA, BANDHA, DRISHTI</h4>
-              <span class="module-duration">Advanced Techniques</span>
+      <!-- Module 3 -->
+      <div class="row mb-5 reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">3</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 3: MUDRA, BANDHA, DRISHTI</h4>
+                <span class="module-duration">Advanced Techniques</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>Understanding and implementation of mudras, bandhas & drishtis during the training takes the student
+                forward through the yogic practices.</p>
+              <ul>
+                <li>Hand mudras and their significance</li>
+                <li>Energy locks (bandhas)</li>
+                <li>Focused gaze techniques (drishti)</li>
+                <li>Integration in practice</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>Understanding and implementation of mudras, bandhas & drishtis during the training takes the student forward through the yogic practices.</p>
-            <ul>
-              <li>Hand mudras and their significance</li>
-              <li>Energy locks (bandhas)</li>
-              <li>Focused gaze techniques (drishti)</li>
-              <li>Integration in practice</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/1200x/76/1a/b6/761ab63e6fe71b9d8a86cc9558878e00.jpg" alt="Mudra and Bandha">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.pexels.com/photos/6246673/pexels-photo-6246673.jpeg" alt="Mudra and Bandha" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 4 -->
-    <div class="row align-items-center mb-5 flex-lg-row-reverse reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">4</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 4: SHATKARMAS</h4>
-              <span class="module-duration">Cleansing Practices</span>
+      <!-- Module 4 -->
+      <div class="row mb-5 flex-lg-row-reverse reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">4</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 4: SHATKARMAS</h4>
+                <span class="module-duration">Cleansing Practices</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>Cleansing of the physical body is primary in yogic practice. We teach objectives, methods & precautions
+                of detoxification practices.</p>
+              <ul>
+                <li>Jal Neti & Rubber Neti</li>
+                <li>Shankprakshalan</li>
+                <li>Kunjal & Kapal Bhati</li>
+                <li>Tratak and other cleansing techniques</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>Cleansing of the physical body is primary in yogic practice. We teach objectives, methods & precautions of detoxification practices.</p>
-            <ul>
-              <li>Jal Neti & Rubber Neti</li>
-              <li>Shankprakshalan</li>
-              <li>Kunjal & Kapal Bhati</li>
-              <li>Tratak and other cleansing techniques</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/736x/18/b8/af/18b8af1f285d67f616a25e70b5980663.jpg?q=80&w=1200&auto=format&fit=crop"
+              alt="Shatkarmas">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?q=80&w=1200&auto=format&fit=crop" alt="Shatkarmas" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 5 -->
-    <div class="row align-items-center mb-5 reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">5</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 5: YOGIC HUMANITIES</h4>
-              <span class="module-duration">Philosophy & Ethics</span>
+      <!-- Module 5 -->
+      <div class="row mb-5 reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">5</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 5: YOGIC HUMANITIES</h4>
+                <span class="module-duration">Philosophy & Ethics</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>This module is devoted to yogic philosophy which gives in-depth knowledge of types of yoga schools. An
+                introduction to 'Patanjali Sutras' is foundational towards becoming a yoga teacher.</p>
+              <ul>
+                <li>Tridosha & Pancha Prana</li>
+                <li>Yogic Ethics & Guidelines</li>
+                <li>Koshas & Chakras</li>
+                <li>Kundalini and associated aspects</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>This module is devoted to yogic philosophy which gives in-depth knowledge of types of yoga schools. An introduction to 'Patanjali Sutras' is foundational towards becoming a yoga teacher.</p>
-            <ul>
-              <li>Tridosha & Pancha Prana</li>
-              <li>Yogic Ethics & Guidelines</li>
-              <li>Koshas & Chakras</li>
-              <li>Kundalini and associated aspects</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/1200x/8a/2e/00/8a2e00f5acd45f807d0f10f10cd57ef6.jpg"
+              alt="Philosophy">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Philosophy" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 6 -->
-    <div class="row align-items-center mb-5 flex-lg-row-reverse reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">6</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 6: MEDITATION</h4>
-              <span class="module-duration">Mind Training</span>
+      <!-- Module 6 -->
+      <div class="row mb-5 flex-lg-row-reverse reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">6</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 6: MEDITATION</h4>
+                <span class="module-duration">Mind Training</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>Covers scientific aspects of meditation as well as practical classroom practice of a variety of
+                meditation techniques.</p>
+              <ul>
+                <li>Yoga Nidra</li>
+                <li>Chakra Meditation</li>
+                <li>Soham Meditation</li>
+                <li>Silent Meditation practices</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>Covers scientific aspects of meditation as well as practical classroom practice of a variety of meditation techniques.</p>
-            <ul>
-              <li>Yoga Nidra</li>
-              <li>Chakra Meditation</li>
-              <li>Soham Meditation</li>
-              <li>Silent Meditation practices</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/736x/fa/f9/28/faf928aaf8485bada8d3e679a6a8e1fa.jpg"
+              alt="Meditation">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop" alt="Meditation" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 7 -->
-    <div class="row align-items-center mb-5 reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">7</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 7: ANATOMY & PHYSIOLOGY</h4>
-              <span class="module-duration">Body Science</span>
+      <!-- Module 7 -->
+      <div class="row mb-5 reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">7</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 7: ANATOMY & PHYSIOLOGY</h4>
+                <span class="module-duration">Body Science</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>This module is theoretical and enables the yoga teacher to connect the knowledge of yoga to the body.
+              </p>
+              <ul>
+                <li>Musculoskeletal, respiratory, cardiovascular, nervous & other body systems</li>
+                <li>Human Spine - Misalgnment & Corrections</li>
+                <li>Muscular Action & Function</li>
+                <li>Injury Prevention & Management</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p><strong>Anatomy:</strong> The study of structure & framework of human body.</p>
-            <p><strong>Physiology:</strong> The study of organ systems & how they function in coordination.</p>
-            <p>This module is theoretical and enables the yoga teacher to connect the knowledge of yoga to the body.</p>
-            <ul>
-              <li>Musculoskeletal system</li>
-              <li>Respiratory & cardiovascular systems</li>
-              <li>Nervous system & yoga</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/1200x/37/e2/d8/37e2d85b150e6b3b0caac40082dc42bf.jpg" alt="Anatomy">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="/img/ANATOMY & PHYSIOLOGY.jpg" alt="Anatomy" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 8 -->
-    <div class="row align-items-center mb-5 flex-lg-row-reverse reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">8</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 8: PROFESSIONAL SKILLS</h4>
-              <span class="module-duration">Teaching Excellence</span>
+      <!-- Module 8 -->
+      <div class="row mb-5 flex-lg-row-reverse reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">8</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 8: PROFESSIONAL SKILLS</h4>
+                <span class="module-duration">Teaching Excellence</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>Comprehensive training to develop professional teaching skills and business acumen for yoga
+                instructors.</p>
+              <ul>
+                <li>Employability Skills</li>
+                <li>Student-Teacher Relationship</li>
+                <li>Lesson Planning & Sequencing</li>
+                <li>Business Aspects of Yoga</li>
+                <li>Class & Student Management</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>Comprehensive training to develop professional teaching skills and business acumen for yoga instructors.</p>
-            <ul>
-              <li>Employability Skills</li>
-              <li>Student-Teacher Relationship</li>
-              <li>Lesson Planning & Sequencing</li>
-              <li>Business Aspects of Yoga</li>
-              <li>Class & Student Management</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/736x/2a/c5/02/2ac502f669b0b2fc0bb448f4874a3d6a.jpg"
+              alt="Professional skills">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop" alt="Professional skills" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
-    </div>
 
-    <!-- Module 9 -->
-    <div class="row align-items-center mb-2 reveal">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="module-card">
-          <div class="module-header">
-            <div class="module-number">9</div>
-            <div class="flex-grow-1">
-              <h4 class="module-title">YOGA MODULE 9: PRACTICUM</h4>
-              <span class="module-duration">Hands-on Application</span>
+      <!-- Module 9 -->
+      <div class="row mb-2 reveal">
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-number">9</div>
+              <div class="flex-grow-1">
+                <h4 class="module-title">YOGA MODULE 9: PRACTICUM</h4>
+                <span class="module-duration">Hands-on Application</span>
+              </div>
+            </div>
+            <div class="module-content">
+              <p>This module is devoted to the practical display of knowledge, understanding, application, skills and
+                experiences across the whole syllabus.</p>
+              <ul>
+                <li>Teaching practice sessions</li>
+                <li>Peer feedback & assessment</li>
+                <li>Real-world application</li>
+                <li>Portfolio development</li>
+                <li>Final certification assessment</li>
+              </ul>
             </div>
           </div>
-          <div class="module-content">
-            <p>This module is devoted to the practical display of knowledge, understanding, application, skills and experiences across the whole syllabus.</p>
-            <ul>
-              <li>Teaching practice sessions</li>
-              <li>Peer feedback & assessment</li>
-              <li>Real-world application</li>
-              <li>Portfolio development</li>
-              <li>Final certification assessment</li>
-            </ul>
+        </div>
+        <div class="col-lg-6 d-flex">
+          <div class="module-image-wrapper">
+            <img src="https://i.pinimg.com/1200x/e7/df/7e/e7df7ee69a7808438e23c6c38ff11474.jpg"
+              alt="Practicum">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=1200&auto=format&fit=crop" alt="Practicum" class="img-fluid rounded" style="box-shadow:var(--shadow); max-height: 300px; object-fit: cover; width: 100%;">
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- INTERNSHIP OPPORTUNITIES -->
-<section id="internship" class="py-5" style="background: var(--royal-50);">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Text Content -->
-      <div class="col-lg-6 mb-4 mb-lg-0 reveal">
-        <span class="badge-soft mb-2">Real-World Training</span>
-        <h2 style="font-family:'Playfair Display',serif; font-weight:700;">
-          Internship Opportunities
-        </h2>
-        <p class="text-muted">
-          As part of our Yoga Teacher Training program, we provide structured internships in 
-          <strong>group classes, kids’ batches, and therapy-based sessions</strong>. 
-          These opportunities help trainees gain <strong>real-life teaching experience</strong>, 
-          strengthen their confidence, and refine classroom management skills under professional guidance.
-        </p>
-        <p class="text-muted">
-          Upon successful completion, students are awarded an 
-          <strong>Internship Certificate</strong> in recognition of their practical training. 
-          <em>80% attendance is compulsory</em> to receive the certificate.
-        </p>
-        <!-- <div class="mt-3">
+  <!-- INTERNSHIP OPPORTUNITIES -->
+  <section id="internship" class="py-5" style="background: var(--royal-50);">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0 reveal">
+          <span class="badge-soft mb-2">Real-World Training</span>
+          <h2 style="font-family:'Playfair Display',serif; font-weight:700;">
+            Internship Opportunities
+          </h2>
+          <p class="text-muted">
+            As part of our Yoga Teacher Training program, we provide structured internships in
+            <strong>group classes, kids’ batches, and therapy-based sessions</strong>.
+            These opportunities help trainees gain <strong>real-life teaching experience</strong>,
+            strengthen their confidence, and refine classroom management skills under professional guidance.
+          </p>
+          <p class="text-muted">
+            Upon successful completion, students are awarded an
+            <strong>Internship Certificate</strong> in recognition of their practical training.
+            <em>80% attendance is compulsory</em> to receive the certificate.
+          </p>
+          <!-- <div class="mt-3">
           <a href="#apply" class="btn btn-pill">Apply Now</a>
           <a href="#contact" class="btn btn-outline-dark btn-pill" 
              style="border:1px solid rgba(11,42,74,.2)">Get Details</a>
         </div> -->
-      </div>
+        </div>
 
-      <!-- Image / Visual -->
-      <div class="col-lg-6 reveal">
-        <div class="h-100" style="border-radius:16px; overflow:hidden; box-shadow: var(--shadow);">
-          <img src="/img/internship-yoga.jpg" alt="Internship Yoga Training" 
-               style="width:100%; height:100%; object-fit:cover;">
+        <!-- Image / Visual -->
+        <div class="col-lg-6 reveal">
+          <div class="h-100" style="border-radius:16px; overflow:hidden; box-shadow: var(--shadow);">
+            <img src="https://images.pexels.com/photos/3768895/pexels-photo-3768895.jpeg" alt="Internship Yoga Training"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- COMMUNITY SERVICE -->
   <section class="py-5">
@@ -918,8 +983,11 @@ Institute</title>
               <i class="fas fa-heart"></i>
             </div>
             <h3>"Teaching Yoga, Touching Lives"</h3>
-            <p class="mb-4">As part of our Yoga Teacher Training, students engage in community service through free yoga sessions and outreach activities. This hands-on experience allows you to practice your teaching skills while making a positive impact in your community.</p>
-            <p class="mb-0"><strong>On completion, you will be awarded a Community Service Certificate</strong> recognizing your contribution to spreading wellness and the yogic lifestyle.</p>
+            <p class="mb-4">As part of our Yoga Teacher Training, students engage in community service through free yoga
+              sessions and outreach activities. This hands-on experience allows you to practice your teaching skills
+              while making a positive impact in your community.</p>
+            <p class="mb-0"><strong>On completion, you will be awarded a Community Service Certificate</strong>
+              recognizing your contribution to spreading wellness and the yogic lifestyle.</p>
           </div>
         </div>
       </div>
@@ -933,19 +1001,21 @@ Institute</title>
         <div class="col-lg-8 reveal">
           <div class="cta-section">
             <h2>Ready to Begin Your Teaching Journey?</h2>
-            <p class="text-muted mb-4">Join hundreds of graduates who have transformed their lives and are now sharing the gift of yoga worldwide. Your journey starts here.</p>
+            <p class="text-muted mb-4">Join hundreds of graduates who have transformed their lives and are now sharing
+              the gift of yoga worldwide. Your journey starts here.</p>
             <div class="d-flex flex-wrap justify-content-center">
               <a href="/contact-us/#form" class="btn btn-pill btn-lg mr-3 mb-2">Enroll Now</a>
               <a href="#" class="btn btn-outline-primary btn-lg mb-2">Download Brochure</a>
             </div>
-            <p class="mt-3 mb-0"><small class="text-muted">Early bird discounts available • Flexible payment plans • Scholarship opportunities</small></p>
+            <p class="mt-3 mb-0"><small class="text-muted">Early bird discounts available • Flexible payment plans •
+                Scholarship opportunities</small></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
- 
+
   <!-- ========== FOOTER (reuse on every page) ========== -->
   <footer class="footer-evy">
     <div class="container">
@@ -953,20 +1023,21 @@ Institute</title>
         <!-- Brand / About -->
         <div class="col-md-4 mb-4">
           <div class="logo mb-2">
-            <span class="brand-mark">EY</span> Everest Yoga & Pilates Institute
+            Everest Yoga & Pilates Institute
           </div>
           <p class="text-muted mb-3" style="max-width:420px">
-            Authentic Yoga Education blending traditional wisdom with modern pedagogy, Pilates Education & Professional Training,  Premium Equipments
+            Authentic Yoga Education blending traditional wisdom with modern pedagogy, Pilates Education & Professional
+            Training, Premium Equipments
           </p>
           <div class="social">
-            <a aria-label="Instagram" href="https://www.instagram.com/everestyogapilatesinstitute/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a aria-label="YouTube" href="https://www.youtube.com/@everestyogapilatesinstitute/videos" target="_blank" rel="noopener"><i
-                class="fa-brands fa-youtube"></i></a>
-            <a aria-label="Facebook" href="https://www.facebook.com/EverestyogaPilatesinstitute/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-facebook-f"></i></a>
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/everest-yoga-institute/about/" target="_blank" rel="noopener"><i
-                class="fa-brands fa-linkedin-in"></i></a>
+            <a aria-label="Instagram" href="https://www.instagram.com/everestyogapilatesinstitute/" target="_blank"
+              rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="YouTube" href="https://www.youtube.com/@everestyogapilatesinstitute/videos" target="_blank"
+              rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+            <a aria-label="Facebook" href="https://www.facebook.com/EverestyogaPilatesinstitute/" target="_blank"
+              rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/company/everest-yoga-institute/about/"
+              target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
@@ -999,8 +1070,8 @@ Institute</title>
         <div class="col-md-3 mb-4">
           <h6>Contact</h6>
           <p class="mb-1"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</p>
-         <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
-          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391" >+91 9501-934-391</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934392">+91 9501-9 34-392</a></p>
+          <p class="mb-1"><i class="fa-solid fa-phone"></i> <a href="tel:+919501934391">+91 9501-934-391</a></p>
           <p class="mb-3 d-flex align-items-center"><i class="fa-solid fa-envelope mr-2"></i> <a
               href="mailto:yogainstituteeverest@gmail.com">yogainstituteeverest@gmail.com</a></p>
         </div>
