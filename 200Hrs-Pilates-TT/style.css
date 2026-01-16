@@ -159,8 +159,7 @@
 }
 
 /* --------------------------- Machines ----------------------------- */
-/* Uses your existing machines markup; just add subtle hover pop */
-/* Machine card */
+/* Inspired by store product card design */
 .machine-card {
     background: #fff;
     border-radius: 16px;
@@ -170,23 +169,35 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.machine-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(10, 44, 79, .16);
 }
 
 .machine-media {
     position: relative;
     width: 100%;
-    height: 260px;
-    background: #f4f6fa;
+    aspect-ratio: 0.8;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f1 100%);
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .machine-media img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
-    transform: scale(1.02);
-    transition: transform .35s ease;
+    padding: 12px;
+    transform: scale(1);
+    transition: transform .5s ease;
+}
+
+.machine-card:hover .machine-media img {
+    transform: scale(1.03);
 }
 
 .machine-badge {
@@ -200,36 +211,29 @@
     border-radius: 999px;
     padding: .25rem .6rem;
     letter-spacing: .02em;
-}
-
-.machine-card:hover .machine-media img {
-    transform: scale(1.06);
+    z-index: 2;
 }
 
 .machine-body {
-    padding: 1.1rem 1.1rem 1.25rem;
+    padding: 16px 16px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .machine-body h5 {
     font-weight: 700;
-    color: #0b2a4a;
-    margin-bottom: .25rem;
+    font-size: 1.15rem;
+    color: var(--royal);
+    margin-bottom: .5rem;
 }
 
 .machine-body p {
-    color: #667085;
+    color: var(--muted);
     margin-bottom: 0;
     font-size: .95rem;
-    line-height: 1.55;
-}
-
-.machine-card {
-    transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.machine-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(11, 42, 74, .15);
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
 /* --------------------- Curriculum modules -------------------- */
